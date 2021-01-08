@@ -1,23 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.38
+Version: 1.1.39
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
-
-//-----------------------------BRAINDEAD MODE-----------------------------
-// NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
-
-//ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%	// Small and Grand Charms
-//ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%			// Magic Jewels
-//ItemDisplay[jew RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%		// Rare Jewels
-//ItemDisplay[wss]: %MAP-4A%%NL%%NL%%PURPLE%*          WORLDSTAR!!!          %ORANGE%*%NL%%NL%          				// Worldstone Shard
-//ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%          				// Puzzlebox
-
-// All runes over 20
-//ItemDisplay[RUNE>20]: %BORDER-62%%RED%**********%NL%%NL% %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%NL%%NL%%RED%**********
-
-// GG Uniques
-//ItemDisplay[(rin OR 7wa OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI ETH !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
-
-//ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ETH !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%PURPLE%**********  %TAN%%NAME%  %PURPLE%**********%PURPLE%%NL%%NL%%PURPLE%************************ 
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
@@ -313,7 +296,7 @@ ItemDisplay[pk3]: %NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURP
 ItemDisplay[(bey OR dhn OR mbr)]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube: Any 3 organs opens Uber Trist%NL%}
 
 //-----------------------------CHARMS-----------------------------
-// Hide Large Chamrs in Hell
+// Hide Large charms in Hell
 ItemDisplay[MAG cm2 DIFF=2]:
 
 //All Charms
