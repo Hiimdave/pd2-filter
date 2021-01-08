@@ -1,97 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.38
-Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
-
-//-----------------------------BRAINDEAD MODE-----------------------------
-// NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
-
-//ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%	// Small and Grand Charms
-//ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%			// Magic Jewels
-//ItemDisplay[jew RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%		// Rare Jewels
-//ItemDisplay[wss]: %MAP-4A%%NL%%NL%%PURPLE%*          WORLDSTAR!!!          %ORANGE%*%NL%%NL%          				// Worldstone Shard
-//ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%          				// Puzzlebox
-
-// All runes over 20
-//ItemDisplay[RUNE>20]: %BORDER-62%%RED%**********%NL%%NL% %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%NL%%NL%%RED%**********
-
-// GG Uniques
-//ItemDisplay[(rin OR 7wa OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI ETH !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
-
-//ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ETH !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%PURPLE%**********  %TAN%%NAME%  %PURPLE%**********%PURPLE%%NL%%NL%%PURPLE%************************ 
-
-//-----------------------------QUICK TOGGLES-----------------------------
-// NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
-
-//ItemDisplay[hp5]: 				// Turn off Rank 5 HP Pots
-//ItemDisplay[mp5]: 				// Turn off Rank 5 MP Pots
-//ItemDisplay[yps]:					// Turn off Antidotes
-
-//-----------------------------UNIQUE AND SET TOGGLES-----------------------------
-// NOTE: These are overrides from Karvinen's verion of Kyzard's filter to apply a more strict view of uniques and sets.
-
-// Hide Non Eth, non GG Unique AXES
-//ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique BOWS
-//ItemDisplay[(sbw OR 8sb OR am7 OR hbw OR lbw OR cbw OR sbb OR lbb OR swb OR lwb OR 8sb OR 8hb OR 8lb OR 8cb OR 8s8 OR 8l8 OR 8sw OR 8lw OR 6l7 OR 6sw) UNI !ID]:
-
-// Hide Non Eth, non GG Unique XBOWS
-//ItemDisplay[(WP10) UNI !ID !ETH]:
-
-// Hide Non Eth, non GG Unique DAGGERS
-//ItemDisplay[(dir OR kri OR bld OR 9dg OR 9di OR 9kr OR 9bl) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique MACES
-//ItemDisplay[(clb OR spc OR mac OR mst OR fla OR whm OR mau OR 9cl OR 9sp OR 9ma OR 9mt OR 9fl OR 9wh OR 9m9 OR 9gm OR 7mt OR 7m7) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique POLEARMS
-//ItemDisplay[(vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR 7o7 OR 7wc) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique SCEPTERS
-//ItemDisplay[(wsp OR 9qs) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique SPEARS
-//ItemDisplay[(spr OR 9tr OR brn OR spt OR pik OR 9sr OR 9br OR 9p9 OR 7sr OR 7br OR 9st) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique STAVES
-//ItemDisplay[(lst OR bst OR wst OR 8bs OR 8ws) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique SWORDS
-//ItemDisplay[(sbr OR lsd OR 9cr OR scm OR flc OR bsd OR wsd OR 2hs OR clm OR gis OR bsw OR flb OR gsd OR 9ss OR 9sm OR 9ls OR 9sb OR 92h OR 9cm OR 9gs OR 9b9 OR 9fb OR 9gd OR 7ls OR 7gs) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique THROWING
-//ItemDisplay[(9tk OR 9ta OR 7ta) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique WANDS
-//ItemDisplay[(wnd OR bwn OR 9yw) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique JAVS
-//ItemDisplay[(7s7 OR 7ts) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique ARMORS
-//ItemDisplay[(lea OR xld OR hla OR stu OR xrs OR scl OR brs OR chn OR xcl OR spl OR ltp OR fld OR plt OR gth OR aar OR xui OR xla OR xtp OR xtu OR xng OR xth OR xul OR xar OR uld) UNI !ID]:
-
-// Hide Non Eth, non GG Unique BELTS
-//ItemDisplay[(vbl OR mbl OR hbl OR zmb) UNI !ID]:
-
-// Hide Non Eth, non GG Unique HELMETS
-//ItemDisplay[(skp OR fhl OR hlm OR ghm OR msk OR crn OR bhm OR xhl OR xrn) UNI !ID]:
-
-// Hide Non Eth, non GG Unique BOOTS
-//ItemDisplay[(vbt OR mbt OR xlb OR xmb OR umb) UNI !ID]:
-
-// Hide Non Eth, non GG Unique GLOVES
-//ItemDisplay[(lgl OR hgl OR xlg OR xvg OR xmg) UNI !ID]:
-
-// Hide Non Eth, non GG Unique SHIELDS
-//ItemDisplay[(sml OR gts OR lrg OR kit OR spk OR tow OR bsh OR xuc OR xrg OR xit OR xpk OR xts OR upk OR ush) UNI !ID]:
-
-// Hide "bad" set items 
-//ItemDisplay[(chn OR xml OR zvb OR paf OR xmb OR oba OR zmb OR xsk OR uul OR 7gd OR 7wd OR gsc OR ult OR aar OR lbb OR 7qr OR 6cs OR xtg OR 9mt OR xh9 OR xar OR ci3 OR amc OR uld OR urn OR xhg OR xhb OR ba5 OR 7m7 OR 7ws OR ztb OR 7ma OR xhm OR xrs OR 9vo OR xrn OR xhl OR vgl OR xvg OR upl OR vbt OR 7ls OR bwn OR ci0 OR 9cs OR xcl OR xlb OR umc OR uui OR uhm OR sbr OR uts OR wst OR lwb OR bst OR tbt OR lea OR hlm OR lbt OR sml OR ful OR hbt OR tow OR hgl OR bhm OR mpi OR gth OR ghm OR hbl OR wsp OR gts OR kit OR fhl OR crn OR bsd OR lgl OR tbl OR cap OR dgr OR wsd OR lbl OR mbt OR mbl OR buc OR mgl OR msk OR lsd OR skp OR lrg OR rng OR chn OR swb OR tgl OR spl OR vbl OR qui OR bwn OR ltp OR vbl OR brs OR msk OR 2ax OR 9mt OR gts OR wsd OR hgl OR lsd OR tgl OR bst OR xar OR crn) SET !ID]:
-
-//--------------------------------------------------------------
-// BEYOND THIS POINT IS THE STANDARD FILTER
-//--------------------------------------------------------------
+Version: 1.1.39
+Description: This is a customized version of Kyzard's Lootfilter with additional custom overrides.
 
 //-----------------------------GEMS-----------------------------
 // General Settings
@@ -314,7 +223,7 @@ ItemDisplay[pk3]: %NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURP
 ItemDisplay[(bey OR dhn OR mbr)]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube: Any 3 organs opens Uber Trist%NL%}
 
 //-----------------------------CHARMS-----------------------------
-// Hide Large Chamrs in Hell
+// Hide Large charms in Hell
 ItemDisplay[MAG cm2 DIFF=2]:
 
 //All Charms
