@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.39
+Version: 1.1.40
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------LOL-----------------------------
@@ -9,11 +9,28 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 //-----------------------------BRAINDEAD MODE-----------------------------
 // NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
 
-ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%	// Small and Grand Charms
-ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%			// Magic Jewels
-ItemDisplay[jew RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%		// Rare Jewels
-ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%          			// Worldstone Shard
-ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%          				// Puzzlebox
+// Rejuvs
+ItemDisplay[rvl]: %NL%     %PURPLE%* %WHITE%Rejuv     %NL%
+
+// Gems
+ItemDisplay[gzv OR gzvs OR gpv OR gpvs]: %ORANGE%[%PURPLE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[glw OR glws OR gpw OR gpws]: %ORANGE%[%wHITE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[glg OR glgs OR gpg OR gpgs]: %ORANGE%[%GREEN%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[glr OR glrs OR gpr OR gprs]: %ORANGE%[%RED%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[glb OR glbs OR gpb OR gpbs]: %ORANGE%[%BLUE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[skl OR skls OR skz OR skzs]: %ORANGE%[%GRAY%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[gly OR glys OR gpy OR gpys]: %ORANGE%[%YELLOW%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
+ItemDisplay[gzvs OR glws OR glgs OR glrs OR glbs OR glys OR skls]: %NL%     %NAME%     %NL%
+
+// Good Drops
+ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
+ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%
+ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%
+
+// All runes over 9
+ItemDisplay[RUNE>9 AND RUNE<21]: %NL% %ORANGE%*         %NAME%      *%NL%%WHITE%
 
 // All runes over 20
 ItemDisplay[RUNE>20]: %BORDER-62%%RED%**********%NL%%NL% %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%NL%%NL%%RED%**********
@@ -26,12 +43,17 @@ ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
 
-//ItemDisplay[hp5]: 				// Turn off Rank 5 HP Pots
-//ItemDisplay[mp5]: 				// Turn off Rank 5 MP Pots
-//ItemDisplay[yps]:					// Turn off Antidotes
+//ItemDisplay[rvs]:				// Turn off small rejuvs
+//ItemDisplay[hp5]: 			// Turn off Rank 5 HP Pots
+//ItemDisplay[mp5]: 			// Turn off Rank 5 MP Pots
+//ItemDisplay[yps]:				// Turn off Antidotes
+//ItemDisplay[key]:				// Turn off Keys
 
-//-----------------------------UNIQUE AND SET TOGGLES-----------------------------
-// NOTE: These are overrides from Karvinen's verion of Kyzard's filter to apply a more strict view of uniques and sets.
+//-----------------------------STRICT TOGGLES-----------------------------
+// NOTE: These are toggles to force the filter to be more strict...
+
+// Hide all non eth, non socketed bases
+ItemDisplay[NMAG !INF !RW !SUP !ETH (ARMOR OR WEAPON) SOCK=0]:
 
 // Hide Non Eth, non GG Unique AXES
 ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:

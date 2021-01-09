@@ -1,16 +1,21 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.39
+Version: 1.1.40
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
 
-ItemDisplay[hp5]: 				// Turn off Rank 5 HP Pots
-ItemDisplay[mp5]: 				// Turn off Rank 5 MP Pots
-ItemDisplay[yps]:				// Turn off Antidotes
+//ItemDisplay[rvs]:				// Turn off small rejuvs
+//ItemDisplay[hp5]: 			// Turn off Rank 5 HP Pots
+//ItemDisplay[mp5]: 			// Turn off Rank 5 MP Pots
+//ItemDisplay[yps]:				// Turn off Antidotes
+//ItemDisplay[key]:				// Turn off Keys
 
 //-----------------------------UNIQUE AND SET TOGGLES-----------------------------
 // NOTE: These are overrides from Karvinen's verion of Kyzard's filter to apply a more strict view of uniques and sets.
+
+// Hide all non eth, non socketed bases
+ItemDisplay[NMAG !INF !RW !SUP !ETH (ARMOR OR WEAPON) SOCK=0]:
 
 // Hide Non Eth, non GG Unique AXES
 ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:
