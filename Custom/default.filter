@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.40
+Version: 1.1.41
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------LOL-----------------------------
@@ -10,7 +10,14 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 // NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
 
 // Rejuvs
-ItemDisplay[rvl]: %NL%     %PURPLE%* %WHITE%Rejuv     %NL%
+ItemDisplay[rvl]: %NL%%PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%
+
+// T3 Maps							
+ItemDisplay[t17]: %RED%[T3] %CONTINUE%
+ItemDisplay[NMAG t17]: %NAME%%WHITE%River of Blood Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t17]: %NAME%%BLUE%River of Blood Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t17]: %NAME%%YELLOW%River of Blood Map%WHITE%%CONTINUE%
+ItemDisplay[t17]: %MAP-62%%NL%%NAME%%ORANGE%*%NL%
 
 // Gems
 ItemDisplay[gzv OR gzvs OR gpv OR gpvs]: %ORANGE%[%PURPLE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
@@ -20,7 +27,7 @@ ItemDisplay[glr OR glrs OR gpr OR gprs]: %ORANGE%[%RED%O%ORANGE%] %WHITE%%NAME%%
 ItemDisplay[glb OR glbs OR gpb OR gpbs]: %ORANGE%[%BLUE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
 ItemDisplay[skl OR skls OR skz OR skzs]: %ORANGE%[%GRAY%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
 ItemDisplay[gly OR glys OR gpy OR gpys]: %ORANGE%[%YELLOW%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[gzvs OR glws OR glgs OR glrs OR glbs OR glys OR skls]: %NL%     %NAME%     %NL%
+ItemDisplay[gzvs OR glws OR glgs OR glrs OR glbs OR glys OR skls]: %NL%%NAME% %ORANGE%*%NL%
 
 // Good Drops
 ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
