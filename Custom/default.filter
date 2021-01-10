@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.41
+Version: 1.2.42
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------LOL-----------------------------
@@ -56,11 +56,52 @@ ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit 
 //ItemDisplay[yps]:				// Turn off Antidotes
 //ItemDisplay[key]:				// Turn off Keys
 
-//-----------------------------STRICT TOGGLES-----------------------------
-// NOTE: These are toggles to force the filter to be more strict...
+//-----------------------------SUPER STRICT TOGGLES-----------------------------
+// NOTE: These are overrides for extreme endgame mapping. 
+// 		 You should add back your own rules above this section or remove item codes / rarity lines for reducing strictness.
 
-// Hide all non eth, non socketed bases
-ItemDisplay[NMAG !INF !RW !SUP !ETH (ARMOR OR WEAPON) SOCK=0]:
+// Hide all non eth, non superior, non socketed bases
+ItemDisplay[NMAG !RW !SUP (ARMOR OR WEAPON)]:
+ItemDisplay[NMAG !RW SUP (ARMOR OR WEAPON) SOCK<2]:
+ItemDisplay[MAG !SUP (ARMOR OR WEAPON)]:
+ItemDisplay[MAG SUP (ARMOR OR WEAPON) SOCK<2]:
+ItemDisplay[RARE !SUP (ARMOR OR WEAPON)]:
+ItemDisplay[RARE SUP (ARMOR OR WEAPON) SOCK<2]:
+
+// Turn off Magic, Rare, and non max socket SIN weapons
+ItemDisplay[NMAG !RW !SUP SIN]:
+ItemDisplay[MAG SIN !ID]:
+ItemDisplay[RARE SIN !ID]:
+
+// Turn off Magic, Rare, and non max socket DRU helms
+ItemDisplay[NMAG !RW !SUP DRU]:
+ItemDisplay[MAG DRU !ID]:
+ItemDisplay[RARE DRU !ID]:
+
+// Turn off Magic, Rare, and non max socket BAR helms
+ItemDisplay[NMAG !RW !SUP BAR]:
+ItemDisplay[MAG BAR !ID]:
+ItemDisplay[RARE BAR !ID]:
+
+// Turn off Magic, Rare, and non max socket DIN shields
+ItemDisplay[NMAG !RW !SUP DIN]:
+ItemDisplay[MAG DIN !ID]:
+ItemDisplay[RARE DIN !ID]:
+
+// Turn off Magic, Rare, and non max socket NEC shields
+ItemDisplay[NMAG !RW !SUP NEC]:
+ItemDisplay[MAG NEC !ID]:
+ItemDisplay[RARE NEC !ID]:
+
+// Turn off Magic, Rare, and non max socket SOR weapons
+ItemDisplay[NMAG !RW !SUP SOR]:
+ItemDisplay[MAG SOR !ID]:
+ItemDisplay[RARE SOR !ID]:
+
+// Turn off Magic, Rare, and non max socket ZON weapons
+ItemDisplay[NMAG !RW !SUP ZON]:
+ItemDisplay[MAG ZON !ID]:
+ItemDisplay[RARE ZON !ID]:
 
 // Hide Non Eth, non GG Unique AXES
 ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:
