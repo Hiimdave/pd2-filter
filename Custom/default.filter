@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.2.43
+Version: 1.2.44
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------LOL-----------------------------
@@ -10,7 +10,7 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 // NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
 
 // GG UNIQUES
-ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %DOT-68%%NL%%NL%%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%NL%%NL%
+ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %DOT-68%%NL%%NL%%PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%NL%%NL%
 
 // OK UNIQUES
 // Belts
