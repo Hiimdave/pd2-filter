@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.1.41
+Version: 1.2.42
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------QUICK TOGGLES-----------------------------
@@ -11,7 +11,7 @@ Description: This is a customized version of Kyzard's Lootfilter, including some
 //ItemDisplay[yps]:				// Turn off Antidotes
 //ItemDisplay[key]:				// Turn off Keys
 
-//-----------------------------UNIQUE AND SET TOGGLES-----------------------------
+//-----------------------------STRICT TOGGLES-----------------------------
 // NOTE: These are overrides from Karvinen's verion of Kyzard's filter to apply a more strict view of uniques and sets.
 
 // Hide all non eth, non socketed bases

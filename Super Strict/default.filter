@@ -1,6 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
 Version: 1.2.42
-Description: This is a customized version of Kyzard's Lootfilter with additional custom overrides.
+Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
@@ -10,6 +10,117 @@ Description: This is a customized version of Kyzard's Lootfilter with additional
 //ItemDisplay[mp5]: 			// Turn off Rank 5 MP Pots
 //ItemDisplay[yps]:				// Turn off Antidotes
 //ItemDisplay[key]:				// Turn off Keys
+
+//-----------------------------SUPER STRICT TOGGLES-----------------------------
+// NOTE: These are overrides for extreme endgame mapping. 
+// 		 You should add back your own rules above this section or remove item codes / rarity lines for reducing strictness.
+
+// Hide all non eth, non superior, non socketed bases
+ItemDisplay[NMAG !RW !SUP (ARMOR OR WEAPON)]:
+ItemDisplay[NMAG !RW SUP (ARMOR OR WEAPON) SOCK<2]:
+ItemDisplay[MAG !SUP (ARMOR OR WEAPON)]:
+ItemDisplay[MAG SUP (ARMOR OR WEAPON) SOCK<2]:
+ItemDisplay[RARE !SUP (ARMOR OR WEAPON)]:
+ItemDisplay[RARE SUP (ARMOR OR WEAPON) SOCK<2]:
+
+// Turn off Magic, Rare, and non max socket SIN weapons
+ItemDisplay[NMAG !RW !SUP SIN]:
+ItemDisplay[MAG SIN !ID]:
+ItemDisplay[RARE SIN !ID]:
+
+// Turn off Magic, Rare, and non max socket DRU helms
+ItemDisplay[NMAG !RW !SUP DRU]:
+ItemDisplay[MAG DRU !ID]:
+ItemDisplay[RARE DRU !ID]:
+
+// Turn off Magic, Rare, and non max socket BAR helms
+ItemDisplay[NMAG !RW !SUP BAR]:
+ItemDisplay[MAG BAR !ID]:
+ItemDisplay[RARE BAR !ID]:
+
+// Turn off Magic, Rare, and non max socket DIN shields
+ItemDisplay[NMAG !RW !SUP DIN]:
+ItemDisplay[MAG DIN !ID]:
+ItemDisplay[RARE DIN !ID]:
+
+// Turn off Magic, Rare, and non max socket NEC shields
+ItemDisplay[NMAG !RW !SUP NEC]:
+ItemDisplay[MAG NEC !ID]:
+ItemDisplay[RARE NEC !ID]:
+
+// Turn off Magic, Rare, and non max socket SOR weapons
+ItemDisplay[NMAG !RW !SUP SOR]:
+ItemDisplay[MAG SOR !ID]:
+ItemDisplay[RARE SOR !ID]:
+
+// Turn off Magic, Rare, and non max socket ZON weapons
+ItemDisplay[NMAG !RW !SUP ZON]:
+ItemDisplay[MAG ZON !ID]:
+ItemDisplay[RARE ZON !ID]:
+
+// Hide Non Eth, non GG Unique AXES
+ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique BOWS
+ItemDisplay[(sbw OR 8sb OR am7 OR hbw OR lbw OR cbw OR sbb OR lbb OR swb OR lwb OR 8sb OR 8hb OR 8lb OR 8cb OR 8s8 OR 8l8 OR 8sw OR 8lw OR 6l7 OR 6sw) UNI !ID]:
+
+// Hide Non Eth, non GG Unique XBOWS
+ItemDisplay[(WP10) UNI !ID !ETH]:
+
+// Hide Non Eth, non GG Unique DAGGERS
+ItemDisplay[(dir OR kri OR bld OR 9dg OR 9di OR 9kr OR 9bl) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique MACES
+ItemDisplay[(clb OR spc OR mac OR mst OR fla OR whm OR mau OR 9cl OR 9sp OR 9ma OR 9mt OR 9fl OR 9wh OR 9m9 OR 9gm OR 7mt OR 7m7) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique POLEARMS
+ItemDisplay[(vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR 7o7 OR 7wc) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique SCEPTERS
+ItemDisplay[(wsp OR 9qs) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique SPEARS
+ItemDisplay[(spr OR 9tr OR brn OR spt OR pik OR 9sr OR 9br OR 9p9 OR 7sr OR 7br OR 9st) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique STAVES
+ItemDisplay[(lst OR bst OR wst OR 8bs OR 8ws) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique SWORDS
+ItemDisplay[(sbr OR lsd OR 9cr OR scm OR flc OR bsd OR wsd OR 2hs OR clm OR gis OR bsw OR flb OR gsd OR 9ss OR 9sm OR 9ls OR 9sb OR 92h OR 9cm OR 9gs OR 9b9 OR 9fb OR 9gd OR 7ls OR 7gs) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique THROWING
+ItemDisplay[(9tk OR 9ta OR 7ta) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique WANDS
+ItemDisplay[(wnd OR bwn OR 9yw) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique JAVS
+ItemDisplay[(7s7 OR 7ts) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique ARMORS
+ItemDisplay[(lea OR xld OR hla OR stu OR xrs OR scl OR brs OR chn OR xcl OR spl OR ltp OR fld OR plt OR gth OR aar OR xui OR xla OR xtp OR xtu OR xng OR xth OR xul OR xar OR uld) UNI !ID]:
+
+// Hide Non Eth, non GG Unique BELTS
+ItemDisplay[(vbl OR mbl OR hbl OR zmb) UNI !ID]:
+
+// Hide Non Eth, non GG Unique HELMETS
+ItemDisplay[(skp OR fhl OR hlm OR ghm OR msk OR crn OR bhm OR xhl OR xrn) UNI !ID]:
+
+// Hide Non Eth, non GG Unique BOOTS
+ItemDisplay[(vbt OR mbt OR xlb OR xmb OR umb) UNI !ID]:
+
+// Hide Non Eth, non GG Unique GLOVES
+ItemDisplay[(lgl OR hgl OR xlg OR xvg OR xmg) UNI !ID]:
+
+// Hide Non Eth, non GG Unique SHIELDS
+ItemDisplay[(sml OR gts OR lrg OR kit OR spk OR tow OR bsh OR xuc OR xrg OR xit OR xpk OR xts OR upk OR ush) UNI !ID]:
+
+// Hide "bad" set items 
+ItemDisplay[(chn OR xml OR zvb OR paf OR xmb OR oba OR zmb OR xsk OR uul OR 7gd OR 7wd OR gsc OR ult OR aar OR lbb OR 7qr OR 6cs OR xtg OR 9mt OR xh9 OR xar OR ci3 OR amc OR uld OR urn OR xhg OR xhb OR ba5 OR 7m7 OR 7ws OR ztb OR 7ma OR xhm OR xrs OR 9vo OR xrn OR xhl OR vgl OR xvg OR upl OR vbt OR 7ls OR bwn OR ci0 OR 9cs OR xcl OR xlb OR umc OR uui OR uhm OR sbr OR uts OR wst OR lwb OR bst OR tbt OR lea OR hlm OR lbt OR sml OR ful OR hbt OR tow OR hgl OR bhm OR mpi OR gth OR ghm OR hbl OR wsp OR gts OR kit OR fhl OR crn OR bsd OR lgl OR tbl OR cap OR dgr OR wsd OR lbl OR mbt OR mbl OR buc OR mgl OR msk OR lsd OR skp OR lrg OR rng OR chn OR swb OR tgl OR spl OR vbl OR qui OR bwn OR ltp OR vbl OR brs OR msk OR 2ax OR 9mt OR gts OR wsd OR hgl OR lsd OR tgl OR bst OR xar OR crn) SET !ID]:
+
+//--------------------------------------------------------------
+// BEYOND THIS POINT IS THE STANDARD FILTER
+//--------------------------------------------------------------
 
 //-----------------------------GEMS-----------------------------
 // General Settings
@@ -83,7 +194,6 @@ ItemDisplay[ETH UNI]: %GRAY%[%WHITE%eth%GRAY%] %GOLD%%NAME%%CONTINUE%
 ItemDisplay[ETH RARE]: %GRAY%[%WHITE%eth%GRAY%] %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[ETH MAG]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%%NAME%%CONTINUE%
 ItemDisplay[ETH NMAG]: %GRAY%[%WHITE%eth%GRAY%] %GRAY%%NAME%%CONTINUE%
-ItemDisplay[ETH CRAFT]: %GRAY%[%WHITE%eth%GRAY%] %ORANGE%%NAME%%CONTINUE%
 
 // Sockets
 ItemDisplay[(ARMOR OR WEAPON) NMAG !INF SOCK=0]: %WHITE%%NAME%%CONTINUE%
@@ -444,7 +554,7 @@ ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%P
 // Armors
 ItemDisplay[(xsk OR xml OR xlb OR xpl OR xap OR xld OR xrs OR gth OR aar OR BELT OR skp OR xhl OR xrn OR vbt OR xmb OR uvb OR umb OR lgl OR mgl OR tgl OR hgl OR xlg OR xvg OR xtg OR xhg OR ush OR upk OR uml OR xts OR xrg OR xuc OR tow OR kit OR gts) UNI !ID]: %PX-68%%NAME%
 // Weapons
-ItemDisplay[((7ga OR 7wa OR 7gi OR 7pa OR 8ls OR 72a OR 7o7 OR 9yw OR 9fc OR 7bw OR 9kr OR amb OR 7sc OR 7mp OR 6sw OR 6l7 OR 8hx OR 8rx OR dgr OR 7dg OR 7bl OR 9ma OR 9wh OR 9gm OR 7s8 OR 7wc OR 9ws OR 6cs OR 7b7 OR 7gs OR 9sb) OR (ELT (WP5 OR WP6)) OR 9bw OR ywn OR 7wb OR 7sp) UNI !ID]: %PX-68%%NAME%
+ItemDisplay[((7wa OR 7gi OR 7pa OR 8ls OR 72a OR 7o7 OR 9yw OR 9fc OR 7bw OR 9kr OR amb OR 7sc OR 7mp OR 6sw OR 6l7 OR 8hx OR 8rx OR dgr OR 7dg OR 7bl OR 9ma OR 9wh OR 9gm OR 7s8 OR 7wc OR 9ws OR 6cs OR 7b7 OR 7gs OR 9sb) OR (ELT (WP5 OR WP6)) OR 9bw OR ywn OR 7wb OR 7sp) UNI !ID]: %PX-68%%NAME%
 // Sets
 ItemDisplay[((ARMOR OR WEAPON) (EXC OR ELT OR ci0 OR ba5) !(9vo OR xcl OR xrn)) SET !ID]: %PX-84%%NAME%
 
