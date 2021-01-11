@@ -1,15 +1,16 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.2.44
+Version: 1.2.45
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
 
-//ItemDisplay[rvs]:				// Turn off small rejuvs
-//ItemDisplay[hp5]: 			// Turn off Rank 5 HP Pots
-//ItemDisplay[mp5]: 			// Turn off Rank 5 MP Pots
-//ItemDisplay[yps]:				// Turn off Antidotes
-//ItemDisplay[key]:				// Turn off Keys
+//ItemDisplay[rvs]:						// Turn off small rejuvs
+//ItemDisplay[hp5]: 					// Turn off Rank 5 HP Pots
+//ItemDisplay[mp5]: 					// Turn off Rank 5 MP Pots
+//ItemDisplay[yps]:						// Turn off Antidotes
+//ItemDisplay[key]:						// Turn off Keys
+//ItemDisplay[RUNE<10 CLVL>80]:			// Turn off Low Runes when Char level is over 80
 
 //-----------------------------SUPER STRICT TOGGLES-----------------------------
 // NOTE: These are overrides for extreme endgame mapping. 
