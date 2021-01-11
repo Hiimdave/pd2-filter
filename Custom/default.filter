@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.2.44
+Version: 1.2.45
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------LOL-----------------------------
@@ -9,80 +9,66 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 //-----------------------------BRAINDEAD MODE-----------------------------
 // NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
 
-// GG UNIQUES
-ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %DOT-68%%NL%%NL%%PURPLE%*%RED%*%ORANGE%*%YELLOW%*             %GOLD%%NAME%             %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%NL%%NL%
-
-// OK UNIQUES
-// Belts
-ItemDisplay[(zlb OR zvb OR zhb OR umc OR uvc) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Armors
-ItemDisplay[(uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Gloves
-ItemDisplay[(uvg OR uhg OR umg) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Helmets
-ItemDisplay[(xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Boots
-ItemDisplay[(lbt OR xhb OR uhb OR tbt OR xvb OR hbt) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Shields
-ItemDisplay[(nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Weapons
-ItemDisplay[(7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR 6ws OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*     %GOLD%%NAME%%GRAY%     *%TAN%*%YELLOW%*%NL%
-
-// Good SET parts
-ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%*     %NAME%     *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
-
-// Rejuvs
-ItemDisplay[rvl]: %NL%%PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%
-
-// T3 Maps							
-ItemDisplay[t17]: %RED%[T3] %CONTINUE%
-ItemDisplay[NMAG t17]: %NAME%%WHITE%River of Blood Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t17]: %NAME%%BLUE%River of Blood Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t17]: %NAME%%YELLOW%River of Blood Map%WHITE%%CONTINUE%
-ItemDisplay[t17]: %MAP-62%%NL%%NAME%%ORANGE%*%NL%
-
-// Gems
-ItemDisplay[gzv OR gzvs OR gpv OR gpvs]: %ORANGE%[%PURPLE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[glw OR glws OR gpw OR gpws]: %ORANGE%[%wHITE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[glg OR glgs OR gpg OR gpgs]: %ORANGE%[%GREEN%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[glr OR glrs OR gpr OR gprs]: %ORANGE%[%RED%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[glb OR glbs OR gpb OR gpbs]: %ORANGE%[%BLUE%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[skl OR skls OR skz OR skzs]: %ORANGE%[%GRAY%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[gly OR glys OR gpy OR gpys]: %ORANGE%[%YELLOW%O%ORANGE%] %WHITE%%NAME%%CONTINUE%
-ItemDisplay[gzvs OR glws OR glgs OR glrs OR glbs OR glys OR skls]: %NL%%NAME% %ORANGE%*%NL%
-
-// Good Drops
-ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+// GG Drops (Large Box)
+-----------------------------
+ItemDisplay[cm1 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
 ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
 ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
 ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%
 ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%
 
+// GG Uniques
+ItemDisplay[(rin OR 7wa OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
+
+// OK Drops (Med Box)
+-----------------------------
+// Uniques
+ItemDisplay[(zlb OR zvb OR zhb OR umc OR uvc OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR hbt OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR 6ws OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%* %GOLD%%NAME% %GRAY%*%TAN%*%YELLOW%*%NL%
+
+// Good SET parts
+ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%* %NAME% *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
+
+// Maps
+-----------------------------						
+ItemDisplay[t17]: %RED%[T3] %CONTINUE%
+ItemDisplay[NMAG t17]: %NAME%%WHITE%River of Blood Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t17]: %NAME%%BLUE%River of Blood Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t17]: %NAME%%YELLOW%River of Blood Map%WHITE%%CONTINUE%
+ItemDisplay[t17]: %MAP-62%%NL%%NAME% %RED%*%NL%
+
+// Materials
+-----------------------------
+// Rejuvs
+ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
+
+// Gems
+-----------------------------
+ItemDisplay[gzv OR gzvs OR gpv OR gpvs]: %NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%
+ItemDisplay[glw OR glws OR gpw OR gpws]: %NL%%wHITE%O %TAN%F. %WHITE% Diamond *%NL%
+ItemDisplay[glg OR glgs OR gpg OR gpgs]: %NL%%GREEN%O %TAN%F. %WHITE% Emerald %GREEN%*%NL%
+ItemDisplay[glr OR glrs OR gpr OR gprs]: %NL%%RED%O %TAN%F. %WHITE% Ruby %RED%*%NL%
+ItemDisplay[glb OR glbs OR gpb OR gpbs]: %NL%%BLUE%O %TAN%F. %WHITE% Sapphire %BLUE%*%NL%
+ItemDisplay[skl OR skls OR skz OR skzs]: %NL%%GRAY%O %TAN%F. %WHITE% Skull %GRAY%*%NL%
+ItemDisplay[gly OR glys OR gpy OR gpys]: %NL%%YELLOW%O %TAN%F. %WHITE% Topaz %YELLOW%*%NL%
+
+// Runes
+-----------------------------
 // All runes over 9
-ItemDisplay[RUNE>9 AND RUNE<21]: %NL% %ORANGE%*         %NAME%      *%NL%%WHITE%
+ItemDisplay[RUNE>9 AND RUNE<21]: %NL%%ORANGE%*    %NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%ORANGE%    *%NL%%WHITE%
 
 // All runes over 20
 ItemDisplay[RUNE>20]: %BORDER-62%%RED%**********%NL%%NL% %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%NL%%NL%%RED%**********
 
-// GG Uniques
-ItemDisplay[(rin OR 7wa OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI ETH !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
-
-ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ETH !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%PURPLE%**********  %TAN%%NAME%  %PURPLE%**********%PURPLE%%NL%%NL%%PURPLE%************************ 
-
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
 
-//ItemDisplay[rvs]:				// Turn off small rejuvs
-//ItemDisplay[hp5]: 			// Turn off Rank 5 HP Pots
-//ItemDisplay[mp5]: 			// Turn off Rank 5 MP Pots
-//ItemDisplay[yps]:				// Turn off Antidotes
-//ItemDisplay[key]:				// Turn off Keys
+//ItemDisplay[rvs]:						// Turn off small rejuvs
+//ItemDisplay[hp5]: 					// Turn off Rank 5 HP Pots
+//ItemDisplay[mp5]: 					// Turn off Rank 5 MP Pots
+//ItemDisplay[yps]:						// Turn off Antidotes
+//ItemDisplay[key]:						// Turn off Keys
+//ItemDisplay[RUNE<10 CLVL>80]:			// Turn off Low Runes when Char level is over 80
 
 //-----------------------------SUPER STRICT TOGGLES-----------------------------
 // NOTE: These are overrides for extreme endgame mapping. 
