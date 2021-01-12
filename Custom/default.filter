@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 1.2.45
+Version: 1.2.46
 Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
 
 //-----------------------------LOL-----------------------------
@@ -44,13 +44,26 @@ ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
 
 // Gems
 -----------------------------
-ItemDisplay[gzv OR gzvs OR gpv OR gpvs]: %NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%
-ItemDisplay[glw OR glws OR gpw OR gpws]: %NL%%wHITE%O %TAN%F. %WHITE% Diamond *%NL%
-ItemDisplay[glg OR glgs OR gpg OR gpgs]: %NL%%GREEN%O %TAN%F. %WHITE% Emerald %GREEN%*%NL%
-ItemDisplay[glr OR glrs OR gpr OR gprs]: %NL%%RED%O %TAN%F. %WHITE% Ruby %RED%*%NL%
-ItemDisplay[glb OR glbs OR gpb OR gpbs]: %NL%%BLUE%O %TAN%F. %WHITE% Sapphire %BLUE%*%NL%
-ItemDisplay[skl OR skls OR skz OR skzs]: %NL%%GRAY%O %TAN%F. %WHITE% Skull %GRAY%*%NL%
-ItemDisplay[gly OR glys OR gpy OR gpys]: %NL%%YELLOW%O %TAN%F. %WHITE% Topaz %YELLOW%*%NL%
+ItemDisplay[gzv OR gzvs]: %NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%
+ItemDisplay[gpv OR gpvs]: %NL%%PURPLE%O %TAN%P. %WHITE% Amethyst %PURPLE%*%NL%
+
+ItemDisplay[glw OR glws]: %NL%%wHITE%O %TAN%F. %WHITE% Diamond *%NL%
+ItemDisplay[gpw OR gpws]: %NL%%wHITE%O %TAN%P. %WHITE% Diamond *%NL%
+
+ItemDisplay[glg OR glgs]: %NL%%GREEN%O %TAN%F. %WHITE% Emerald %GREEN%*%NL%
+ItemDisplay[gpg OR gpgs]: %NL%%GREEN%O %TAN%P. %WHITE% Emerald %GREEN%*%NL%
+
+ItemDisplay[glr OR glrs]: %NL%%RED%O %TAN%F. %WHITE% Ruby %RED%*%NL%
+ItemDisplay[gpr OR gprs]: %NL%%RED%O %TAN%P. %WHITE% Ruby %RED%*%NL%
+
+ItemDisplay[glb OR glbs]: %NL%%BLUE%O %TAN%F. %WHITE% Sapphire %BLUE%*%NL%
+ItemDisplay[gpb OR gpbs]: %NL%%BLUE%O %TAN%P. %WHITE% Sapphire %BLUE%*%NL%
+
+ItemDisplay[skl OR skls]: %NL%%GRAY%O %TAN%F. %WHITE% Skull %GRAY%*%NL%
+ItemDisplay[skz OR skzs]: %NL%%GRAY%O %TAN%P. %WHITE% Skull %GRAY%*%NL%
+
+ItemDisplay[gly OR glys]: %NL%%YELLOW%O %TAN%F. %WHITE% Topaz %YELLOW%*%NL%
+ItemDisplay[gpy OR gpys]: %NL%%YELLOW%O %TAN%P. %WHITE% Topaz %YELLOW%*%NL%
 
 // Runes
 -----------------------------
