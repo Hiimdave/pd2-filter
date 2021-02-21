@@ -1,6 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
 Version: 1.2.48
-Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
+Description: This is a customized version of Kyzard's Lootfilter, with custom tweaks.
 
 //-----------------------------LOL-----------------------------
 ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%

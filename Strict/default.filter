@@ -1,6 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
 Version: 1.2.48
-Description: This is a customized version of Kyzard's Lootfilter, including some overrides from Karvinen's custom filter, with additional custom overrides.
+Description: This is a customized version of Kyzard's Lootfilter, with custom tweaks.
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
