@@ -2,7 +2,7 @@
 Version: 1.2.48
 Description: This is a customized version of Kyzard's Lootfilter, with custom tweaks.
 
-//-----------------------------QUICK TOGGLES-----------------------------
+//-----------------------------QUICK TOGGLES-------------------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
 
 //ItemDisplay[rvs]:						// Turn off small rejuvs
@@ -12,7 +12,7 @@ Description: This is a customized version of Kyzard's Lootfilter, with custom tw
 //ItemDisplay[key]:						// Turn off Keys
 //ItemDisplay[RUNE<10 CLVL>80]:			// Turn off Low Runes when Char level is over 80
 
-//-----------------------------SUPER STRICT TOGGLES-----------------------------
+//-----------------------------SUPER STRICT TOGGLES-------------------------------
 // NOTE: These are overrides for extreme endgame mapping. 
 // 		 You should add back your own rules above this section or remove item codes / rarity lines for reducing strictness.
 
