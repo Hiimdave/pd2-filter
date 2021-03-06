@@ -281,50 +281,76 @@ ItemDisplay[upma]: %NAME%{%WHITE%This Item + %TAN%P.%WHITE% Skull + %ORANGE%Thul
 
 //-----------------------------MAPS-----------------------------
 // Maps (by Tier)
-ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t22 OR t23 OR t24 OR t32 OR t34]: %NAME%%CONTINUE%						// Make sure all tiers show
+ItemDisplay[t11 OR t12 OR t13 OR t14]: %NAME%%CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME%%CONTINUE%
+ItemDisplay[t31 OR t32 OR t33 OR t34]: %NAME%%CONTINUE%
+ItemDisplay[t41 OR t42]: %NAME%%CONTINUE%
 
 // Add tags to maps
-ItemDisplay[t16]: %GREEN%[T1] %CONTINUE%						
-ItemDisplay[t18 OR t22 OR t23 OR t24]: %ORANGE%[T2] %CONTINUE%							
-ItemDisplay[t17 OR t32 OR t34]: %RED%[T3] %CONTINUE%								
+ItemDisplay[t11 OR t12 OR t13 OR t14]: %GREEN%[T1] %CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%
+ItemDisplay[t31 OR t32 OR t33 OR t34]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t41 OR t42]: %RED%[T4] %CONTINUE%					
 
 // Overrides for Normal Rarity
-ItemDisplay[NMAG t16]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t18]: %NAME%%WHITE%Phlegathon Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t12]: %NAME%%WHITE%Horazons Memory Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t13]: %NAME%%WHITE%Horadrim Tower Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t14]: %NAME%%WHITE%Tomb Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t21]: %NAME%%WHITE%Phlegathon Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t22]: %NAME%%WHITE%Torajan Jungle Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t23]: %NAME%%WHITE%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t24]: %NAME%%WHITE%Blood Moon Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t17]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t31]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t32]: %NAME%%WHITE%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t33]: %NAME%%WHITE%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t41]: %NAME%%WHITE%Plains of Torment Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t42]: %NAME%%WHITE%Desert Map%WHITE%%CONTINUE%
 
 // Overrides for Magic Rarity
-ItemDisplay[MAG t16]: %NAME%%BLUE%Ruins of Vizjun Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t18]: %NAME%%BLUE%Phlegathon Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t11]: %NAME%%BLUE%Ruins of Vizjun Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t12]: %NAME%%BLUE%Horazons Memory Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t13]: %NAME%%BLUE%Horadrim Tower Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t14]: %NAME%%BLUE%Tomb Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t21]: %NAME%%BLUE%Phlegathon Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t22]: %NAME%%BLUE%Torajan Jungle Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t23]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t24]: %NAME%%BLUE%Blood Moon Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t17]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t32]: %NAME%%BLUE%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t33]: %NAME%%BLUE%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t41]: %NAME%%BLUE%Plains of Torment Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t42]: %NAME%%BLUE%Desert Map%WHITE%%CONTINUE%
 
 // Overrides for Rare Rarity
-ItemDisplay[RARE t16]: %NAME%%YELLOW%Ruins of Vizjun Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t18]: %NAME%%YELLOW%Phlegathon Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t11]: %NAME%%YELLOW%Ruins of Vizjun Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t12]: %NAME%%YELLOW%Horazons Memory Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t13]: %NAME%%YELLOW%Horadrim Tower Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t14]: %NAME%%YELLOW%Tomb Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t21]: %NAME%%YELLOW%Phlegathon Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t22]: %NAME%%YELLOW%Torajan Jungle Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t23]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t24]: %NAME%%YELLOW%Blood Moon Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t17]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t32]: %NAME%%YELLOW%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t33]: %NAME%%YELLOW%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t41]: %NAME%%YELLOW%Plains of Torment Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t42]: %NAME%%YELLOW%Desert Map%WHITE%%CONTINUE%
 
 // Endcap map names with dot of same color as tier tag
-ItemDisplay[t16]: %NAME% %GREEN%*%CONTINUE%	
-ItemDisplay[t18 OR t22 OR t23 OR t24]: %NAME% %ORANGE%*%CONTINUE%	
-ItemDisplay[t17 OR t32 OR t34]: %NAME% %RED%*%CONTINUE%
+ItemDisplay[t11 OR t12 OR t13 OR t14]: %NAME% %GREEN%*%CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME% %YELLOW%*%CONTINUE%	
+ItemDisplay[t31 OR t32 OR t33 OR t34]: %NAME% %ORANGE%*%CONTINUE%
+ItemDisplay[t41 OR t42]: %NAME% %RED%*%CONTINUE% 
 
 //Notify on Map Drops
-ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t22 OR t23 OR t24 OR t32 OR t34]: %NAME%%MAP-62%
+ItemDisplay[t11 OR t12 OR t13 OR t14]: %NAME%%MAP-62%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME%%MAP-62%
+ItemDisplay[t31 OR t32 OR t33 OR t34]: %NAME%%MAP-62%
+ItemDisplay[t41 OR t42]: %NAME%%MAP-62%
 
 //-----------------------------QUEST ITEMS-----------------------------
 // Reward Items
