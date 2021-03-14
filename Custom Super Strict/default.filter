@@ -10,6 +10,109 @@ Version: 3.0.1
 //ItemDisplay[key]:						// Turn off Keys
 //ItemDisplay[RUNE<10 CLVL>80]:			// Turn off Low Runes when Char level is over 80
 
+//--------------------------------------------------------------
+// BEYOND THIS POINT ARE THE CUSTOM FILTER OVERRIDES
+//--------------------------------------------------------------
+
+//-----------------------------LOL-----------------------------
+ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
+ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
+
+//-----------------------------BRAINDEAD MODE-----------------------------
+// NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
+
+// GG Drops (Large Box)
+-----------------------------
+ItemDisplay[cm1 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
+ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%
+ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%
+
+// GG Uniques
+ItemDisplay[(rin OR 7wa OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
+
+// OK Drops (Med Box)
+-----------------------------
+// Uniques
+ItemDisplay[(zlb OR zvb OR zhb OR umc OR uvc OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR hbt OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR 6ws OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%* %GOLD%%NAME% %GRAY%*%TAN%*%YELLOW%*%NL%
+
+// Good SET parts
+ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%* %NAME% *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
+
+// Maps
+-----------------------------						
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t41 OR t42]: %RED%[T4] %CONTINUE%
+
+ItemDisplay[NMAG t31]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t32]: %NAME%%WHITE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t33]: %NAME%%WHITE%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t35]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t36]: %NAME%%WHITE%Tomb of Zultun Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t41]: %NAME%%WHITE%Plains of Torment Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t42]: %NAME%%WHITE%Desert Map%WHITE%%CONTINUE%
+
+ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t32]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t33]: %NAME%%BLUE%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t35]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t36]: %NAME%%BLUE%Tomb of Zultun Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t41]: %NAME%%BLUE%Plains of Torment Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t42]: %NAME%%BLUE%Desert Map%WHITE%%CONTINUE%
+
+ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t32]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t33]: %NAME%%YELLOW%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t35]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t36]: %NAME%%YELLOW%Tomb of Zultun Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t41]: %NAME%%YELLOW%Plains of Torment Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t42]: %NAME%%YELLOW%Desert Map%WHITE%%CONTINUE%
+
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %MAP-62%%NL%%NAME% %ORANGE%*%NL%
+ItemDisplay[t41 OR t42]: %MAP-62%%NL%%NAME% %RED%*%NL%
+
+// Materials
+-----------------------------
+// Rejuvs
+ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
+
+// Gems
+-----------------------------
+ItemDisplay[gzv OR gzvs]: %NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%
+ItemDisplay[gpv OR gpvs]: %NL%%PURPLE%O %TAN%P. %WHITE% Amethyst %PURPLE%*%NL%
+
+ItemDisplay[glw OR glws]: %NL%%wHITE%O %TAN%F. %WHITE% Diamond *%NL%
+ItemDisplay[gpw OR gpws]: %NL%%wHITE%O %TAN%P. %WHITE% Diamond *%NL%
+
+ItemDisplay[glg OR glgs]: %NL%%GREEN%O %TAN%F. %WHITE% Emerald %GREEN%*%NL%
+ItemDisplay[gpg OR gpgs]: %NL%%GREEN%O %TAN%P. %WHITE% Emerald %GREEN%*%NL%
+
+ItemDisplay[glr OR glrs]: %NL%%RED%O %TAN%F. %WHITE% Ruby %RED%*%NL%
+ItemDisplay[gpr OR gprs]: %NL%%RED%O %TAN%P. %WHITE% Ruby %RED%*%NL%
+
+ItemDisplay[glb OR glbs]: %NL%%BLUE%O %TAN%F. %WHITE% Sapphire %BLUE%*%NL%
+ItemDisplay[gpb OR gpbs]: %NL%%BLUE%O %TAN%P. %WHITE% Sapphire %BLUE%*%NL%
+
+ItemDisplay[skl OR skls]: %NL%%GRAY%O %TAN%F. %WHITE% Skull %GRAY%*%NL%
+ItemDisplay[skz OR skzs]: %NL%%GRAY%O %TAN%P. %WHITE% Skull %GRAY%*%NL%
+
+ItemDisplay[gly OR glys]: %NL%%YELLOW%O %TAN%F. %WHITE% Topaz %YELLOW%*%NL%
+ItemDisplay[gpy OR gpys]: %NL%%YELLOW%O %TAN%P. %WHITE% Topaz %YELLOW%*%NL%
+
+// Runes
+-----------------------------
+// All runes over 9
+ItemDisplay[RUNE>9 AND RUNE<21]: %NL%%ORANGE%*    %NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%ORANGE%    *%NL%%WHITE%
+
+// All runes over 20
+ItemDisplay[RUNE>20]: %BORDER-62%%RED%**********%NL%%NL% %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%NL%%NL%%RED%**********
+
+
 //-----------------------------SUPER STRICT TOGGLES-------------------------------
 // NOTE: These are overrides for extreme endgame mapping. 
 // 		 You should add back your own rules above this section or remove item codes / rarity lines for reducing strictness.
