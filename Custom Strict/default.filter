@@ -341,10 +341,10 @@ ItemDisplay[ibk]: %RED%+%WHITE%ID Tome												// Always show ID Tomes
 ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome												// Always show TP Tomes
 
 // Rejuv Pot Settings
-ItemDisplay[rvs OR rvl]: %TAN%Rejuv%PURPLE%+%WHITE%%CONTINUE% 						// Set a default name for both
-ItemDisplay[rvs]: %PURPLE%+%WHITE%35% %NAME%            							// Always show Minor Rejuvs
-ItemDisplay[rvl]: %PURPLE%+%WHITE%65% %NAME%								        // Always show Major Rejuvs
-//ItemDisplay[rvl]: %NAME%%MAP-70%													// Notify on Major Rejuvs
+ItemDisplay[rvs OR rvl]: %TAN%Rejuv%PURPLE%+%WHITE%%CONTINUE%
+ItemDisplay[rvs]: %PURPLE%+%WHITE%35% %NAME%
+ItemDisplay[rvl]: %PURPLE%+%WHITE%65% %NAME%
+//ItemDisplay[rvl]: %NAME%%MAP-70%
 
 // HP Pot Settings
 ItemDisplay[(hp1 OR hp2) (DIFF>0 OR CLVL>79)]: 										// Hide Rank 1 & 2 post Normal or when 80+
