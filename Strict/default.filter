@@ -230,13 +230,13 @@ ItemDisplay[dcbl OR lbox OR wss]: %NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PU
 
 // Map Orbs
 ItemDisplay[rera OR imra OR upma OR imma OR scou OR upmp OR scrb]: %ORANGE%**%GOLD%%NAME%%ORANGE%**%CONTINUE%
-ItemDisplay[imra]: %NAME%{%WHITE%This Item + %BLUE%Jewel %WHITE%+ %ORANGE%Thul+%NL%%TAN%Note%WHITE%: Imbue White to %YELLOW%Rare %WHITE%Map:}%CONTINUE%
-ItemDisplay[imma]: %NAME%{%WHITE%This Item + %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White to %BLUE%Magic%WHITE% Map:}%CONTINUE%
-ItemDisplay[scou]: %NAME%{%WHITE%This Item + %ORANGE%Hel%NL%%TAN%Note%WHITE%: Revert back to a White Map:}%CONTINUE%
-ItemDisplay[rera]: %NAME%{%WHITE%This Item + Any %TAN%P.%WHITE% Gem + %ORANGE%Thul+%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}%CONTINUE%
-ItemDisplay[upma]: %NAME%{%WHITE%This Item + %TAN%P.%WHITE% Skull + %ORANGE%Thul+%NL%%TAN%Note%WHITE%: Upg %BLUE%Magic %WHITE%to %YELLOW%Rare%WHITE% Map:}%CONTINUE%
-ItemDisplay[upmp]: %NAME%{%WHITE%This Item + 3 Maps%NL%Note: Upg a map's tier:}%CONTINUE%
-ItemDisplay[scrb]: %NAME%{%WHITE%This Item + T3 Map%NL%Note: Enter Group Dungeon:}%CONTINUE%
+ItemDisplay[imra]: %NAME%{%WHITE%This Item + %BLUE%Jewel %WHITE%+ %ORANGE%Thul+%NL%%TAN%Note%WHITE%: Imbue White to %YELLOW%Rare %WHITE%Map:}
+ItemDisplay[imma]: %NAME%{%WHITE%This Item + %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White to %BLUE%Magic%WHITE% Map:}
+ItemDisplay[scou]: %NAME%{%WHITE%This Item + %ORANGE%Hel%NL%%TAN%Note%WHITE%: Revert back to a White Map:}
+ItemDisplay[rera]: %NAME%{%WHITE%This Item + Any %TAN%P.%WHITE% Gem + %ORANGE%Thul+%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}
+ItemDisplay[upma]: %NAME%{%WHITE%This Item + %TAN%P.%WHITE% Skull + %ORANGE%Thul+%NL%%TAN%Note%WHITE%: Upg %BLUE%Magic %WHITE%to %YELLOW%Rare%WHITE% Map:}
+ItemDisplay[upmp]: %NAME%{%WHITE%This Item + 3 Maps%NL%%TAN%Note: Upg a map's tier:}
+ItemDisplay[scrb]: %NAME%{%WHITE%This Item + T3 Map%NL%%TAN%Note: Enter Group Dungeon:}
 
 //-----------------------------MAPS-----------------------------
 // Maps (by Tier)
@@ -567,7 +567,7 @@ ItemDisplay[jew UNI]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PUR
 ItemDisplay[UNI !ID CLVL<80]: %PX-68%%NAME%
 ItemDisplay[SET !ID CLVL<80]: %PX-84%%NAME%
 
-//----------------------------Custom Base Rules
+//----------------------------Custom Base Rules----------------------------
 // Show ETH Crystal or Dimensional Blades that can be upped...
 ItemDisplay[MAG (crs OR 9cr) ETH]: %TAN%[ETH] %YELLOW%* %BLUE%%NAME% %TAN%[%PURPLE%Up Me!%TAN%]%WHITE%
 
