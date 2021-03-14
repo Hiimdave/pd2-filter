@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 2.0.3
+Version: 2.0.4
 Description: This is a customized version of Kyzard's Lootfilter, with custom tweaks.
 
 //-----------------------------QUICK TOGGLES-------------------------------------
@@ -150,7 +150,7 @@ ItemDisplay[gpy OR gpys]: %YELLOW%+%TAN%P. %WHITE%Topaz%YELLOW%+%WHITE%%DOT-20%%
 
 // Add Gem Indicator to Display for easy Identify
 ItemDisplay[gzv OR gzvs OR gpv OR gpvs]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%		// Purple for Amethyst
-ItemDisplay[glw OR glws OR gpw OR gpws]: %NAME% %ORANGE%[%wHITE%O%ORANGE%]%CONTINUE%		// White for Diamond
+ItemDisplay[glw OR glws OR gpw OR gpws]: %NAME% %ORANGE%[%WHITE%O%ORANGE%]%CONTINUE%		// White for Diamond
 ItemDisplay[glg OR glgs OR gpg OR gpgs]: %NAME% %ORANGE%[%GREEN%O%ORANGE%]%CONTINUE%		// Green for Emerald
 ItemDisplay[glr OR glrs OR gpr OR gprs]: %NAME% %ORANGE%[%RED%O%ORANGE%]%CONTINUE%			// Red for Ruby
 ItemDisplay[glb OR glbs OR gpb OR gpbs]: %NAME% %ORANGE%[%BLUE%O%ORANGE%]%CONTINUE%			// Blue for Sapphire
@@ -251,7 +251,7 @@ ItemDisplay[vps DIFF=0]: %WHITE%+Stam 												// Show Stam Pots in Normal an
 
 // Antidote Settings
 ItemDisplay[yps CLVL>89 DIFF<2]:													// Hide Antidotes when not in Hell and 90+
-ItemDisplay[yps (DIFF=2 OR (DIFF<2 AND CLVL<90))]: %GREEN%+%WHITE%Antidotes			// Show Antidotes when in Hell or not in Hell but under 90
+ItemDisplay[yps (DIFF=2 OR (DIFF<2 AND CLVL<90))]: %GREEN%+%WHITE%Antidote			// Show Antidotes when in Hell or not in Hell but under 90
 
 // Other Potions
 ItemDisplay[wms OR gpl OR gpm OR gps OR opl OR opm OR ops]:  						// Hide all other types of pots
@@ -607,6 +607,28 @@ ItemDisplay[jew UNI]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PUR
 // Highlight all Sets and Uniques for low lvl characters
 ItemDisplay[UNI !ID CLVL<80]: %PX-68%%NAME%
 ItemDisplay[SET !ID CLVL<80]: %PX-84%%NAME%
+
+//----------------------------Custom Base Rules
+// Show ETH Crystal or Dimensional Blades that can be upped...
+ItemDisplay[MAG (crs OR 9cr) ETH]: %TAN%[ETH] %YELLOW%* %BLUE%%NAME% %TAN%[%PURPLE%Up Me!%TAN%]%WHITE%
+
+// Commonly used Armor Bases
+ItemDisplay[NMAG !RW (uui OR uea OR ltp OR xtp OR utp) SOCK=2]: %TAN%[%GRAY%2os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (uui OR uea OR ltp OR xtp OR utp) SOCK=3]: %TAN%[%GRAY%3os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (uui OR uea OR ltp OR xtp OR utp) SOCK=4]: %TAN%[%GRAY%4os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (ltp OR xtp OR utp) SOCK=5]: %TAN%[%GRAY%5os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (ltp OR xtp OR utp) SOCK=6]: %TAN%[%GRAY%6os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+
+// Commonly used Shield Bases
+ItemDisplay[NMAG !RW (lrg OR bsh OR xsh OR ush OR DIN OR NEC) SOCK=2]: %TAN%[%GRAY%2os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (lrg OR bsh OR xsh OR ush OR DIN OR NEC) SOCK=3]: %TAN%[%GRAY%3os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (lrg OR bsh OR xsh OR ush OR uit OR DIN) SOCK=4]: %TAN%[%GRAY%4os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+
+// Commonly used Weapon Bases
+ItemDisplay[NMAG !RW (crs OR 9cr OR 7cr) SOCK=3]: %TAN%[%GRAY%3os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (crs OR 9cr OR 7cr) SOCK=4]: %TAN%[%GRAY%4os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (crs OR 9cr OR 7cr) SOCK=5]: %TAN%[%GRAY%5os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
+ItemDisplay[NMAG !RW (crs OR 9cr OR 7cr OR 7wa) SOCK=6]: %TAN%[%GRAY%6os%TAN%] * %WHITE%%NAME% %TAN%*%WHITE%
 
 //-----------------------------SHOPPING-----------------------------
 // Shop Hunting
@@ -1519,7 +1541,7 @@ ItemDisplay[((CHEST OR HELM OR SHIELD) OR (WEAPON AND !THROWING)) (EXC OR ELT) N
 ItemDisplay[((POLEARM OR SPEAR) AND !THROWING) NMAG ETH !INF SOCK=0 CLVL<80]: %NAME%%CONTINUE%
 
 //-----------------------------NOTES AND TOOLTIPS-----------------------------
-//Show me quantitiy of all stackables
+//Show me quantity of all stackables
 ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%%CONTINUE%
 
 // Standard of Heroes
