@@ -1,8 +1,476 @@
-//	Kryszard's PD2 Loot Filter for Season II: ver 1.0.9
-//
-//	twitch.tv/kryszard
-//
-//	For Casual and EndGame Players
+//-----------------------------Hiimdave's Lootfilter-----------------------------
+Version: 3.0.3
+
+//-----------------------------QUICK TOGGLES-----------------------------
+// NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
+//ItemDisplay[rvs]:						// Turn off small rejuvs
+//ItemDisplay[hp5]: 					// Turn off Rank 5 HP Pots
+//ItemDisplay[mp5]: 					// Turn off Rank 5 MP Pots
+//ItemDisplay[yps]:						// Turn off Antidotes
+//ItemDisplay[key]:						// Turn off Keys
+//ItemDisplay[RUNE<10 CLVL>80]:			// Turn off Low Runes when Char level is over 80
+
+//--------------------------------------------------------------
+// BEYOND THIS POINT ARE THE CUSTOM FILTER OVERRIDES
+//--------------------------------------------------------------
+
+//-----------------------------LOL-----------------------------
+ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
+ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
+
+//-----------------------------BRAINDEAD MODE-----------------------------
+// NOTE: These are overrides to make slurping in party games ez mode...make everyone call you a cheater with PickIt everytime!
+
+// GG Drops (Large Box)
+-----------------------------
+ItemDisplay[cm1 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[cm3 MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[jew MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
+ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
+ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%
+ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%
+
+// GG Uniques
+ItemDisplay[(rin OR 7wa OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]:%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
+
+// OK Drops (Med Box)
+-----------------------------
+// Uniques
+ItemDisplay[(zlb OR zvb OR zhb OR umc OR uvc OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR hbt OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR 6ws OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%* %GOLD%%NAME% %GRAY%*%TAN%*%YELLOW%*%NL%
+
+// Good SET parts
+ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%* %NAME% *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
+
+// Maps
+-----------------------------						
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t41 OR t42]: %RED%[T4] %CONTINUE%
+
+ItemDisplay[NMAG t31]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t32]: %NAME%%WHITE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t33]: %NAME%%WHITE%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t35]: %NAME%%WHITE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t41]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t32]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t33]: %NAME%%BLUE%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t35]: %NAME%%BLUE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t41]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t32]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t33]: %NAME%%YELLOW%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t35]: %NAME%%YELLOW%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
+
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %MAP-62%%NL%%NAME% %ORANGE%*%NL%
+ItemDisplay[t41 OR t42]: %MAP-62%%NL%%NAME% %RED%*%NL%
+
+// Materials
+-----------------------------
+// Rejuvs
+ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
+
+// Gems
+-----------------------------
+ItemDisplay[gzv OR gzvs]: %NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%
+ItemDisplay[gpv OR gpvs]: %NL%%PURPLE%O %TAN%P. %WHITE% Amethyst %PURPLE%*%NL%
+
+ItemDisplay[glw OR glws]: %NL%%wHITE%O %TAN%F. %WHITE% Diamond *%NL%
+ItemDisplay[gpw OR gpws]: %NL%%wHITE%O %TAN%P. %WHITE% Diamond *%NL%
+
+ItemDisplay[glg OR glgs]: %NL%%GREEN%O %TAN%F. %WHITE% Emerald %GREEN%*%NL%
+ItemDisplay[gpg OR gpgs]: %NL%%GREEN%O %TAN%P. %WHITE% Emerald %GREEN%*%NL%
+
+ItemDisplay[glr OR glrs]: %NL%%RED%O %TAN%F. %WHITE% Ruby %RED%*%NL%
+ItemDisplay[gpr OR gprs]: %NL%%RED%O %TAN%P. %WHITE% Ruby %RED%*%NL%
+
+ItemDisplay[glb OR glbs]: %NL%%BLUE%O %TAN%F. %WHITE% Sapphire %BLUE%*%NL%
+ItemDisplay[gpb OR gpbs]: %NL%%BLUE%O %TAN%P. %WHITE% Sapphire %BLUE%*%NL%
+
+ItemDisplay[skl OR skls]: %NL%%GRAY%O %TAN%F. %WHITE% Skull %GRAY%*%NL%
+ItemDisplay[skz OR skzs]: %NL%%GRAY%O %TAN%P. %WHITE% Skull %GRAY%*%NL%
+
+ItemDisplay[gly OR glys]: %NL%%YELLOW%O %TAN%F. %WHITE% Topaz %YELLOW%*%NL%
+ItemDisplay[gpy OR gpys]: %NL%%YELLOW%O %TAN%P. %WHITE% Topaz %YELLOW%*%NL%
+
+// Runes
+-----------------------------
+// All runes over 9
+ItemDisplay[RUNE>9 AND RUNE<21]: %NL%%ORANGE%*    %NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%ORANGE%    *%NL%%WHITE%
+
+// All runes over 20
+ItemDisplay[RUNE>20]: %BORDER-62%%RED%**********%NL%%NL% %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%NL%%NL%%RED%**********
+
+//--------------------------------------------------------------
+// BEYOND THIS POINT ARE THE STRICT FILTER OVERRIDES
+//--------------------------------------------------------------
+
+// Hide all non eth, non socketed bases
+ItemDisplay[NMAG !INF !RW !SUP !ETH (ARMOR OR WEAPON) SOCK=0]:
+
+// Hide Non Eth, non GG Unique AXES
+ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique BOWS
+ItemDisplay[(sbw OR 8sb OR am7 OR hbw OR lbw OR cbw OR sbb OR lbb OR swb OR lwb OR 8sb OR 8hb OR 8lb OR 8cb OR 8s8 OR 8l8 OR 8sw OR 8lw OR 6l7 OR 6sw) UNI !ID]:
+
+// Hide Non Eth, non GG Unique XBOWS
+ItemDisplay[(WP10) UNI !ID !ETH]:
+
+// Hide Non Eth, non GG Unique DAGGERS
+ItemDisplay[(dir OR kri OR bld OR 9dg OR 9di OR 9kr OR 9bl) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique MACES
+ItemDisplay[(clb OR spc OR mac OR mst OR fla OR whm OR mau OR 9cl OR 9sp OR 9ma OR 9mt OR 9fl OR 9wh OR 9m9 OR 9gm OR 7mt OR 7m7) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique POLEARMS
+ItemDisplay[(vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR 7o7 OR 7wc) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique SCEPTERS
+ItemDisplay[(wsp OR 9qs) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique SPEARS
+ItemDisplay[(spr OR 9tr OR brn OR spt OR pik OR 9sr OR 9br OR 9p9 OR 7sr OR 7br OR 9st) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique STAVES
+ItemDisplay[(lst OR bst OR wst OR 8bs OR 8ws) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique SWORDS
+ItemDisplay[(sbr OR lsd OR 9cr OR scm OR flc OR bsd OR wsd OR 2hs OR clm OR gis OR bsw OR flb OR gsd OR 9ss OR 9sm OR 9ls OR 9sb OR 92h OR 9cm OR 9gs OR 9b9 OR 9fb OR 9gd OR 7ls OR 7gs) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique THROWING
+ItemDisplay[(9tk OR 9ta OR 7ta) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique WANDS
+ItemDisplay[(wnd OR bwn OR 9yw) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique JAVS
+ItemDisplay[(7s7 OR 7ts) UNI !ETH !ID]:
+
+// Hide Non Eth, non GG Unique ARMORS
+ItemDisplay[(lea OR xld OR hla OR stu OR xrs OR scl OR brs OR chn OR xcl OR spl OR ltp OR fld OR plt OR gth OR aar OR xui OR xla OR xtp OR xtu OR xng OR xth OR xul OR xar OR uld) UNI !ID]:
+
+// Hide Non Eth, non GG Unique BELTS
+ItemDisplay[(vbl OR mbl OR hbl OR zmb) UNI !ID]:
+
+// Hide Non Eth, non GG Unique HELMETS
+ItemDisplay[(skp OR fhl OR hlm OR ghm OR msk OR crn OR bhm OR xhl OR xrn) UNI !ID]:
+
+// Hide Non Eth, non GG Unique BOOTS
+ItemDisplay[(vbt OR mbt OR xlb OR xmb OR umb) UNI !ID]:
+
+// Hide Non Eth, non GG Unique GLOVES
+ItemDisplay[(lgl OR hgl OR xlg OR xvg OR xmg) UNI !ID]:
+
+// Hide Non Eth, non GG Unique SHIELDS
+ItemDisplay[(sml OR gts OR lrg OR kit OR spk OR tow OR bsh OR xuc OR xrg OR xit OR xpk OR xts OR upk OR ush) UNI !ID]:
+
+// Hide "bad" set items 
+ItemDisplay[(chn OR xml OR zvb OR paf OR xmb OR oba OR zmb OR xsk OR uul OR 7gd OR 7wd OR gsc OR ult OR aar OR lbb OR 7qr OR 6cs OR xtg OR 9mt OR xh9 OR xar OR ci3 OR amc OR uld OR urn OR xhg OR xhb OR ba5 OR 7m7 OR 7ws OR ztb OR 7ma OR xhm OR xrs OR 9vo OR xrn OR xhl OR vgl OR xvg OR upl OR vbt OR 7ls OR bwn OR ci0 OR 9cs OR xcl OR xlb OR umc OR uui OR uhm OR sbr OR uts OR wst OR lwb OR bst OR tbt OR lea OR hlm OR lbt OR sml OR ful OR hbt OR tow OR hgl OR bhm OR mpi OR gth OR ghm OR hbl OR wsp OR gts OR kit OR fhl OR crn OR bsd OR lgl OR tbl OR cap OR dgr OR wsd OR lbl OR mbt OR mbl OR buc OR mgl OR msk OR lsd OR skp OR lrg OR rng OR chn OR swb OR tgl OR spl OR vbl OR qui OR bwn OR ltp OR vbl OR brs OR msk OR 2ax OR 9mt OR gts OR wsd OR hgl OR lsd OR tgl OR bst OR xar OR crn) SET !ID]:
+
+//--------------------------------------------------------------
+// BEYOND THIS POINT ARE HIIMDAVE'S FILTER OVERRIDES
+//--------------------------------------------------------------
+
+//-----------------------------HIDE THESE THINGS!!!-----------------------------
+ItemDisplay[cm2 DIFF=2]:
+ItemDisplay[mpi SET DIFF=2]:
+
+//-----------------------------PICK ME UP TAG-----------------------------
+ItemDisplay[UNI jew]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
+ItemDisplay[lbox OR wss]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
+ItemDisplay[dcma OR dcbl OR dcho OR dcso]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
+ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
+
+//-----------------------------GEMS-----------------------------
+// General Settings
+ItemDisplay[GEM>0 QTY>1]: %NAME% x%QTY%%CONTINUE%									// Show stack counts in tooltip
+ItemDisplay[GEM=1]:																	// Hide Chipped Gems									
+ItemDisplay[GEM=2]:																	// Hide Flawed Gems
+ItemDisplay[GEM=3]:																	// Hide Normal Gems
+
+// Flawless (Order: Amethyst, Diamond, Emerald, Ruby, Sapphire, Skull, Topaz)
+ItemDisplay[gzv OR gzvs]: %PURPLE%+%TAN%F. %WHITE%Amethyst%PURPLE%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[glw OR glws]: %WHITE%+%TAN%F. %WHITE%Diamond%WHITE%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[glg OR glgs]: %GREEN%+%TAN%F. %WHITE%Emerald%GREEN%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[glr OR glrs]: %RED%+%TAN%F. %WHITE%Ruby%RED%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[glb OR glbs]: %BLUE%+%TAN%F. %WHITE%Sapphire%BLUE%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[skl OR skls]: %GRAY%+%TAN%F. %WHITE%Skull%GRAY%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[gly OR glys]: %YELLOW%+%TAN%F. %WHITE%Topaz%YELLOW%+%WHITE%%DOT-20%%CONTINUE%
+
+// Perfect (Order: Amethyst, Diamond, Emerald, Ruby, Sapphire, Skull, Topaz)
+ItemDisplay[gpv OR gpvs]: %PURPLE%+%TAN%P. %WHITE%Amethyst%PURPLE%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[gpw OR gpws]: %WHITE%+%TAN%P. %WHITE%Diamond%WHITE%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[gpg OR gpgs]: %GREEN%+%TAN%P. %WHITE%Emerald%GREEN%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[gpr OR gprs]: %RED%+%TAN%P. %WHITE%Ruby%RED%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[gpb OR gpbs]: %BLUE%+%TAN%P. %WHITE%Sapphire%BLUE%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[skz OR skzs]: %GRAY%+%TAN%P. %WHITE%Skull%GRAY%+%WHITE%%DOT-20%%CONTINUE%
+ItemDisplay[gpy OR gpys]: %YELLOW%+%TAN%P. %WHITE%Topaz%YELLOW%+%WHITE%%DOT-20%%CONTINUE%
+
+// Gems Tooltips (Order: Amethyst, Diamond, Emerald, Ruby, Sapphire, Skull, Topaz)
+ItemDisplay[gzvs]: %NAME%{%WHITE%Weapons: +100 Atk Rating%NL%Armor/Helms: +8 Str%NL%Shields: +24 Def%NL%}
+ItemDisplay[gpvs]: %NAME%{%WHITE%Weapons: +150 Atk Rating%NL%Armor/Helms: +10 Str%NL%Shields: +30 Def%NL%}
+ItemDisplay[glws]: %NAME%{%WHITE%Weapons: +54% Dmg vs Undead%NL%Armor/Helms: +80 Atk Rating%NL%Shields: All Res +14%%NL%}
+ItemDisplay[gpws]: %NAME%{%WHITE%Weapons: +68% Dmg vs Undead%NL%Armor/Helms: +100 Atk Rating%NL%Shields: All Res +19%%NL%}
+ItemDisplay[glgs]: %NAME%{%WHITE%Weapons: +60 Psn Dmg/6s%NL%Armor/Helms: +8 Dex%NL%Shields: Psn Res +28%%NL%}
+ItemDisplay[gpgs]: %NAME%{%WHITE%Weapons: +100 Psn Dmg/6s%NL%Armor/Helms: +10 Dex%NL%Shields: Psn Res +40%%NL%}
+ItemDisplay[glrs]: %NAME%{%WHITE%Weapons: Adds 10-16 Fire Dmg%NL%Armor/Helms: +31 Life%NL%Shields: Fire Res +28%%NL%}
+ItemDisplay[gprs]: %NAME%{%WHITE%Weapons: Adds 15-20 Fire Dmg%NL%Armor/Helms: +38 Life%NL%Shields: Fire Res +40%%NL%}
+ItemDisplay[glbs]: %NAME%{%WHITE%Weapons: Adds 6-10 Cold Dmg%NL%Armor/Helms: +31 Mana%NL%Shields: Cold Res +28%%NL%}
+ItemDisplay[gpbs]: %NAME%{%WHITE%Weapons: Adds 10-14 Cold Dmg%NL%Armor/Helms: +38 Mana%NL%Shields: Cold Res +40%%NL%}
+ItemDisplay[skls]: %NAME%{%WHITE%Weapons: 3% Leech%NL%Armor/Helms: Regen Mana 12%. Regen Life +4%NL%Shields: Thorns +16%NL%}
+ItemDisplay[skzs]: %NAME%{%WHITE%Weapons: 4% Life/3% Mana stolen%NL%Armor/Helms: Regen Mana 19%. Regen Life +5%NL%Shields: Thorns +21%NL%}
+ItemDisplay[glys]: %NAME%{%WHITE%Weapons: Adds 1-30 Lightning Dmg%NL%Armor/Helms: 20% MF%NL%Shields: Lightning Res +28%%NL%}
+ItemDisplay[gpys]: %NAME%{%WHITE%Weapons: Adds 1-40 Lightning Dmg%NL%Armor/Helms: 24% MF%NL%Shields: Lightning Res +40%%NL%}
+
+//-----------------------------RUNES-----------------------------
+// General
+ItemDisplay[RUNE<11]: %GREEN%%RUNENAME% %GREEN%(%RUNENUM%)%CONTINUE%
+ItemDisplay[RUNE>10 RUNE<24]: %ORANGE%%RUNENAME% %ORANGE%(%RUNENUM%)%CONTINUE%
+ItemDisplay[RUNE>23]: %RED%%RUNENAME% %RED%(%RUNENUM%)%CONTINUE%
+
+// High Value Runes !!!IMPORTANT - Leave the space around %NAME% or game crashes on mouseover, no clue why!!!
+ItemDisplay[RUNE>20 AND RUNE<26]: %GREEN%+%YELLOW%+%RED%+ %NAME% %RED%+%YELLOW%+%GREEN%+%WHITE%%CONTINUE%
+ItemDisplay[RUNE>25]:  %YELLOW%++%RED%++%PURPLE%++ %NAME% %PURPLE%++%RED%++%YELLOW%++%WHITE%%CONTINUE%
+
+// Add pick me up tag
+ItemDisplay[RUNE>20]: %NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
+
+// Add Notification
+ItemDisplay[RUNE>20]: %NAME%%WHITE%%DOT-76%%CONTINUE%
+
+// Rune Tooltips - Singles
+ItemDisplay[r01]: %NAME%{%TAN%3 El+Key = Eld%NL%}
+ItemDisplay[r02]: %NAME%{%TAN%3 Eld+Key = Tir%NL%}
+ItemDisplay[r03]: %NAME%{%TAN%3 Tir+Key = Nef%NL%}
+ItemDisplay[r04]: %NAME%{%TAN%3 Nef+Key = Eth%NL%}
+ItemDisplay[r05]: %NAME%{%TAN%3 Eth+Key = Ith%NL%}
+ItemDisplay[r06]: %NAME%{%TAN%3 Ith+Key = Tal%NL%}
+ItemDisplay[r07]: %NAME%{%TAN%3 Tal+Key = Ral%NL%}
+ItemDisplay[r08]: %NAME%{%TAN%3 Ral+Key = Ort%NL%}
+ItemDisplay[r09]: %NAME%{%TAN%3 Ort+Key = Thul%NL%}
+ItemDisplay[r10]: %NAME%{%TAN%3 Thul+Key = Amn%NL%}
+ItemDisplay[r11]: %NAME%{%TAN%3 Amn+Key = Sol%NL%}
+ItemDisplay[r12]: %NAME%{%TAN%3 Sol+Key = Shael%NL%}
+ItemDisplay[r13]: %NAME%{%TAN%3 Shael+Key = Dol%NL%}
+ItemDisplay[r14]: %NAME%{%TAN%3 Dol+Key = Hel%NL%}
+ItemDisplay[r15]: %NAME%{%TAN%3 Hel+Key = Io%NL%}
+ItemDisplay[r16]: %NAME%{%TAN%3 Io+Key = Lum%NL%}
+ItemDisplay[r17]: %NAME%{%TAN%3 Lum+Key = Ko%NL%}
+ItemDisplay[r18]: %NAME%{%TAN%3 Ko+Key = Fal%NL%}
+ItemDisplay[r19]: %NAME%{%TAN%3 Fal+Key = Lem%NL%}
+ItemDisplay[r20]: %NAME%{%TAN%3 Lem+Key = Pul%NL%}
+ItemDisplay[r21]: %NAME%{%TAN%2 Pul+Key = Um%NL%}
+ItemDisplay[r22]: %NAME%{%TAN%2 Um+Key = Mal%NL%}
+ItemDisplay[r23]: %NAME%{%TAN%2 Mal+Key = Ist%NL%}
+ItemDisplay[r24]: %NAME%{%TAN%2 Ist+Key = Gul%NL%}
+ItemDisplay[r25]: %NAME%{%TAN%2 Gul+Key = Vex%NL%}
+ItemDisplay[r26]: %NAME%{%TAN%2 Vex+Key = Ohm%NL%}
+ItemDisplay[r27]: %NAME%{%TAN%2 Ohm+Key = Lo%NL%}
+ItemDisplay[r28]: %NAME%{%TAN%2 Lo+Key = Sur%NL%}
+ItemDisplay[r29]: %NAME%{%TAN%2 Sur+Key = Ber%NL%}
+ItemDisplay[r30]: %NAME%{%TAN%2 Ber+Key= Jah%NL%}
+ItemDisplay[r31]: %NAME%{%TAN%2 Jah+Key = Cham%NL%}
+ItemDisplay[r32]: %NAME%{%TAN%2 Cham+Key = Zod%NL%}
+ItemDisplay[r33]: %NAME%
+
+// Rune Tooltips - Stacks
+ItemDisplay[r01s]: %NAME%{%TAN%3 El+Key = Eld%NL%%NL%%WHITE%All: +1 Light Radius%NL%Shields: +15 Def%NL%Armor/Helms: +15 Def%NL%Weapons: +50 Atk Rating%NL%}
+ItemDisplay[r02s]: %NAME%{%TAN%3 Eld+Key = Tir%NL%%NL%%WHITE%Shields: +7% Block%NL%Armor/Helms: -15% Drain Stam%NL%Weapons: +75% Dmg & +50 Atk Rating vs Undead%NL%}
+ItemDisplay[r03s]: %NAME%{%TAN%3 Tir+Key = Nef%NL%%NL%%WHITE%Shields: +2 Mana on Kill%NL%Armor/Helms: +2 Mana on Kill%NL%Weapons: +2 Mana on Kill%NL%}
+ItemDisplay[r04s]: %NAME%{%TAN%3 Nef+Key = Eth%NL%%NL%%WHITE%Shields: +30 Def vs Missile%NL%Armor/Helms: +30 Def vs Missile%NL%Weapons: Knockback%NL%}
+ItemDisplay[r05s]: %NAME%{%TAN%3 Eth+Key = Ith%NL%%NL%%WHITE%Shields: Regen Mana 15%%NL%Armor/Helms: Regen Mana 15%%NL%Weapons: -25% Target Def%NL%}
+ItemDisplay[r06s]: %NAME%{%TAN%3 Ith+Key = Tal%NL%%NL%%WHITE%Shields: 15% Dmg Taken Gained as Mana%NL%Armor/Helms: 15% Dmg Taken Gained as Mana%NL%Weapons: +9 Max Dmg%NL%}
+ItemDisplay[r07s]: %NAME%{%TAN%3 Tal+Key = Ral%NL%%NL%%WHITE%Shields: Psn Res +35%%NL%Armor/Helms: Psn Res +30%%NL%Weapons: +75 Psn Dmg/5s%NL%}
+ItemDisplay[r08s]: %NAME%{%TAN%3 Ral+Key = Ort%NL%%NL%%WHITE%Shields: Fire Res +35%%NL%Armor/Helms: Fire Res +30%%NL%Weapons: Adds 5-30 Fire Dmg%NL%}
+ItemDisplay[r09s]: %NAME%{%TAN%3 Ort+Key = Thul%NL%%NL%%WHITE%Shields: Lightning Res +35%%NL%Armor/Helms: Lightning Res +30%%NL%Weapons: Adds 1-50 Lightning Dmg%NL%}
+ItemDisplay[r10s]: %NAME%{%TAN%3 Thul+Key = Amn%NL%%NL%%WHITE%Shields: Cold Res +35%%NL%Armor/Helms: Cold Res +30%%NL%Weapons: Adds 3-14 Cold Dmg%NL%}
+ItemDisplay[r11s]: %NAME%{%TAN%3 Amn+Key = Sol%NL%%NL%%WHITE%Shields: Thorns +14%NL%Armor/Helms: Thorns +14%NL%Weapons: 7% Leech%NL%}
+ItemDisplay[r12s]: %NAME%{%TAN%3 Sol+Key = Shael%NL%%NL%%WHITE%Shields: +7 DR%NL%Armor/Helms: +7 DR%NL%Weapons: +9 to Min Dmg%NL%}
+ItemDisplay[r13s]: %NAME%{%TAN%3 Shael+Key = Dol%NL%%NL%%WHITE%Shields: 20% Block Rate%NL%Armor/Helms: 20% FHR%NL%Weapons: +20% Atk Spd%NL%}
+ItemDisplay[r14s]: %NAME%{%TAN%3 Dol+Key = Hel%NL%%NL%%WHITE%Shields: Regen Life +7%NL%Armor/Helms: Regen Life +7%NL%Weapons: +25% Dmg%NL%}
+ItemDisplay[r15s]: %NAME%{%TAN%3 Hel+Key = Io%NL%%NL%%WHITE%Shields: Reqs -15%%NL%Armor/Helms: Reqs -15%%NL%Weapons: Reqs -20%%NL%}
+ItemDisplay[r16s]: %NAME%{%TAN%3 Io+Key = Lum%NL%%NL%%WHITE%Shields: +10 Vit%NL%Armor/Helms: +10 Vit%NL%Weapons: +10 Vit%NL%}
+ItemDisplay[r17s]: %NAME%{%TAN%3 Lum+Key = Ko%NL%%NL%%WHITE%Shields: +10 Energy%NL%Armor/Helms: +10 Energy%NL%Weapons: +10 Energy%NL%}
+ItemDisplay[r18s]: %NAME%{%TAN%3 Ko+Key = Fal%NL%%NL%%WHITE%Shields: +10 Dex%NL%Armor/Helms: +10 Dex%NL%Weapons: +10 Dex%NL%}
+ItemDisplay[r19s]: %NAME%{%TAN%3 Fal+Key = Lem%NL%%NL%%WHITE%Shields: +10 Str%NL%Armor/Helms: +10 Str%NL%Weapons: +10 Str%NL%}
+ItemDisplay[r20s]: %NAME%{%TAN%3 Lem+Key = Pul%NL%%NL%%WHITE%Shields: 50% Gold Find%NL%Armor/Helms: 50% Gold Find%NL%Weapons: 75% Gold Find%NL%}
+ItemDisplay[r21s]: %NAME%{%TAN%2 Pul+Key = Um%NL%%NL%%WHITE%Shield: +30% Def%NL%Armor/Helm: +30% Def%NL%Weapon: +75% Dmg & +100 Atk Rating vs Demon%NL%}
+ItemDisplay[r22s]: %NAME%{%TAN%2 Um+Key = Mal%NL%%NL%%WHITE%Shields: All Res +22%NL%Armor/Helms: All Res +15%NL%Weapons: 25% Open Wounds%NL%}
+ItemDisplay[r23s]: %NAME%{%TAN%2 Mal+Key = Ist%NL%%NL%%WHITE%Shield: Magic DR +7%NL%Armor/Helm: Magic DR +7%NL%Weapon: Prevent Monster Heal%NL%}
+ItemDisplay[r24s]: %NAME%{%TAN%2 Ist+Key = Gul%NL%%NL%%WHITE%Shields: +25% MF%NL%Armor/Helms: +25% MF%NL%Weapons: +25% MF%NL%}
+ItemDisplay[r25s]: %NAME%{%TAN%2 Gul+Key = Vex%NL%%NL%%WHITE%Shields: +5% Max Poison Res%NL%Armor/Helms: +5% Max Poison Res%NL%Weapons: +20% Atk Rating%NL%}
+ItemDisplay[r26s]: %NAME%{%TAN%2 Vex+Key = Ohm%NL%%NL%%WHITE%Shields: +5% Max Fire Res%NL%Armor/Helms: +5% Max Fire Res%NL%Weapons: 7% Mana Leech%NL%}
+ItemDisplay[r27s]: %NAME%{%TAN%2 Ohm+Key = Lo%NL%%NL%%WHITE%Shields: +5% Max Cold Res%NL%Armor/Helms: +5% Max Cold Res%NL%Weapons: +50% Enhanced Dmg%NL%}
+ItemDisplay[r28s]: %NAME%{%TAN%2 Lo+Key = Sur%NL%%NL%%WHITE%Shields: +5% Max Lightning Res%NL%Armor/Helms: +5% Max Lightning Res%NL%Weapons: 20% Deadly Strike%NL%}
+ItemDisplay[r29s]: %NAME%{%TAN%2 Sur+Key = Ber%NL%%NL%%WHITE%Shields: +50 Mana%NL%Armor/Helms: Max Mana +5%%NL%Weapons: Blind on Hit%NL%}
+ItemDisplay[r30s]: %NAME%{%TAN%2 Ber+Key= Jah%NL%%NL%%WHITE%Shields: DR +8%%NL%Armor/Helms: DR +8%%NL%Weapons: +20% Crushing Blow%NL%}
+ItemDisplay[r31s]: %NAME%{%TAN%2 Jah+Key = Cham%NL%%NL%%WHITE%Shields: +50 Life%NL%Armor/Helms: Max Life +5%%NL%Weapons: Ignore Targets Def%NL%}
+ItemDisplay[r32s]: %NAME%{%TAN%2 Cham+Key = Zod%NL%%NL%%WHITE%Shields: Cannot be Frozen%NL%Armor/Helms: Cannot be Frozen%NL%Weapons: Freezes Target +3%NL%}
+ItemDisplay[r33s]: %NAME%{%NL%%NL%%WHITE%All Sockets: Indestructible%NL%}
+
+//-----------------------------BASICS-----------------------------
+// Hide low amounts of Gold
+ItemDisplay[GOLD<100 CLVL>19]:
+ItemDisplay[GOLD<250 CLVL>29]:
+ItemDisplay[GOLD<500 CLVL>39]:
+ItemDisplay[GOLD<1000 CLVL>59]:
+ItemDisplay[GOLD<2000 CLVL>79]:
+ItemDisplay[GOLD<4000 CLVL>84]:
+ItemDisplay[GOLD<5000 CLVL>89]:
+
+// Hide Player Ears...ewww!
+ItemDisplay[ear]:
+
+//-----------------------------CONSUMABLES-----------------------------
+// Keys
+ItemDisplay[key]: %GOLD%+%WHITE%Key
+
+// Scrolls and Tomes
+ItemDisplay[isc (DIFF=2 OR CLVL>79)]:												// Hide ID Scrolls in Hell or when 80+
+ItemDisplay[tsc (DIFF=2 OR CLVL>79)]:												// Hide TP Scrolls in Hell or when 80+
+ItemDisplay[isc (DIFF<2 AND CLVL<80)]: %RED%+%WHITE%ID								// Show ID Scrolls pre Hell and under 80
+ItemDisplay[tsc (DIFF<2 AND CLVL<80)]: %BLUE%+%WHITE%TP								// Show ID Scrolls pre Hell and under 80
+ItemDisplay[ibk]: %RED%+%WHITE%ID Tome												// Always show ID Tomes
+ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome												// Always show TP Tomes
+
+// Rejuv Pot Settings
+ItemDisplay[rvs OR rvl]: %TAN%Rejuv%PURPLE%+%WHITE%%CONTINUE%
+ItemDisplay[rvs]: %PURPLE%+%WHITE%35% %NAME%
+ItemDisplay[rvl]: %PURPLE%+%WHITE%65% %NAME%
+//ItemDisplay[rvl]: %NAME%%MAP-70%
+
+// HP Pot Settings
+ItemDisplay[(hp1 OR hp2) (DIFF>0 OR CLVL>79)]: 										// Hide Rank 1 & 2 post Normal or when 80+
+ItemDisplay[(hp3 OR hp4) (DIFF>1 OR CLVL>79)]: 										// Hide Rank 3 & 4 post NM or when 80+
+ItemDisplay[hp1 DIFF<1 CLVL<80]: %RED%+%WHITE%HP1 									// Rank 1
+ItemDisplay[hp2 DIFF<1 CLVL<80]: %RED%+%WHITE%HP2 									// Rank 2
+ItemDisplay[hp3 DIFF<2 CLVL<80]: %RED%+%WHITE%HP3 									// Rank 3 
+ItemDisplay[hp4 DIFF<2 CLVL<80]: %RED%+%WHITE%HP4 									// Rank 4
+ItemDisplay[hp5]: %RED%+%WHITE%HP5													// Rank 5
+
+// MP Pot Settings
+ItemDisplay[(mp1 OR mp2) (DIFF>0 OR CLVL>79)]: 										// Hide Rank 1 & 2 post Normal or when 80+
+ItemDisplay[(mp3 OR mp4) (DIFF>1 OR CLVL>79)]: 										// Hide Rank 3 & 4 post NM or when 80+
+ItemDisplay[mp1 DIFF<1 CLVL<80]: %BLUE%+%WHITE%MP1 									// Rank 1
+ItemDisplay[mp2 DIFF<1 CLVL<80]: %BLUE%+%WHITE%MP2 									// Rank 2
+ItemDisplay[mp3 DIFF<2 CLVL<80]: %BLUE%+%WHITE%MP3 									// Rank 3
+ItemDisplay[mp4 DIFF<2 CLVL<80]: %BLUE%+%WHITE%MP4 									// Rank 4
+ItemDisplay[mp5]: %BLUE%+%WHITE%MP5 												// Rank 5
+
+// Stam Pot Settings
+ItemDisplay[vps DIFF>0]: 															// Hide Stam pots past Normal or when high enough level
+ItemDisplay[vps DIFF=0]: %WHITE%+Stam 												// Show Stam Pots in Normal and under 20
+
+// Antidote Settings
+ItemDisplay[yps CLVL>89 DIFF<2]:													// Hide Antidotes when not in Hell and 90+
+ItemDisplay[yps (DIFF=2 OR (DIFF<2 AND CLVL<90))]: %GREEN%+%WHITE%Antidote			// Show Antidotes when in Hell or not in Hell but under 90
+
+// Other Potions
+ItemDisplay[wms OR gpl OR gpm OR gps OR opl OR opm OR ops]:  						// Hide all other types of pots
+
+//-----------------------------MAPS-----------------------------
+// Maps (by Tier)
+ItemDisplay[t11 OR t12 OR t13]: %NAME%%CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME%%CONTINUE%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME%%CONTINUE%
+ItemDisplay[t41 OR t42]: %NAME%%CONTINUE%
+
+// Add tags to maps
+ItemDisplay[t11 OR t12 OR t13]: %GREEN%[T1] %CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t41 OR t42]: %RED%[T4] %CONTINUE%					
+
+// Overrides for Normal Rarity
+ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t12]: %NAME%%WHITE%Horazons Memory Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t13]: %NAME%%WHITE%Bastion Keep Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t21]: %NAME%%WHITE%Phlegathon Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t22]: %NAME%%WHITE%Torajan Jungle Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t23]: %NAME%%WHITE%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t24]: %NAME%%WHITE%Blood Moon Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t31]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t32]: %NAME%%WHITE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t33]: %NAME%%WHITE%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t35]: %NAME%%WHITE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t41]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
+
+// Overrides for Magic Rarity
+ItemDisplay[MAG t11]: %NAME%%BLUE%Ruins of Vizjun Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t12]: %NAME%%BLUE%Horazons Memory Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t13]: %NAME%%BLUE%Bastion Keep Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t21]: %NAME%%BLUE%Phlegathon Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t22]: %NAME%%BLUE%Torajan Jungle Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t23]: %NAME%%BLUE%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t24]: %NAME%%BLUE%Blood Moon Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t32]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t33]: %NAME%%BLUE%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t35]: %NAME%%BLUE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t41]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
+
+// Overrides for Rare Rarity
+ItemDisplay[RARE t11]: %NAME%%YELLOW%Ruins of Vizjun Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t12]: %NAME%%YELLOW%Horazons Memory Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t13]: %NAME%%YELLOW%Bastion Keep Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t21]: %NAME%%YELLOW%Phlegathon Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t22]: %NAME%%YELLOW%Torajan Jungle Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t23]: %NAME%%YELLOW%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t24]: %NAME%%YELLOW%Blood Moon Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t32]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t33]: %NAME%%YELLOW%Sewers of Harrogath Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t35]: %NAME%%YELLOW%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
+
+// Endcap map names with dot of same color as tier tag
+ItemDisplay[t11 OR t12 OR t13]: %NAME% %GREEN%*%MAP-62%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME% %YELLOW%*%MAP-62%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME% %ORANGE%*%MAP-62%
+ItemDisplay[t41 OR t42]: %NAME% %RED%*%MAP-62%
+
+//-----------------------------QUEST ITEMS-----------------------------
+// Reward Items
+ItemDisplay[ass]: %GOLD%Book of Skill%WHITE%%MAP-58%
+ItemDisplay[xyz]: %GOLD%Potion of Life%WHITE%%MAP-58%
+ItemDisplay[tr2]: %GOLD%Scroll of Resistance%WHITE%%MAP-58%
+
+// All standard Act 1-5 Items
+ItemDisplay[bks OR bkd OR hdm OR box OR hst OR vip OR msf OR j34 OR g33 OR g34 OR qey OR qbr OR qhr OR qf1 OR qf2 OR bbb OR mss OR hfh]: %NAME%%MAP-58%
+
+// Others
+ItemDisplay[ice]: %GOLD%Malahs Potion%WHITE%%MAP-58%
+ItemDisplay[leg]: %GOLD%Wirt's Leg%WHITE%%MAP-58%{%TAN%Cube: Add TP Tome for Cow Level%NL%}
+
+//-----------------------------RESET TOKENS-----------------------------
+// Essences
+ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}
+ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}
+ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}
+ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
+
+// Reset Token
+ItemDisplay[toa]: %ORANGE%Reset Token%MAP-68%{%TAN%Use: Reset your Stat & Skill points.%NL%}
+
+//-----------------------------UBERS-----------------------------
+// Keys
+ItemDisplay[pk1]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
+ItemDisplay[pk2]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
+ItemDisplay[pk3]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
+
+// Organs
+ItemDisplay[(bey OR dhn OR mbr)]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube: Any 3 organs opens Uber Trist%NL%}
+
+//--------------------------------------------------------------
+// BEYOND THIS POINT IS KYZARD'S BASE FILTER
+//--------------------------------------------------------------
 
 //Gold
 ItemDisplay[GOLD<100 CLVL<18]:
@@ -1446,5 +1914,3 @@ ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>0 CLVL<31]: %NAME%
 ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>2 CLVL<80]: %NAME%
 ItemDisplay[(ARMOR OR WEAPON) INF]: 
 ItemDisplay[(ARMOR OR WEAPON) !leg CLVL>30]: 
-
-//It’s just different sizes. BORDER > MAP > DOT > PX.
