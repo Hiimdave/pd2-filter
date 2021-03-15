@@ -80,6 +80,10 @@ ItemDisplay[(chn OR xml OR zvb OR paf OR xmb OR oba OR zmb OR xsk OR uul OR 7gd 
 // BEYOND THIS POINT ARE HIIMDAVE'S FILTER OVERRIDES
 //--------------------------------------------------------------
 
+//-----------------------------HIDE THESE THINGS!!!-----------------------------
+ItemDisplay[cm2 DIFF=2]:
+ItemDisplay[mpi SET DIFF=2]:
+
 //-----------------------------PICK ME UP TAG-----------------------------
 ItemDisplay[UNI jew]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
 ItemDisplay[lbox OR wss]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
@@ -298,10 +302,8 @@ ItemDisplay[NMAG t31]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t32]: %NAME%%WHITE%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t33]: %NAME%%WHITE%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t35]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t36]: %NAME%%WHITE%Tomb of Zultun Kulle Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t41]: %NAME%%WHITE%Plains of Torment Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t42]: %NAME%%WHITE%Desert Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t35]: %NAME%%WHITE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t41]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
 
 // Overrides for Magic Rarity
 ItemDisplay[MAG t11]: %NAME%%BLUE%Ruins of Vizjun Map%WHITE%%CONTINUE%
@@ -315,10 +317,8 @@ ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t32]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t33]: %NAME%%BLUE%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t35]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t36]: %NAME%%BLUE%Tomb of Zultun Kulle Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t41]: %NAME%%BLUE%Plains of Torment Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t42]: %NAME%%BLUE%Desert Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t35]: %NAME%%BLUE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t41]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
 
 // Overrides for Rare Rarity
 ItemDisplay[RARE t11]: %NAME%%YELLOW%Ruins of Vizjun Map%WHITE%%CONTINUE%
@@ -332,10 +332,8 @@ ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t32]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t33]: %NAME%%YELLOW%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t35]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t36]: %NAME%%YELLOW%Tomb of Zultun Kulle Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t41]: %NAME%%YELLOW%Plains of Torment Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t42]: %NAME%%YELLOW%Desert Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t35]: %NAME%%YELLOW%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
 
 // Endcap map names with dot of same color as tier tag
 ItemDisplay[t11 OR t12 OR t13]: %NAME% %GREEN%*%MAP-62%
