@@ -3,6 +3,24 @@
 ## About
 These are filters I've built for myself and/or my play group that are built on top of the Kyzard loot filter as a base.
 
+## Using the Filters
+
+### Option 1
+1. Copy the content (text) from the filter of your choice and replace the default.filter contents (text) in your ProjectDiablo2 root folder and save the file.
+2. Download the files from GitHub and copy the filter of your choice to your Project Diablo 2 root folder.  Delete your old default.filter file and rename this one to replace it.
+
+### Option 2
+1. Copy the content (text) from the filter of your choice and replace the default.filter contents (text) in your ProjectDiablo2 root folder => filters => local folder and save the file.
+2. Download the files from GitHub and copy the filter of your choice to your Project Diablo 2 folder => filters => local folder.  If you have a default.filter there, delete it.  Rename this file to default.filter.
+
+**Remember to always reload your filter after making any changes in game!!!**
+
+#### Reloading your Filter
+Numpad 0 or Ctrl + R unless you have changed the default bindings.
+
+#### Common Issues
+1. My launcher sits on Updating... forever! - You probably put the file into your local filters folder and didnt rename it to default.filter.  If it is not named exactly that, this occurs.
+
 ## Filters
 
 ### Categories
