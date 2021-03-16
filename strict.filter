@@ -1761,6 +1761,7 @@ ItemDisplay[(ARMOR OR WEAPON) !leg CLVL>30]:
 
 //-----------------------------SHOW-----------------------------
 ItemDisplay[((UNI OR SET OR CRAFT) ID) OR RW]: %NAME%%CONTINUE%
+ItemDisplay[CRAFT ID]: %NAME%
 ItemDisplay[(UNI OR SET) OR RW ID]: %MAP-84%%NAME%
 
 //-----------------------------HIDE-----------------------------
