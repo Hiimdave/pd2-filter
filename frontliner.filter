@@ -7,8 +7,8 @@ Version: 3.0.4
 //------------------------------------------------------------------------
 
 // Rejuvs
-ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
-ItemDisplay[rvs]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%35%
+ItemDisplay[rvl]: %NL%%NL%%PURPLE%*             %TAN%65% %WHITE%Rejuv             %PURPLE%*%NL%%NL%
+ItemDisplay[rvs]: %NL%%NL%%PURPLE%*             %TAN%35% %WHITE%Rejuv             %PURPLE%*%NL%%NL%
 
 //Hide everything else...
 ItemDisplay[!(rvl OR rvs)]:
