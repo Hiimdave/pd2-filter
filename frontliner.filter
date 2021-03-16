@@ -1,0 +1,14 @@
+//-----------------------------Hiimdave's Lootfilter-----------------------------
+Frontliner Version
+Version: 3.0.4
+
+//------------------------------------------------------------------------
+// NOTE: THIS FILTER IS A MEME, IF YOU USE THIS, YOU WILL ONLY SEE REJUVS
+//------------------------------------------------------------------------
+
+// Rejuvs
+ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
+ItemDisplay[rvs]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%35%
+
+//Hide everything else...
+ItemDisplay[!(rvl OR rvs)]:

@@ -1,5 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 3.0.3
+Standard Version
+Version: 3.0.4
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
@@ -13,10 +14,6 @@ Version: 3.0.3
 //--------------------------------------------------------------
 // BEYOND THIS POINT ARE HIIMDAVE'S FILTER OVERRIDES
 //--------------------------------------------------------------
-
-//-----------------------------HIDE THESE THINGS!!!-----------------------------
-ItemDisplay[cm2 DIFF=2]:
-ItemDisplay[mpi SET DIFF=2]:
 
 //-----------------------------PICK ME UP TAG-----------------------------
 ItemDisplay[UNI jew]: %BORDER-68%%NAME%%NL%%NL%%PURPLE%***  [%TAN%pick me up%PURPLE%]  ***%WHITE%%CONTINUE%
@@ -215,14 +212,14 @@ ItemDisplay[wms OR gpl OR gpm OR gps OR opl OR opm OR ops]:  						// Hide all o
 // Maps (by Tier)
 ItemDisplay[t11 OR t12 OR t13]: %NAME%%CONTINUE%
 ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME%%CONTINUE%
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME%%CONTINUE%
-ItemDisplay[t41 OR t42]: %NAME%%CONTINUE%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %NAME%%CONTINUE%
+ItemDisplay[t41]: %NAME%%CONTINUE%
 
 // Add tags to maps
 ItemDisplay[t11 OR t12 OR t13]: %GREEN%[T1] %CONTINUE%
 ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %ORANGE%[T3] %CONTINUE%
-ItemDisplay[t41 OR t42]: %RED%[T4] %CONTINUE%					
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t41]: %RED%[T4] %CONTINUE%					
 
 // Overrides for Normal Rarity
 ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
@@ -272,8 +269,8 @@ ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
 // Endcap map names with dot of same color as tier tag
 ItemDisplay[t11 OR t12 OR t13]: %NAME% %GREEN%*%MAP-62%
 ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME% %YELLOW%*%MAP-62%
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME% %ORANGE%*%MAP-62%
-ItemDisplay[t41 OR t42]: %NAME% %RED%*%MAP-62%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %NAME% %ORANGE%*%MAP-62%
+ItemDisplay[t41]: %NAME% %RED%*%MAP-62%
 
 //-----------------------------QUEST ITEMS-----------------------------
 // Reward Items
@@ -1752,4 +1749,12 @@ ItemDisplay[SHIELD (EXC OR ELT) !INF !SUP SOCK=0 NMAG CLVL<80]: %NAME%{%WHITE%Th
 ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>0 CLVL<31]: %NAME%
 ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>2 CLVL<80]: %NAME%
 ItemDisplay[(ARMOR OR WEAPON) INF]: 
-ItemDisplay[(ARMOR OR WEAPON) !leg CLVL>30]: 
+ItemDisplay[(ARMOR OR WEAPON) !leg CLVL>30]:
+
+//-----------------------------SHOW-----------------------------
+ItemDisplay[((UNI OR SET OR CRAFT) ID) OR RW]: %NAME%%CONTINUE%
+ItemDisplay[(UNI OR SET) OR RW ID]: %MAP-84%%NAME%
+
+//-----------------------------HIDE-----------------------------
+ItemDisplay[cm2 DIFF=2]:
+ItemDisplay[mpi SET DIFF=2]:

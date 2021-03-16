@@ -1,5 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Version: 3.0.3
+Strict Version
+Version: 3.0.4
 
 //-----------------------------QUICK TOGGLES-----------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
@@ -9,73 +10,6 @@ Version: 3.0.3
 //ItemDisplay[yps]:						// Turn off Antidotes
 //ItemDisplay[key]:						// Turn off Keys
 //ItemDisplay[RUNE<10 CLVL>80]:			// Turn off Low Runes when Char level is over 80
-
-//--------------------------------------------------------------
-// BEYOND THIS POINT ARE THE STRICT FILTER OVERRIDES
-//--------------------------------------------------------------
-
-// Hide all non eth, non socketed bases
-ItemDisplay[NMAG !INF !RW !SUP !ETH (ARMOR OR WEAPON) SOCK=0]:
-
-// Hide Non Eth, non GG Unique AXES
-ItemDisplay[(hax OR axe OR 2ax OR mpi OR wax OR lax OR bax OR btx OR gax OR gix OR 9ha OR 9ax OR 9ba OR 92a OR 9mp OR 9wa OR 9la OR 9bt OR 9ga OR 9gi OR 72a OR 7mp OR 7ba OR 7bt OR 7ga OR 7gi) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique BOWS
-ItemDisplay[(sbw OR 8sb OR am7 OR hbw OR lbw OR cbw OR sbb OR lbb OR swb OR lwb OR 8sb OR 8hb OR 8lb OR 8cb OR 8s8 OR 8l8 OR 8sw OR 8lw OR 6l7 OR 6sw) UNI !ID]:
-
-// Hide Non Eth, non GG Unique XBOWS
-ItemDisplay[(WP10) UNI !ID !ETH]:
-
-// Hide Non Eth, non GG Unique DAGGERS
-ItemDisplay[(dir OR kri OR bld OR 9dg OR 9di OR 9kr OR 9bl) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique MACES
-ItemDisplay[(clb OR spc OR mac OR mst OR fla OR whm OR mau OR 9cl OR 9sp OR 9ma OR 9mt OR 9fl OR 9wh OR 9m9 OR 9gm OR 7mt OR 7m7) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique POLEARMS
-ItemDisplay[(vou OR scy OR pax OR hal OR wsc OR 9b7 OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR 7o7 OR 7wc) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique SCEPTERS
-ItemDisplay[(wsp OR 9qs) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique SPEARS
-ItemDisplay[(spr OR 9tr OR brn OR spt OR pik OR 9sr OR 9br OR 9p9 OR 7sr OR 7br OR 9st) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique STAVES
-ItemDisplay[(lst OR bst OR wst OR 8bs OR 8ws) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique SWORDS
-ItemDisplay[(sbr OR lsd OR 9cr OR scm OR flc OR bsd OR wsd OR 2hs OR clm OR gis OR bsw OR flb OR gsd OR 9ss OR 9sm OR 9ls OR 9sb OR 92h OR 9cm OR 9gs OR 9b9 OR 9fb OR 9gd OR 7ls OR 7gs) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique THROWING
-ItemDisplay[(9tk OR 9ta OR 7ta) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique WANDS
-ItemDisplay[(wnd OR bwn OR 9yw) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique JAVS
-ItemDisplay[(7s7 OR 7ts) UNI !ETH !ID]:
-
-// Hide Non Eth, non GG Unique ARMORS
-ItemDisplay[(lea OR xld OR hla OR stu OR xrs OR scl OR brs OR chn OR xcl OR spl OR ltp OR fld OR plt OR gth OR aar OR xui OR xla OR xtp OR xtu OR xng OR xth OR xul OR xar OR uld) UNI !ID]:
-
-// Hide Non Eth, non GG Unique BELTS
-ItemDisplay[(vbl OR mbl OR hbl OR zmb) UNI !ID]:
-
-// Hide Non Eth, non GG Unique HELMETS
-ItemDisplay[(skp OR fhl OR hlm OR ghm OR msk OR crn OR bhm OR xhl OR xrn) UNI !ID]:
-
-// Hide Non Eth, non GG Unique BOOTS
-ItemDisplay[(vbt OR mbt OR xlb OR xmb OR umb) UNI !ID]:
-
-// Hide Non Eth, non GG Unique GLOVES
-ItemDisplay[(lgl OR hgl OR xlg OR xvg OR xmg) UNI !ID]:
-
-// Hide Non Eth, non GG Unique SHIELDS
-ItemDisplay[(sml OR gts OR lrg OR kit OR spk OR tow OR bsh OR xuc OR xrg OR xit OR xpk OR xts OR upk OR ush) UNI !ID]:
-
-// Hide "bad" set items 
-ItemDisplay[(chn OR xml OR zvb OR paf OR xmb OR oba OR zmb OR xsk OR uul OR 7gd OR 7wd OR gsc OR ult OR aar OR lbb OR 7qr OR 6cs OR xtg OR 9mt OR xh9 OR xar OR ci3 OR amc OR uld OR urn OR xhg OR xhb OR ba5 OR 7m7 OR 7ws OR ztb OR 7ma OR xhm OR xrs OR 9vo OR xrn OR xhl OR vgl OR xvg OR upl OR vbt OR 7ls OR bwn OR ci0 OR 9cs OR xcl OR xlb OR umc OR uui OR uhm OR sbr OR uts OR wst OR lwb OR bst OR tbt OR lea OR hlm OR lbt OR sml OR ful OR hbt OR tow OR hgl OR bhm OR mpi OR gth OR ghm OR hbl OR wsp OR gts OR kit OR fhl OR crn OR bsd OR lgl OR tbl OR cap OR dgr OR wsd OR lbl OR mbt OR mbl OR buc OR mgl OR msk OR lsd OR skp OR lrg OR rng OR chn OR swb OR tgl OR spl OR vbl OR qui OR bwn OR ltp OR vbl OR brs OR msk OR 2ax OR 9mt OR gts OR wsd OR hgl OR lsd OR tgl OR bst OR xar OR crn) SET !ID]:
 
 //--------------------------------------------------------------
 // BEYOND THIS POINT ARE HIIMDAVE'S FILTER OVERRIDES
@@ -282,14 +216,14 @@ ItemDisplay[wms OR gpl OR gpm OR gps OR opl OR opm OR ops]:  						// Hide all o
 // Maps (by Tier)
 ItemDisplay[t11 OR t12 OR t13]: %NAME%%CONTINUE%
 ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME%%CONTINUE%
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME%%CONTINUE%
-ItemDisplay[t41 OR t42]: %NAME%%CONTINUE%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %NAME%%CONTINUE%
+ItemDisplay[t41]: %NAME%%CONTINUE%
 
 // Add tags to maps
 ItemDisplay[t11 OR t12 OR t13]: %GREEN%[T1] %CONTINUE%
 ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %ORANGE%[T3] %CONTINUE%
-ItemDisplay[t41 OR t42]: %RED%[T4] %CONTINUE%					
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t41]: %RED%[T4] %CONTINUE%					
 
 // Overrides for Normal Rarity
 ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
@@ -339,8 +273,8 @@ ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
 // Endcap map names with dot of same color as tier tag
 ItemDisplay[t11 OR t12 OR t13]: %NAME% %GREEN%*%MAP-62%
 ItemDisplay[t21 OR t22 OR t23 OR t24]: %NAME% %YELLOW%*%MAP-62%
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36]: %NAME% %ORANGE%*%MAP-62%
-ItemDisplay[t41 OR t42]: %NAME% %RED%*%MAP-62%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %NAME% %ORANGE%*%MAP-62%
+ItemDisplay[t41]: %NAME% %RED%*%MAP-62%
 
 //-----------------------------QUEST ITEMS-----------------------------
 // Reward Items
@@ -1820,3 +1754,16 @@ ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>0 CLVL<31]: %NAME%
 ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>2 CLVL<80]: %NAME%
 ItemDisplay[(ARMOR OR WEAPON) INF]: 
 ItemDisplay[(ARMOR OR WEAPON) !leg CLVL>30]: 
+
+//--------------------------------------------------------------
+// BEYOND THIS POINT ARE HIIMDAVE'S STRICT OVERRIDES
+//--------------------------------------------------------------
+
+//-----------------------------SHOW-----------------------------
+ItemDisplay[((UNI OR SET OR CRAFT) ID) OR RW]: %NAME%%CONTINUE%
+ItemDisplay[(UNI OR SET) OR RW ID]: %MAP-84%%NAME%
+
+//-----------------------------HIDE-----------------------------
+ItemDisplay[cm2 DIFF=2]:
+ItemDisplay[mpi SET DIFF=2]:
+ItemDisplay[!((rvl) OR (wss OR lbox OR scrb OR std) OR (cm1 OR cm3 OR jew) OR ((rin OR amu) (MAG OR RARE)) OR ((rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI) OR ((ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI) OR ((rin OR amu OR uar OR ci3 OR 7qr OR uth OR paf) SET) OR (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t31 OR t32 OR t33 OR t34 OR t35 OR t41) OR (gzv OR gzvs OR gpv OR gpvs OR glw OR glws OR gpw OR gpws OR glg OR glgs OR gpg OR gpgs OR glr OR glrs OR gpr OR gprs OR glb OR glbs OR gpb OR gpbs OR skl OR skls OR skz OR skzs OR gly OR glys OR gpy OR gpys) OR (ass OR xyz OR tr2 OR bks OR bkd OR hdm OR box OR hst OR vip OR msf OR j34 OR g33 OR g34 OR qey OR qbr OR qhr OR qf1 OR qf2 OR bbb OR mss OR hfh OR ice OR leg) OR (imra OR rera OR upma OR imma OR scou OR upmp) OR (tes OR ceh OR bet OR fed OR toa) OR (pk1 OR pk2 OR pk3 OR bey OR dhn OR mbr)) OR RUNE<10 OR RW]:
