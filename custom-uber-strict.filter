@@ -1,6 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
-Custom UBER Strict Version
-Version: 3.0.4
+//Custom UBER Strict Version
+//Version: 3.0.4
 
 //-----------------------------QUICK TOGGLES-------------------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
@@ -29,58 +29,68 @@ ItemDisplay[scrb]: %MAP-0A%%NL%%NL%%GOLD%*%TAN%          %NAME%          %GOLD%*
 ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %GOLD%%NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%pick me up
 
 // GG Uniques (Large Box)
-ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
+ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm OR uvb) UNI !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
 
 // OK Drops (Med Box)
 ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%* %GOLD%%NAME% %GRAY%*%TAN%*%YELLOW%*%NL%
 ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%* %NAME% *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
 
 // Maps
-// Hide these...
-ItemDisplay[t11 OR t23 OR t24 OR t33]:
-
 // Prefix of Map Names
-ItemDisplay[t12 OR t13]: %GREEN%[T1] %CONTINUE%
-ItemDisplay[t21 OR t22]: %YELLOW%[T2] %CONTINUE%			
-ItemDisplay[t31 OR t32 OR t34 OR t35]: %ORANGE%[T3] %CONTINUE%
+ItemDisplay[t11 OR t12 OR t13]: %GREEN%[T1] %CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%			
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%[T3] %CONTINUE%
 ItemDisplay[t41]: %RED%[T4] %CONTINUE%
 
 // Overrides for Normal Rarity
+ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t12]: %NAME%%WHITE%Horazons Memory Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t13]: %NAME%%WHITE%Bastion Keep Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t21]: %NAME%%WHITE%Phlegathon Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t22]: %NAME%%WHITE%Torajan Jungle Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t23]: %NAME%%WHITE%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t24]: %NAME%%WHITE%Blood Moon Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t31]: %NAME%%WHITE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t32]: %NAME%%WHITE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t33]: %NAME%%WHITE%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t35]: %NAME%%WHITE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t41]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
 
 // Overrides for Magic Rarity
+ItemDisplay[MAG t11]: %NAME%%BLUE%Ruins of Vizjun Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t12]: %NAME%%BLUE%Horazons Memory Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t13]: %NAME%%BLUE%Bastion Keep Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t21]: %NAME%%BLUE%Phlegathon Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t22]: %NAME%%BLUE%Torajan Jungle Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t23]: %NAME%%BLUE%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t24]: %NAME%%BLUE%Blood Moon Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t32]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t33]: %NAME%%BLUE%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t35]: %NAME%%BLUE%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t41]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
 
 // Overrides for Rare Rarity
+ItemDisplay[RARE t11]: %NAME%%YELLOW%Ruins of Vizjun Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t12]: %NAME%%YELLOW%Horazons Memory Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t13]: %NAME%%YELLOW%Bastion Keep Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t21]: %NAME%%YELLOW%Phlegathon Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t22]: %NAME%%YELLOW%Torajan Jungle Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t23]: %NAME%%YELLOW%Arreat Battlefield Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t24]: %NAME%%YELLOW%Blood Moon Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t32]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t33]: %NAME%%YELLOW%Sewers of Harrogath Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t35]: %NAME%%YELLOW%Tomb of Zultan Kulle Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
 
 // Suffix of Map Names
-ItemDisplay[t12 OR t13]: %MAP-62%%NL%%NAME% %GREEN%*%NL%
-ItemDisplay[t21 OR t22]: %MAP-62%%NL%%NAME% %YELLOW%*%NL%
-ItemDisplay[t31 OR t32 OR t34 OR t35]: %MAP-62%%NL%%NAME% %ORANGE%*%NL%
+ItemDisplay[t11 OR t12 OR t13]: %MAP-62%%NL%%NAME% %GREEN%*%NL%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %MAP-62%%NL%%NAME% %YELLOW%*%NL%
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %MAP-62%%NL%%NAME% %ORANGE%*%NL%
 ItemDisplay[t41]: %MAP-62%%NL%%NAME% %RED%*%NL%
 
 // Rejuvs
@@ -89,8 +99,8 @@ ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
 // Gems
 ItemDisplay[gzv OR gzvs]: %DOT-20%%NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%%CONTINUE%
 ItemDisplay[gpv OR gpvs]: %DOT-20%%NL%%PURPLE%O %TAN%P. %WHITE% Amethyst %PURPLE%*%NL%%CONTINUE%
-ItemDisplay[glw OR glws]: %DOT-20%%NL%%wHITE%O %TAN%F. %WHITE% Diamond *%NL%%CONTINUE%
-ItemDisplay[gpw OR gpws]: %DOT-20%%NL%%wHITE%O %TAN%P. %WHITE% Diamond *%NL%%CONTINUE%
+ItemDisplay[glw OR glws]: %DOT-20%%NL%%WHITE%O %TAN%F. %WHITE% Diamond *%NL%%CONTINUE%
+ItemDisplay[gpw OR gpws]: %DOT-20%%NL%%WHITE%O %TAN%P. %WHITE% Diamond *%NL%%CONTINUE%
 ItemDisplay[glg OR glgs]: %DOT-20%%NL%%GREEN%O %TAN%F. %WHITE% Emerald %GREEN%*%NL%%CONTINUE%
 ItemDisplay[gpg OR gpgs]: %DOT-20%%NL%%GREEN%O %TAN%P. %WHITE% Emerald %GREEN%*%NL%%CONTINUE%
 ItemDisplay[glr OR glrs]: %DOT-20%%NL%%RED%O %TAN%F. %WHITE% Ruby %RED%*%NL%%CONTINUE%
@@ -362,19 +372,10 @@ ItemDisplay[(UNI OR SET OR CRAFT OR MAG OR RARE) ID]: %NAME%%CONTINUE%
 ItemDisplay[ETH UNI]: %GRAY%[%WHITE%eth%GRAY%] %GOLD%%NAME%%CONTINUE%
 ItemDisplay[ETH CRAFT]: %GRAY%[%WHITE%eth%GRAY%] %ORANGE%%NAME%%CONTINUE%
 
-//Show me number of sockets of every socketed item
-//ItemDisplay[SOCK>0]: %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%CONTINUE%
-
 //Note abut High-LVL Grand Charms
 ItemDisplay[cm3 MAG ID ILVL>90]: %NAME%{%WHITE%Cube with 3xPerf Gem%NL%%TAN%Note%WHITE%: ILVL%ORANGE%91+ %BLUE%Grand Charm%WHITE%, to Reroll:}
 
 //Craftables
-ItemDisplay[GLOVES ((EXC OR ELT) !(utg OR uhg)) MAG !ETH !ID]: %GRAY%* %BLUE%%NAME% %GRAY%*
-ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF) MAG ETH !ID]: %NAME%
-ItemDisplay[(bhm OR xh9 OR uh9) MAG !ID]: %NAME%
-ItemDisplay[(bsh OR xsh OR ush) MAG !ID]: %NAME%
-ItemDisplay[(lwb OR 8lw OR 6lw) MAG !ID]: %NAME%
-ItemDisplay[CL3 MAG !ID]: %NAME%
 ItemDisplay[GLOVES MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ort %WHITE%| S: Perf %GREEN%O%ORANGE%, Ral%NL%%WHITE%B: Perf %RED%O%ORANGE%, Nef%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ort%NL%Craft Recipes: %BLUE%Jewel,}
 ItemDisplay[BOOTS MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ral %WHITE%| S: Perf %GREEN%O%ORANGE%, Ort%NL%%WHITE%B: Perf %RED%O%ORANGE%, Eth%WHITE% | C: Perf %PURPLE%O%ORANGE%, Thul%NL%Craft Recipes: %BLUE%Jewel,}
 ItemDisplay[BELT MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tal %WHITE%| S: Perf %GREEN%O%ORANGE%, Tal%NL%%WHITE%B: Perf %RED%O%ORANGE%, Tal%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ith%NL%Craft Recipes: %BLUE%Jewel,}
@@ -427,7 +428,7 @@ ItemDisplay[SHIELD (EXC OR ELT) !INF !SUP SOCK=0 NMAG CLVL<80]: %NAME%{%WHITE%Th
 //-----------------------------SHOW-----------------------------
 ItemDisplay[((UNI OR SET OR CRAFT) ID) OR RW]: %NAME%%CONTINUE%
 ItemDisplay[CRAFT ID]: %NAME%
-ItemDisplay[(UNI OR SET) OR RW ID]: %MAP-84%%NAME%
+ItemDisplay[(UNI OR SET OR RW) ID]: %MAP-84%%NAME%
 
 //-----------------------------HIDE-----------------------------
 ItemDisplay[GEM=1]:
@@ -435,4 +436,4 @@ ItemDisplay[GEM=2]:
 ItemDisplay[GEM=3]:
 ItemDisplay[cm2 DIFF=2]:
 ItemDisplay[mpi SET DIFF=2]:
-ItemDisplay[!((rvl) OR (wss OR lbox OR scrb OR std) OR (cm1 OR cm3 OR jew) OR ((rin OR amu) (MAG OR RARE)) OR ((rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI) OR ((ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI) OR ((rin OR amu OR uar OR ci3 OR 7qr OR uth OR paf) SET) OR (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t31 OR t32 OR t33 OR t34 OR t35 OR t41) OR (gzv OR gzvs OR gpv OR gpvs OR glw OR glws OR gpw OR gpws OR glg OR glgs OR gpg OR gpgs OR glr OR glrs OR gpr OR gprs OR glb OR glbs OR gpb OR gpbs OR skl OR skls OR skz OR skzs OR gly OR glys OR gpy OR gpys) OR (ass OR xyz OR tr2 OR bks OR bkd OR hdm OR box OR hst OR vip OR msf OR j34 OR g33 OR g34 OR qey OR qbr OR qhr OR qf1 OR qf2 OR bbb OR mss OR hfh OR ice OR leg) OR (imra OR rera OR upma OR imma OR scou OR upmp) OR (tes OR ceh OR bet OR fed OR toa) OR (pk1 OR pk2 OR pk3 OR bey OR dhn OR mbr)) OR RUNE<10 OR RW]:
+ItemDisplay[!((rvl) OR (wss OR lbox OR scrb OR std) OR (cm1 OR cm3 OR jew) OR ((rin OR amu) (MAG OR RARE)) OR ((rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm OR uvb) UNI) OR ((ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI) OR ((rin OR amu OR uar OR ci3 OR 7qr OR uth OR paf) SET) OR (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t31 OR t32 OR t33 OR t34 OR t35 OR t41) OR (gzv OR gzvs OR gpv OR gpvs OR glw OR glws OR gpw OR gpws OR glg OR glgs OR gpg OR gpgs OR glr OR glrs OR gpr OR gprs OR glb OR glbs OR gpb OR gpbs OR skl OR skls OR skz OR skzs OR gly OR glys OR gpy OR gpys) OR (ass OR xyz OR tr2 OR bks OR bkd OR hdm OR box OR hst OR vip OR msf OR j34 OR g33 OR g34 OR qey OR qbr OR qhr OR qf1 OR qf2 OR bbb OR mss OR hfh OR ice OR leg) OR (imra OR rera OR upma OR imma OR scou OR upmp) OR (tes OR ceh OR bet OR fed OR toa) OR (pk1 OR pk2 OR pk3 OR bey OR dhn OR mbr)) OR RUNE<10 OR RW]:
