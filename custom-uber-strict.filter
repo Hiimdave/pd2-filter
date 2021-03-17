@@ -1,6 +1,6 @@
 //-----------------------------Hiimdave's Lootfilter-----------------------------
 //Custom UBER Strict Version
-//Version: 3.0.4
+//Version: 3.1.0
 
 //-----------------------------QUICK TOGGLES-------------------------------------
 // NOTE: These are the most commonly asked about things to turn off, uncomment these to turn off, comment them out to have default behavior.
@@ -19,7 +19,7 @@
 ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
 ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
-//-----------------------------BRAINDEAD MODE-----------------------------
+//-----------------------------CUSTOM DROP SIZES-----------------------------
 // GG Drops (Large Box)
 ItemDisplay[(cm1 OR cm3 OR jew) MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
 ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
@@ -28,12 +28,9 @@ ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORA
 ItemDisplay[scrb]: %MAP-0A%%NL%%NL%%GOLD%*%TAN%          %NAME%          %GOLD%*%NL%%NL%%CONTINUE%
 ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %GOLD%%NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%pick me up
 
-// GG Uniques (Large Box)
-ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm OR uvb) UNI !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
-
-// OK Drops (Med Box)
-ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%* %GOLD%%NAME% %GRAY%*%TAN%*%YELLOW%*%NL%
-ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%* %NAME% *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
+//Uniques and Sets
+ItemDisplay[UNI (rin OR amu OR cm1 OR cm2 OR cm3 OR ci2 OR ci3 OR ama OR amf OR baa OR bac OR bae OR dra OR drb OR drd OR dre OR nae OR nef OR pe9 OR oba OR obc OR obf OR xea OR uui OR upl OR uar OR ulc OR uvc OR umc OR mbt OR xlb OR xvb OR xhb OR uvb OR umb OR uhb OR tgl OR uvg OR uhg OR xhm OR xh9 OR uap OR ulm OR uhm OR usk OR urn OR uh9 OR xsh OR xow OR uit OR uow OR 6lw OR 8hx OR 8rx OR 7bl OR 7s7 OR 7gl OR 7ts OR 9wh OR 9gm OR 7fl OR 7wh OR 7m7 OR 7gm OR 9s8 OR 7s8 OR 9sc OR 9ws OR 7sc OR 7ws OR 6ws OR 7cr OR 7gs OR 7gd OR 7bk OR 7ta OR 7b8 OR 9wn OR 7bw OR 7gw) !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%TAN%  %NAME%  %NL%%NL%%PURPLE%************************%WHITE%
+ItemDisplay[SET (rin OR amu OR dr8 OR xtb OR uul OR 9mt OR ulg OR xlb OR ba5 OR 7m7 OR uar OR zhb OR xhg OR xhb OR ci3 OR amc OR uld OR xtg OR zvb OR xh9 OR 7qr OR ucl OR xmb OR 6cs OR xhm OR oba OR xsk OR uth OR zmb OR uh9 OR xul OR ne9 OR utc OR xmg) !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%GREEN%  %NAME%  %NL%%NL%%PURPLE%************************%WHITE%
 
 // Maps
 // Prefix of Map Names
@@ -436,4 +433,4 @@ ItemDisplay[GEM=2]:
 ItemDisplay[GEM=3]:
 ItemDisplay[cm2 DIFF=2]:
 ItemDisplay[mpi SET DIFF=2]:
-ItemDisplay[!((rvl) OR (wss OR lbox OR scrb OR std) OR (cm1 OR cm3 OR jew) OR ((rin OR amu) (MAG OR RARE)) OR ((rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm OR uvb) UNI) OR ((ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI) OR ((rin OR amu OR uar OR ci3 OR 7qr OR uth OR paf) SET) OR (t11 OR t12 OR t13 OR t21 OR t22 OR t23 OR t24 OR t31 OR t32 OR t33 OR t34 OR t35 OR t41) OR (gzv OR gzvs OR gpv OR gpvs OR glw OR glws OR gpw OR gpws OR glg OR glgs OR gpg OR gpgs OR glr OR glrs OR gpr OR gprs OR glb OR glbs OR gpb OR gpbs OR skl OR skls OR skz OR skzs OR gly OR glys OR gpy OR gpys) OR (ass OR xyz OR tr2 OR bks OR bkd OR hdm OR box OR hst OR vip OR msf OR j34 OR g33 OR g34 OR qey OR qbr OR qhr OR qf1 OR qf2 OR bbb OR mss OR hfh OR ice OR leg) OR (imra OR rera OR upma OR imma OR scou OR upmp) OR (tes OR ceh OR bet OR fed OR toa) OR (pk1 OR pk2 OR pk3 OR bey OR dhn OR mbr)) OR RUNE<10 OR RW]:
+ItemDisplay[!RW]:

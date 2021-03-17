@@ -19,7 +19,7 @@
 ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
 ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
-//-----------------------------BRAINDEAD MODE-----------------------------
+//-----------------------------CUSTOM DROP SIZES-----------------------------
 // GG Drops (Large Box)
 ItemDisplay[(cm1 OR cm3 OR jew) MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
 ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
