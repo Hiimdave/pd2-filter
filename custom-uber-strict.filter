@@ -15,29 +15,40 @@
 // BEYOND THIS POINT ARE THE CUSTOM FILTER OVERRIDES
 //--------------------------------------------------------------
 
+//-----------------------------HIDE EXPLICITLY-----------------------------
+ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:
+ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:
+ItemDisplay[cm2 DIFF>0]:
+ItemDisplay[mpi SET DIFF>0]:
+
 //-----------------------------LOL-----------------------------
 ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
 ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
 //-----------------------------CUSTOM DROP SIZES-----------------------------
 // GG Drops (Large Box)
-ItemDisplay[(cm1 OR cm3 OR jew) MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
-ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
-ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%%CONTINUE%
-ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%%CONTINUE%
-ItemDisplay[scrb]: %MAP-0A%%NL%%NL%%GOLD%*%TAN%          %NAME%          %GOLD%*%NL%%NL%%CONTINUE%
-ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %GOLD%%NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%pick me up
+ItemDisplay[(cm1 OR cm3 OR jew) MAG !ID]: %DOT-9B%%NL%%PURPLE%*%BLUE%          %NAME%          %PURPLE%*%NL%
+ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%NL%%ORANGE%*%YELLOW%          %NAME%          %ORANGE%*%NL%
+ItemDisplay[wss]: %MAP-4A%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%CONTINUE%
+ItemDisplay[lbox]: %MAP-0A%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%CONTINUE%
+ItemDisplay[scrb]: %MAP-0A%%NL%%GOLD%*%TAN%          %NAME%          %GOLD%*%NL%%CONTINUE%
+ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w          %GOLD%%NAME%          %PURPLE%r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%> PICK ME UP <%WHITE%
 
-//Uniques and Sets
-ItemDisplay[UNI (rin OR amu OR cm1 OR cm2 OR cm3 OR ci2 OR ci3 OR ama OR amf OR baa OR bac OR bae OR dra OR drb OR drd OR dre OR nae OR nef OR pe9 OR oba OR obc OR obf OR xea OR uui OR upl OR uar OR ulc OR uvc OR umc OR mbt OR xlb OR xvb OR xhb OR uvb OR umb OR uhb OR tgl OR uvg OR uhg OR xhm OR xh9 OR uap OR ulm OR uhm OR usk OR urn OR uh9 OR xsh OR xow OR uit OR uow OR 6lw OR 8hx OR 8rx OR 7bl OR 7s7 OR 7gl OR 7ts OR 9wh OR 9gm OR 7fl OR 7wh OR 7m7 OR 7gm OR 9s8 OR 7s8 OR 9sc OR 9ws OR 7sc OR 7ws OR 6ws OR 7cr OR 7gs OR 7gd OR 7bk OR 7ta OR 7b8 OR 9wn OR 7bw OR 7gw) !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%TAN%  %NAME%  %NL%%NL%%PURPLE%************************%WHITE%
-ItemDisplay[SET (rin OR amu OR dr8 OR xtb OR uul OR 9mt OR ulg OR xlb OR ba5 OR 7m7 OR uar OR zhb OR xhg OR xhb OR ci3 OR amc OR uld OR xtg OR zvb OR xh9 OR 7qr OR ucl OR xmb OR 6cs OR xhm OR oba OR xsk OR uth OR zmb OR uh9 OR xul OR ne9 OR utc OR xmg) !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%GREEN%  %NAME%  %NL%%NL%%PURPLE%************************%WHITE%
+//Uniques that we care to see
+ItemDisplay[UNI (rin OR amu OR cm1 OR cm2 OR cm3 OR ci2 OR ci3 OR ama OR amf OR baa OR bac OR bae OR dra OR drb OR drd OR dre OR nea OR nef OR pa9 OR oba OR obc OR obf OR xea OR uui OR upl OR uar OR zlb OR zvb OR ulc OR uvc OR umc OR mbt OR hbt OR xlb OR xvb OR xhb OR uvb OR umb OR uhb OR tgl OR uvg OR uhg OR xhm OR xh9 OR uap OR ulm OR uhm OR usk OR urn OR uh9 OR xsh OR xow OR uit OR uow OR 6lw OR 8hx OR 8rx OR 7bl OR 7gl OR 7ts OR 9wh OR 9gm OR 7fl OR 7wh OR 7m7 OR 7gm OR 9s8 OR 7s8 OR 9ws OR 7sc OR 7ws OR 6ws OR 7cr OR 7gs OR 7gd OR 7bk OR 7ta OR 7b8 OR 9wn OR 7bw OR 7gw) !ID]: %MAP-84%%PURPLE%*****************************%NL%%TAN%         %NAME%         %NL%%PURPLE%*****************************%WHITE%
+
+//Sets that we care to see
+ItemDisplay[SET (rin OR amu OR dr8 OR xtb OR uul OR 9mt OR ulg OR xlb OR ba5 OR 7m7 OR uar OR zhb OR xhg OR xhb OR ci3 OR amc OR zlb OR zvb OR uld OR xtg OR zvb OR xh9 OR 7qr OR ucl OR xmb OR 6cs OR xhm OR oba OR xsk OR uth OR zmb OR uh9 OR xul OR ne9 OR utc OR xmg) !ID]: %MAP-84%%PURPLE%*****************************%NL%%GREEN%         %NAME%         %NL%%PURPLE%*****************************%WHITE%
 
 // Maps
+ItemDisplay[dcma]: %MAP-0A%%RED%**********************************%NL%%ORANGE%         %NAME%         %NL%%RED%**********************************%WHITE%{%RED%DO IT AT YOUR OWN RISK!%NL%%TAN%Note%WHITE%: %GRAY%You better not go in there...}
+ItemDisplay[dcbl OR dcho OR dcso]: %MAP-0A%%NL%%RED%*          %NAME%          %RED%*%NL%{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}
+
 // Prefix of Map Names
-ItemDisplay[t11 OR t12 OR t13]: %GREEN%[T1] %CONTINUE%
-ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%			
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%[T3] %CONTINUE%
-ItemDisplay[t41]: %RED%[T4] %CONTINUE%
+ItemDisplay[t11 OR t12 OR t13]: %GREEN%* [T1] %CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%* [T2] %CONTINUE%			
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%* [T3] %CONTINUE%
+ItemDisplay[t41]: %RED%* [T4] %CONTINUE%
 
 // Overrides for Normal Rarity
 ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
@@ -91,7 +102,7 @@ ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %MAP-62%%NL%%NAME% %ORANGE%*%NL%
 ItemDisplay[t41]: %MAP-62%%NL%%NAME% %RED%*%NL%
 
 // Rejuvs
-ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
+ItemDisplay[rvl]: %NL%%PURPLE%*        %TAN%Rejuv %WHITE%65%        %PURPLE%*%NL%
 
 // Gems
 ItemDisplay[gzv OR gzvs]: %DOT-20%%NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%%CONTINUE%
@@ -194,22 +205,24 @@ ItemDisplay[leg]: %GOLD%Wirt's Leg%WHITE%%MAP-58%{%TAN%Cube: Add TP Tome for Cow
 
 //-----------------------------RESET TOKENS-----------------------------
 // Essences
+ItemDisplay[tes OR ceh OR bet OR fed]: %NL%%ORANGE%*          %NAME%          *%NL%%CONTINUE%
 ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}
 ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}
 ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}
 ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
 
 // Reset Token
-ItemDisplay[toa]: %ORANGE%Reset Token%MAP-68%{%TAN%Use: Reset your Stat & Skill points.%NL%}
+ItemDisplay[toa]: %NL%%ORANGE%*        Reset Token        *%WHITE%%NL%%MAP-68%{%TAN%Use: Reset your Stat & Skill points.%NL%}
 
 //-----------------------------UBERS-----------------------------
 // Keys
+ItemDisplay[pk1 OR pk2 OR pk3]: %NL%%ORANGE%*          %NAME%          *%NL%%CONTINUE%
 ItemDisplay[pk1]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
 ItemDisplay[pk2]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
 ItemDisplay[pk3]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
 
 // Organs
-ItemDisplay[(bey OR dhn OR mbr)]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube: Any 3 organs opens Uber Trist%NL%}
+ItemDisplay[(bey OR dhn OR mbr)]: %NL%%ORANGE%*          %NAME%          *%NL%%MAP-68%{%TAN%Cube: Any 3 organs opens Uber Trist%NL%}
 
 //--------------------------------------------------------------
 // BEYOND THIS POINT IS KYZARD'S BASE FILTER
@@ -399,18 +412,19 @@ ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Ral %W
 ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Lum %WHITE%+ %ORANGE%Pul %WHITE%+ Perf %GREEN%O%NL%%TAN%Note%WHITE%: Upgrading Recipe:}
 
 //Standard of Heroes
-ItemDisplay[std]: %PX-9D%%NAME%{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
+ItemDisplay[std]: %PX-9D%%NL%%GOLD%*        %NAME%        *%NL%%WHITE%{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
 
 //Project Diablo 2 items
+ItemDisplay[imra OR rera OR upma OR imma OR scou OR upmp]: %BORDER-A9%%NL%%ORANGE%*        %GOLD%%NAME%        %ORANGE%*%NL%%WHITE%%CONTINUE%
 ItemDisplay[wss]: %MAP-0A%%NAME%{%RED%Warning%WHITE%: It can Brick your Item/Map%NL%%TAN%Note%WHITE%: Use it to %RED%Corrupt %WHITE%Item/Map:}
 ItemDisplay[scrb]: %BORDER-A9%%NAME%{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
 ItemDisplay[lbox]: %BORDER-0A%%NAME%{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}
-ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:}
-ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}
-ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:}
-ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}
-ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}
-ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}
+ItemDisplay[imra]: %NAME%x%QTY%{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:}
+ItemDisplay[rera]: %NAME%x%QTY%{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}
+ItemDisplay[upma]: %NAME%x%QTY%{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:}
+ItemDisplay[imma]: %NAME%x%QTY%{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}
+ItemDisplay[scou]: %NAME%x%QTY%{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}
+ItemDisplay[upmp]: %NAME%x%QTY%{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}
 
 //Notes for socketing
 ItemDisplay[CHEST NORM !INF !SUP SOCK=0 NMAG CLVL<31]: %NAME%{%WHITE%This Item + %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+ Perf %YELLOW%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
@@ -423,14 +437,13 @@ ItemDisplay[(HELM OR CIRC) (EXC OR ELT) !INF !SUP SOCK=0 NMAG CLVL<80]: %NAME%{%
 ItemDisplay[SHIELD (EXC OR ELT) !INF !SUP SOCK=0 NMAG CLVL<80]: %NAME%{%WHITE%This Item + %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ Perf %RED%O%NL%%TAN%Note%WHITE%: Socketing Recipe:}
 
 //-----------------------------SHOW-----------------------------
-ItemDisplay[((UNI OR SET OR CRAFT) ID) OR RW]: %NAME%%CONTINUE%
+ItemDisplay[UNI ID]: %MAP-0D%%NAME%
+ItemDisplay[SET ID]: %MAP-84%%NAME%
 ItemDisplay[CRAFT ID]: %NAME%
-ItemDisplay[(UNI OR SET OR RW) ID]: %MAP-84%%NAME%
+ItemDisplay[RW]: %MAP-40%%NAME%
 
-//-----------------------------HIDE-----------------------------
-ItemDisplay[GEM=1]:
-ItemDisplay[GEM=2]:
-ItemDisplay[GEM=3]:
-ItemDisplay[cm2 DIFF=2]:
-ItemDisplay[mpi SET DIFF=2]:
-ItemDisplay[!RW]:
+ItemDisplay[RARE ID]: %NAME%
+ItemDisplay[MAG ID]: %NAME%
+
+//-----------------------------HIDE EVERYTHING ELSE-----------------------------
+ItemDisplay[!GOLD]:
