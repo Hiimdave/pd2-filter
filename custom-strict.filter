@@ -21,26 +21,28 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
 //-----------------------------CUSTOM DROP SIZES-----------------------------
 // GG Drops (Large Box)
-ItemDisplay[(cm1 OR cm3 OR jew) MAG !ID]: %DOT-9B%%NL%%NL%%PURPLE%*%BLUE%             %NAME%             %PURPLE%*%NL%%NL%
-ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%NL%%NL%%ORANGE%*%YELLOW%             %NAME%             %ORANGE%*%NL%%NL%
-ItemDisplay[wss]: %MAP-4A%%NL%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%NL%%CONTINUE%
-ItemDisplay[lbox]: %MAP-0A%%NL%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%NL%%CONTINUE%
-ItemDisplay[scrb]: %MAP-0A%%NL%%NL%%GOLD%*%TAN%          %NAME%          %GOLD%*%NL%%NL%%CONTINUE%
-ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %GOLD%%NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%pick me up
+ItemDisplay[(cm1 OR cm3 OR jew) MAG !ID]: %DOT-9B%%NL%%PURPLE%*%BLUE%          %NAME%          %PURPLE%*%NL%
+ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%NL%%ORANGE%*%YELLOW%          %NAME%          %ORANGE%*%NL%
+ItemDisplay[wss]: %MAP-4A%%NL%%ORANGE%*%PURPLE%          %NAME%          %ORANGE%*%NL%%CONTINUE%
+ItemDisplay[lbox]: %MAP-0A%%NL%%ORANGE%*%GOLD%          %NAME%          %ORANGE%*%NL%%CONTINUE%
+ItemDisplay[scrb]: %MAP-0A%%NL%%GOLD%*%TAN%          %NAME%          %GOLD%*%NL%%CONTINUE%
+ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w          %GOLD%%NAME%          %PURPLE%r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%> PICK ME UP <%WHITE%
 
-// GG Uniques (Large Box)
-ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %MAP-84%%PURPLE%************************%NL%%NL%%PURPLE%%BORDER-50%%TAN%  %NAME%  %PURPLE%%NL%%NL%%PURPLE%************************
+//Uniques that we care to see
+ItemDisplay[UNI (rin OR amu OR cm1 OR cm2 OR cm3 OR ci2 OR ci3 OR ama OR amf OR baa OR bac OR bae OR dra OR drb OR drd OR dre OR nea OR nef OR pa9 OR oba OR obc OR obf OR xea OR uui OR upl OR uar OR zlb OR zvb OR ulc OR uvc OR umc OR mbt OR hbt OR xlb OR xvb OR xhb OR uvb OR umb OR uhb OR tgl OR uvg OR uhg OR xhm OR xh9 OR uap OR ulm OR uhm OR usk OR urn OR uh9 OR xsh OR xow OR uit OR uow OR 6lw OR 8hx OR 8rx OR 7bl OR 7gl OR 7ts OR 9wh OR 9gm OR 7fl OR 7wh OR 7m7 OR 7gm OR 9s8 OR 7s8 OR 9ws OR 7sc OR 7ws OR 6ws OR 7cr OR 7gs OR 7gd OR 7bk OR 7ta OR 7b8 OR 9wn OR 7bw OR 7gw) !ID]: %MAP-84%%PURPLE%*****************************%NL%%TAN%         %NAME%         %NL%%PURPLE%*****************************%WHITE%
 
-// OK Drops (Med Box)
-ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu OR uvg OR uhg OR umg OR xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae OR lbt OR xhb OR uhb OR tbt OR xvb OR nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%* %GOLD%%NAME% %GRAY%*%TAN%*%YELLOW%*%NL%
-ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%* %NAME% *%DARK_GREEN%*%RED%*%PURPLE%*%NL%
+//Sets that we care to see
+ItemDisplay[SET (rin OR amu OR dr8 OR xtb OR uul OR 9mt OR ulg OR xlb OR ba5 OR 7m7 OR uar OR zhb OR xhg OR xhb OR ci3 OR amc OR zlb OR zvb OR uld OR xtg OR zvb OR xh9 OR 7qr OR ucl OR xmb OR 6cs OR xhm OR oba OR xsk OR uth OR zmb OR uh9 OR xul OR ne9 OR utc OR xmg) !ID]: %MAP-84%%PURPLE%*****************************%NL%%GREEN%         %NAME%         %NL%%PURPLE%*****************************%WHITE%
 
 // Maps
+ItemDisplay[dcma]: %MAP-0A%%RED%**********************************%NL%%ORANGE%         %NAME%         %NL%%RED%**********************************%WHITE%{%RED%DO IT AT YOUR OWN RISK!%NL%%TAN%Note%WHITE%: %GRAY%You better not go in there...}
+ItemDisplay[dcbl OR dcho OR dcso]: %MAP-0A%%NL%%RED%*          %NAME%          %RED%*%NL%{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}
+
 // Prefix of Map Names
-ItemDisplay[t11 OR t12 OR t13]: %GREEN%[T1] %CONTINUE%
-ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%[T2] %CONTINUE%			
-ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%[T3] %CONTINUE%
-ItemDisplay[t41]: %RED%[T4] %CONTINUE%
+ItemDisplay[t11 OR t12 OR t13]: %GREEN%* [T1] %CONTINUE%
+ItemDisplay[t21 OR t22 OR t23 OR t24]: %YELLOW%* [T2] %CONTINUE%			
+ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %ORANGE%* [T3] %CONTINUE%
+ItemDisplay[t41]: %RED%* [T4] %CONTINUE%
 
 // Overrides for Normal Rarity
 ItemDisplay[NMAG t11]: %NAME%%WHITE%Ruins of Vizjun Map%WHITE%%CONTINUE%
@@ -94,7 +96,7 @@ ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35]: %MAP-62%%NL%%NAME% %ORANGE%*%NL%
 ItemDisplay[t41]: %MAP-62%%NL%%NAME% %RED%*%NL%
 
 // Rejuvs
-ItemDisplay[rvl]: %PURPLE%* %WHITE%Rejuv %PURPLE%*%NL%%TAN%65%
+ItemDisplay[rvl]: %NL%%PURPLE%*        %TAN%Rejuv %WHITE%65%        %PURPLE%*%NL%
 
 // Gems
 ItemDisplay[gzv OR gzvs]: %DOT-20%%NL%%PURPLE%O %TAN%F. %WHITE% Amethyst %PURPLE%*%NL%%CONTINUE%
