@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
-// Version: 3.2.1
+// Version: 3.2.2
 
 //-----------------------------QUICK TOGGLES---------------------------------------
 // Note: Turn these on / off based on personal preference
@@ -62,7 +62,7 @@ ItemDisplay[UNI ID]: %NAME%%CONTINUE%
 //ItemDisplay[UNI !ID DIFF=2 CLVL>85]:
 
 //Sets that we care to see
-ItemDisplay[SET (rin OR amu) !ID]: %MAP-84%%NL%%GREEN%*          %NAME%          *%NL%%CONTINUE%
+ItemDisplay[SET (rin OR amu) !ID]: %MAP-84%%NL%%GREEN%*          %NAME%          *%NL%
 ItemDisplay[SET (dr8 OR xtb OR uul OR 9mt OR ulg OR xlb OR ba5 OR 7m7 OR uar OR zhb OR xhg OR xhb OR ci3 OR amc OR zlb OR zvb OR uld OR xtg OR zvb OR xh9 OR 7qr OR ucl OR xmb OR 6cs OR xhm OR oba OR xsk OR uth OR zmb OR uh9 OR xul OR ne9 OR utc OR xmg) !ID]: %MAP-84%%PURPLE%*****************************%NL%%NL%%GREEN%         %NAME%         %NL%%NL%%PURPLE%*****************************%WHITE%
 ItemDisplay[SET (dr8 OR xtb OR uul OR 9mt OR ulg OR xlb OR ba5 OR 7m7 OR uar OR zhb OR xhg OR xhb OR ci3 OR amc OR zlb OR zvb OR uld OR xtg OR zvb OR xh9 OR 7qr OR ucl OR xmb OR 6cs OR xhm OR oba OR xsk OR uth OR zmb OR uh9 OR xul OR ne9 OR utc OR xmg) ID]: %MAP-84%%NL%%GREEN%%NAME%%NL%%WHITE%%CONTINUE%
 ItemDisplay[SET ID]: %NAME%%CONTINUE%
