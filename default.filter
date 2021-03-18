@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
-// Version: 3.2.2
+// Version: 3.2.3
 
 //-----------------------------QUICK TOGGLES---------------------------------------
 // Note: Turn these on / off based on personal preference
@@ -1549,6 +1549,7 @@ ItemDisplay[UNI OR SET OR RW OR CRAFT]: %NAME%
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%
 
 //Project Diablo 2 items
+ItemDisplay[imra OR rera OR upma OR imma OR scou OR upmp]: %BORDER-A9%%NL%%ORANGE%*        %GOLD%%NAME%        %ORANGE%*%NL%%WHITE%%CONTINUE%
 ItemDisplay[wss]: %MAP-0A%%NAME% %ORANGE%*{%RED%Warning%WHITE%: It can Brick your Item/Map%NL%%TAN%Note%WHITE%: Use it to %RED%Corrupt %WHITE%Item/Map:}
 ItemDisplay[scrb]: %BORDER-A9%%NAME% %ORANGE%*{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
 ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:}
