@@ -1,11 +1,7 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
 // Version: 3.2.1
 
-//-----------------------------HIIMDAVE CUSTOM OVERRIDES-----------------------------
-ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
-ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
-
-//-----------------------------HIDE EXPLICITLY---------------------------------------
+//-----------------------------QUICK TOGGLES---------------------------------------
 // Note: Turn these on / off based on personal preference
 
 // Turn off player ears...ewww.
@@ -20,17 +16,17 @@ ItemDisplay[RUNE<10 (DIFF=2 OR CLVL>85)]:
 // Turn off small rejuvs
 //ItemDisplay[rvs]:
 
-// Turn off Rank 5 HP Pots
-//ItemDisplay[hp5]:
+// Turn off Rank 5 HP Pots in Hell or 85+
+//ItemDisplay[hp5 (DIFF=2 OR CLVL>84)]:
 
-// Turn off Rank 5 MP Pots
-//ItemDisplay[mp5]:
+// Turn off Rank 5 MP Pots in Hell or 85+
+//ItemDisplay[mp5 (DIFF=2 OR CLVL>84)]:
 
-// Turn off Antidotes
-//ItemDisplay[yps]:
+// Turn off Antidotes in Hell or 85+
+//ItemDisplay[yps (DIFF=2 OR CLVL>84)]:
 
-// Turn off Keys
-//ItemDisplay[key]:
+// Turn off Keys in Hell or 85+
+//ItemDisplay[key (DIFF=2 OR CLVL>84)]:
 
 // Turn off Large Charms in Hell
 ItemDisplay[cm2 DIFF=2]:
@@ -38,11 +34,12 @@ ItemDisplay[cm2 DIFF=2]:
 // Turn off Magic rings/amulets that are not ID'd in Hell
 ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:
 
-// Turn off Bases in Hell or 85+
+// Turn off basic Normal Bases in Hell or 85+
 ItemDisplay[NMAG !INF !SUP SOCK=0 (WEAPON OR ARMOR) (DIFF=2 OR CLVL>84)]:
 
-//-----------------------------MAKE DROPS MORE VISIBLE-----------------------------
-// Note: Turn off these lines if you don't want bigger drop boxes.
+//-----------------------------HIIMDAVE CUSTOM OVERRIDES-----------------------------
+ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
+ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
 // Rejuvs
 ItemDisplay[rvl]: %NL%%PURPLE%*        %TAN%Rejuv %WHITE%65%        %PURPLE%*%NL%
