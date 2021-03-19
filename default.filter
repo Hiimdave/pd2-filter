@@ -29,7 +29,7 @@ ItemDisplay[RUNE<10 (DIFF=2 OR CLVL>85)]:
 //ItemDisplay[key (DIFF=2 OR CLVL>84)]:
 
 // Turn off Large Charms in Hell
-ItemDisplay[cm2 DIFF=2]:
+ItemDisplay[MAG cm2 DIFF=2]:
 
 // Turn off Magic rings/amulets that are not ID'd in Hell
 ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:
