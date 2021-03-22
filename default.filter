@@ -643,22 +643,22 @@ ItemDisplay[(GLOVES OR BOOTS OR BELT) RARE !ID]: %NAME%
 ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF) RARE ETH !ID]: %NAME%
 
 //Craftables
-//ItemDisplay[GLOVES ((EXC OR ELT) !(utg OR uhg)) MAG !ETH !ID]: %GRAY%* %BLUE%%NAME% %GRAY%*
-//ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF) MAG ETH !ID]: %NAME%
-//ItemDisplay[(bhm OR xh9 OR uh9) MAG !ID]: %NAME%
-//ItemDisplay[(bsh OR xsh OR ush) MAG !ID]: %NAME%
-//ItemDisplay[(lwb OR 8lw OR 6lw) MAG !ID]: %NAME%
-//ItemDisplay[CL3 MAG !ID]: %NAME%
-//ItemDisplay[GLOVES MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ort %WHITE%| S: Perf %GREEN%O%ORANGE%, Ral%NL%%WHITE%B: Perf %RED%O%ORANGE%, Nef%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ort%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[BOOTS MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ral %WHITE%| S: Perf %GREEN%O%ORANGE%, Ort%NL%%WHITE%B: Perf %RED%O%ORANGE%, Eth%WHITE% | C: Perf %PURPLE%O%ORANGE%, Thul%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[BELT MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tal %WHITE%| S: Perf %GREEN%O%ORANGE%, Tal%NL%%WHITE%B: Perf %RED%O%ORANGE%, Tal%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ith%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[SHIELD MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Eth %WHITE%| S: Perf %GREEN%O%ORANGE%, Nef%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ith%WHITE% | C: Perf %PURPLE%O%ORANGE%, Eth%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[HELM MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ith %WHITE%| S: Perf %GREEN%O%ORANGE%, Ith%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ral%WHITE% | C: Perf %PURPLE%O%ORANGE%, Nef%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[CHEST MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Nef %WHITE%| S: Perf %GREEN%O%ORANGE%, Eth%NL%%WHITE%B: Perf %RED%O%ORANGE%, Thul%WHITE% | C: Perf %PURPLE%O%ORANGE%, Tal%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[WEAPON !(BOW OR XBOW) MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tir %WHITE%| S: %GRAY%x/Bows only%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ort%WHITE% | C: Perf %PURPLE%O%ORANGE%, Tir%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[(BOW OR XBOW) MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tir %WHITE%| S: Perf %GREEN%O%ORANGE%, Sol%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ort%WHITE% | C: Perf %PURPLE%O%ORANGE%, Tir%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[amu MAG]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Thul %WHITE%| S: Perf %GREEN%O%ORANGE%, Thul%NL%%WHITE%B: Perf %RED%O%ORANGE%, Amn%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ral%NL%Craft Recipes: %BLUE%Jewel,}
-//ItemDisplay[rin MAG]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Amn %WHITE%| S: Perf %GREEN%O%ORANGE%, Amn%NL%%WHITE%B: Perf %RED%O%ORANGE%, Sol%WHITE% | C: Perf %PURPLE%O%ORANGE%, Amn%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[GLOVES ((EXC OR ELT) !(utg OR uhg)) MAG !ETH !ID]: %GRAY%* %BLUE%%NAME% %GRAY%*
+ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF) MAG ETH !ID]: %NAME%
+ItemDisplay[(bhm OR xh9 OR uh9) MAG !ID]: %NAME%
+ItemDisplay[(bsh OR xsh OR ush) MAG !ID]: %NAME%
+ItemDisplay[(lwb OR 8lw OR 6lw) MAG !ID]: %NAME%
+ItemDisplay[CL3 MAG !ID]: %NAME%
+ItemDisplay[GLOVES MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ort %WHITE%| S: Perf %GREEN%O%ORANGE%, Ral%NL%%WHITE%B: Perf %RED%O%ORANGE%, Nef%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ort%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[BOOTS MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ral %WHITE%| S: Perf %GREEN%O%ORANGE%, Ort%NL%%WHITE%B: Perf %RED%O%ORANGE%, Eth%WHITE% | C: Perf %PURPLE%O%ORANGE%, Thul%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[BELT MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tal %WHITE%| S: Perf %GREEN%O%ORANGE%, Tal%NL%%WHITE%B: Perf %RED%O%ORANGE%, Tal%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ith%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[SHIELD MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Eth %WHITE%| S: Perf %GREEN%O%ORANGE%, Nef%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ith%WHITE% | C: Perf %PURPLE%O%ORANGE%, Eth%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[HELM MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Ith %WHITE%| S: Perf %GREEN%O%ORANGE%, Ith%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ral%WHITE% | C: Perf %PURPLE%O%ORANGE%, Nef%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[CHEST MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Nef %WHITE%| S: Perf %GREEN%O%ORANGE%, Eth%NL%%WHITE%B: Perf %RED%O%ORANGE%, Thul%WHITE% | C: Perf %PURPLE%O%ORANGE%, Tal%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[WEAPON !(BOW OR XBOW) MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tir %WHITE%| S: %GRAY%x/Bows only%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ort%WHITE% | C: Perf %PURPLE%O%ORANGE%, Tir%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[(BOW OR XBOW) MAG ID]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Tir %WHITE%| S: Perf %GREEN%O%ORANGE%, Sol%NL%%WHITE%B: Perf %RED%O%ORANGE%, Ort%WHITE% | C: Perf %PURPLE%O%ORANGE%, Tir%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[amu MAG]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Thul %WHITE%| S: Perf %GREEN%O%ORANGE%, Thul%NL%%WHITE%B: Perf %RED%O%ORANGE%, Amn%WHITE% | C: Perf %PURPLE%O%ORANGE%, Ral%NL%Craft Recipes: %BLUE%Jewel,}
+ItemDisplay[rin MAG]: %NAME%{%WHITE%HP: Perf %BLUE%O%ORANGE%, Amn %WHITE%| S: Perf %GREEN%O%ORANGE%, Amn%NL%%WHITE%B: Perf %RED%O%ORANGE%, Sol%WHITE% | C: Perf %PURPLE%O%ORANGE%, Amn%NL%Craft Recipes: %BLUE%Jewel,}
 
 //Class items
 ItemDisplay[(DIFF<2 OR CLVL<85) (SOR OR WAND OR SCEPTER OR STAFF OR DRU OR BAR OR NEC OR (SIN !(NORM OR 9ar OR 9wb OR 9xf))) NMAG]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
