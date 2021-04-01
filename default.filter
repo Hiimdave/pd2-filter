@@ -149,25 +149,25 @@ ItemDisplay[gly OR glys]: %DOT-20%%YELLOW%O %TAN%F. %WHITE% Topaz %YELLOW%*%CONT
 ItemDisplay[gpy OR gpys]: %DOT-20%%YELLOW%O %TAN%P. %WHITE% Topaz %YELLOW%*%CONTINUE%
 
 // Gems Tooltips (Order: Amethyst, Diamond, Emerald, Ruby, Sapphire, Skull, Topaz)
-ItemDisplay[gzvs]: %NAME%{%WHITE%Weapons: +100 Atk RatingArmor/Helms: +8 StrShields: +24 Def}
-ItemDisplay[gpvs]: %NAME%{%WHITE%Weapons: +150 Atk RatingArmor/Helms: +10 StrShields: +30 Def}
-ItemDisplay[glws]: %NAME%{%WHITE%Weapons: +54% Dmg vs UndeadArmor/Helms: +80 Atk RatingShields: All Res +14%}
-ItemDisplay[gpws]: %NAME%{%WHITE%Weapons: +68% Dmg vs UndeadArmor/Helms: +100 Atk RatingShields: All Res +19%}
-ItemDisplay[glgs]: %NAME%{%WHITE%Weapons: +60 Psn Dmg/6sArmor/Helms: +8 DexShields: Psn Res +28%}
-ItemDisplay[gpgs]: %NAME%{%WHITE%Weapons: +100 Psn Dmg/6sArmor/Helms: +10 DexShields: Psn Res +40%}
-ItemDisplay[glrs]: %NAME%{%WHITE%Weapons: Adds 10-16 Fire DmgArmor/Helms: +31 LifeShields: Fire Res +28%}
-ItemDisplay[gprs]: %NAME%{%WHITE%Weapons: Adds 15-20 Fire DmgArmor/Helms: +38 LifeShields: Fire Res +40%}
-ItemDisplay[glbs]: %NAME%{%WHITE%Weapons: Adds 6-10 Cold DmgArmor/Helms: +31 ManaShields: Cold Res +28%}
-ItemDisplay[gpbs]: %NAME%{%WHITE%Weapons: Adds 10-14 Cold DmgArmor/Helms: +38 ManaShields: Cold Res +40%}
-ItemDisplay[skls]: %NAME%{%WHITE%Weapons: 3% LeechArmor/Helms: Regen Mana 12%. Regen Life +4Shields: Thorns +16}
-ItemDisplay[skzs]: %NAME%{%WHITE%Weapons: 4% Life/3% Mana stolenArmor/Helms: Regen Mana 19%. Regen Life +5Shields: Thorns +21}
-ItemDisplay[glys]: %NAME%{%WHITE%Weapons: Adds 1-30 Lightning DmgArmor/Helms: 20% MFShields: Lightning Res +28%}
-ItemDisplay[gpys]: %NAME%{%WHITE%Weapons: Adds 1-40 Lightning DmgArmor/Helms: 24% MFShields: Lightning Res +40%}
+ItemDisplay[gzvs]: %NAME%{%WHITE%Weapons: +100 Atk Rating%NL%Armor/Helms: +8 Str%NL%Shields: +24 Def}
+ItemDisplay[gpvs]: %NAME%{%WHITE%Weapons: +150 Atk Rating%NL%Armor/Helms: +10 Str%NL%Shields: +30 Def}
+ItemDisplay[glws]: %NAME%{%WHITE%Weapons: +54% Dmg vs Undead%NL%Armor/Helms: +80 Atk Rating%NL%Shields: All Res +14%}
+ItemDisplay[gpws]: %NAME%{%WHITE%Weapons: +68% Dmg vs Undead%NL%Armor/Helms: +100 Atk Rating%NL%Shields: All Res +19%}
+ItemDisplay[glgs]: %NAME%{%WHITE%Weapons: +60 Psn Dmg/6s%NL%Armor/Helms: +8 Dex%NL%Shields: Psn Res +28%}
+ItemDisplay[gpgs]: %NAME%{%WHITE%Weapons: +100 Psn Dmg/6s%NL%Armor/Helms: +10 Dex%NL%Shields: Psn Res +40%}
+ItemDisplay[glrs]: %NAME%{%WHITE%Weapons: Adds 10-16 Fire Dmg%NL%Armor/Helms: +31 Life%NL%Shields: Fire Res +28%}
+ItemDisplay[gprs]: %NAME%{%WHITE%Weapons: Adds 15-20 Fire Dmg%NL%Armor/Helms: +38 Life%NL%Shields: Fire Res +40%}
+ItemDisplay[glbs]: %NAME%{%WHITE%Weapons: Adds 6-10 Cold Dmg%NL%Armor/Helms: +31 Mana%NL%Shields: Cold Res +28%}
+ItemDisplay[gpbs]: %NAME%{%WHITE%Weapons: Adds 10-14 Cold Dmg%NL%Armor/Helms: +38 Mana%NL%Shields: Cold Res +40%}
+ItemDisplay[skls]: %NAME%{%WHITE%Weapons: 3% Leech%NL%Armor/Helms: Regen Mana 12%. Regen Life +4%NL%Shields: Thorns +16}
+ItemDisplay[skzs]: %NAME%{%WHITE%Weapons: 4% Life/3% Mana stolen%NL%Armor/Helms: Regen Mana 19%. Regen Life +5%NL%Shields: Thorns +21}
+ItemDisplay[glys]: %NAME%{%WHITE%Weapons: Adds 1-30 Lightning Dmg%NL%Armor/Helms: 20% MF%NL%Shields: Lightning Res +28%}
+ItemDisplay[gpys]: %NAME%{%WHITE%Weapons: Adds 1-40 Lightning Dmg%NL%Armor/Helms: 24% MF%NL%Shields: Lightning Res +40%}
 
 //-----------------------------RUNES-----------------------------
 ItemDisplay[RUNE<10]: %GREEN%%RUNENAME% %GREEN%(%RUNENUM%)%CONTINUE%
 ItemDisplay[RUNE>9 AND RUNE<21]: %ORANGE%*    %NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%ORANGE%    *%WHITE%%CONTINUE%
-ItemDisplay[RUNE>20]: %BORDER-62%%RED%********** %RED%*********%WHITE%%NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%*********%RED%**********%CONTINUE%
+ItemDisplay[RUNE>20]: %BORDER-62%%RED%*****   %NAME%%GRAY%[%GREEN%%RUNENUM%%GRAY%]%RED%   *****%WHITE%%CONTINUE%
 
 ItemDisplay[r01]: %NAME%{%TAN%3 El+Key = Eld}
 ItemDisplay[r02]: %NAME%{%TAN%3 Eld+Key = Tir}
@@ -203,38 +203,38 @@ ItemDisplay[r31]: %NAME%{%TAN%2 Jah+Key = Cham}
 ItemDisplay[r32]: %NAME%{%TAN%2 Cham+Key = Zod}
 ItemDisplay[r33]: %NAME%
 
-ItemDisplay[r01s]: %NAME%{%TAN%3 El+Key = Eld%WHITE%All: +1 Light RadiusShields: +15 DefArmor/Helms: +15 DefWeapons: +50 Atk Rating}
-ItemDisplay[r02s]: %NAME%{%TAN%3 Eld+Key = Tir%WHITE%Shields: +7% BlockArmor/Helms: -15% Drain StamWeapons: +75% Dmg & +50 Atk Rating vs Undead}
-ItemDisplay[r03s]: %NAME%{%TAN%3 Tir+Key = Nef%WHITE%Shields: +2 Mana on KillArmor/Helms: +2 Mana on KillWeapons: +2 Mana on Kill}
-ItemDisplay[r04s]: %NAME%{%TAN%3 Nef+Key = Eth%WHITE%Shields: +30 Def vs MissileArmor/Helms: +30 Def vs MissileWeapons: Knockback}
-ItemDisplay[r05s]: %NAME%{%TAN%3 Eth+Key = Ith%WHITE%Shields: Regen Mana 15%Armor/Helms: Regen Mana 15%Weapons: -25% Target Def}
-ItemDisplay[r06s]: %NAME%{%TAN%3 Ith+Key = Tal%WHITE%Shields: 15% Dmg Taken Gained as ManaArmor/Helms: 15% Dmg Taken Gained as ManaWeapons: +9 Max Dmg}
-ItemDisplay[r07s]: %NAME%{%TAN%3 Tal+Key = Ral%WHITE%Shields: Psn Res +35%Armor/Helms: Psn Res +30%Weapons: +75 Psn Dmg/5s}
-ItemDisplay[r08s]: %NAME%{%TAN%3 Ral+Key = Ort%WHITE%Shields: Fire Res +35%Armor/Helms: Fire Res +30%Weapons: Adds 5-30 Fire Dmg}
-ItemDisplay[r09s]: %NAME%{%TAN%3 Ort+Key = Thul%WHITE%Shields: Lightning Res +35%Armor/Helms: Lightning Res +30%Weapons: Adds 1-50 Lightning Dmg}
-ItemDisplay[r10s]: %NAME%{%TAN%3 Thul+Key = Amn%WHITE%Shields: Cold Res +35%Armor/Helms: Cold Res +30%Weapons: Adds 3-14 Cold Dmg}
-ItemDisplay[r11s]: %NAME%{%TAN%3 Amn+Key = Sol%WHITE%Shields: Thorns +14Armor/Helms: Thorns +14Weapons: 7% Leech}
-ItemDisplay[r12s]: %NAME%{%TAN%3 Sol+Key = Shael%WHITE%Shields: +7 DRArmor/Helms: +7 DRWeapons: +9 to Min Dmg}
-ItemDisplay[r13s]: %NAME%{%TAN%3 Shael+Key = Dol%WHITE%Shields: 20% Block RateArmor/Helms: 20% FHRWeapons: +20% Atk Spd}
-ItemDisplay[r14s]: %NAME%{%TAN%3 Dol+Key = Hel%WHITE%Shields: Regen Life +7Armor/Helms: Regen Life +7Weapons: +25% Dmg}
-ItemDisplay[r15s]: %NAME%{%TAN%3 Hel+Key = Io%WHITE%Shields: Reqs -15%Armor/Helms: Reqs -15%Weapons: Reqs -20%}
-ItemDisplay[r16s]: %NAME%{%TAN%3 Io+Key = Lum%WHITE%Shields: +10 VitArmor/Helms: +10 VitWeapons: +10 Vit}
-ItemDisplay[r17s]: %NAME%{%TAN%3 Lum+Key = Ko%WHITE%Shields: +10 EnergyArmor/Helms: +10 EnergyWeapons: +10 Energy}
-ItemDisplay[r18s]: %NAME%{%TAN%3 Ko+Key = Fal%WHITE%Shields: +10 DexArmor/Helms: +10 DexWeapons: +10 Dex}
-ItemDisplay[r19s]: %NAME%{%TAN%3 Fal+Key = Lem%WHITE%Shields: +10 StrArmor/Helms: +10 StrWeapons: +10 Str}
-ItemDisplay[r20s]: %NAME%{%TAN%3 Lem+Key = Pul%WHITE%Shields: 50% Gold FindArmor/Helms: 50% Gold FindWeapons: 75% Gold Find}
-ItemDisplay[r21s]: %NAME%{%TAN%2 Pul+Key = Um%WHITE%Shield: +30% DefArmor/Helm: +30% DefWeapon: +75% Dmg & +100 Atk Rating vs Demon}
-ItemDisplay[r22s]: %NAME%{%TAN%2 Um+Key = Mal%WHITE%Shields: All Res +22Armor/Helms: All Res +15Weapons: 25% Open Wounds}
-ItemDisplay[r23s]: %NAME%{%TAN%2 Mal+Key = Ist%WHITE%Shield: Magic DR +7Armor/Helm: Magic DR +7Weapon: Prevent Monster Heal}
-ItemDisplay[r24s]: %NAME%{%TAN%2 Ist+Key = Gul%WHITE%Shields: +25% MFArmor/Helms: +25% MFWeapons: +25% MF}
-ItemDisplay[r25s]: %NAME%{%TAN%2 Gul+Key = Vex%WHITE%Shields: +5% Max Poison ResArmor/Helms: +5% Max Poison ResWeapons: +20% Atk Rating}
-ItemDisplay[r26s]: %NAME%{%TAN%2 Vex+Key = Ohm%WHITE%Shields: +5% Max Fire ResArmor/Helms: +5% Max Fire ResWeapons: 7% Mana Leech}
-ItemDisplay[r27s]: %NAME%{%TAN%2 Ohm+Key = Lo%WHITE%Shields: +5% Max Cold ResArmor/Helms: +5% Max Cold ResWeapons: +50% Enhanced Dmg}
-ItemDisplay[r28s]: %NAME%{%TAN%2 Lo+Key = Sur%WHITE%Shields: +5% Max Lightning ResArmor/Helms: +5% Max Lightning ResWeapons: 20% Deadly Strike}
-ItemDisplay[r29s]: %NAME%{%TAN%2 Sur+Key = Ber%WHITE%Shields: +50 ManaArmor/Helms: Max Mana +5%Weapons: Blind on Hit}
-ItemDisplay[r30s]: %NAME%{%TAN%2 Ber+Key= Jah%WHITE%Shields: DR +8%Armor/Helms: DR +8%Weapons: +20% Crushing Blow}
-ItemDisplay[r31s]: %NAME%{%TAN%2 Jah+Key = Cham%WHITE%Shields: +50 LifeArmor/Helms: Max Life +5%Weapons: Ignore Targets Def}
-ItemDisplay[r32s]: %NAME%{%TAN%2 Cham+Key = Zod%WHITE%Shields: Cannot be FrozenArmor/Helms: Cannot be FrozenWeapons: Freezes Target +3}
+ItemDisplay[r01s]: %NAME%{%TAN%3 El+Key = Eld%NL%%WHITE%All: +1 Light Radius%NL%Shields: +15 Def%NL%Armor/Helms: +15 Def%NL%Weapons: +50 Atk Rating}
+ItemDisplay[r02s]: %NAME%{%TAN%3 Eld+Key = Tir%NL%%WHITE%Shields: +7% Block%NL%Armor/Helms: -15% Drain Stam%NL%Weapons: +75% Dmg & +50 Atk Rating vs Undead}
+ItemDisplay[r03s]: %NAME%{%TAN%3 Tir+Key = Nef%NL%%WHITE%Shields: +2 Mana on Kill%NL%Armor/Helms: +2 Mana on Kill%NL%Weapons: +2 Mana on Kill}
+ItemDisplay[r04s]: %NAME%{%TAN%3 Nef+Key = Eth%NL%%WHITE%Shields: +30 Def vs Missile%NL%Armor/Helms: +30 Def vs Missile%NL%Weapons: Knockback}
+ItemDisplay[r05s]: %NAME%{%TAN%3 Eth+Key = Ith%NL%%WHITE%Shields: Regen Mana 15%%NL%Armor/Helms: Regen Mana 15%%NL%Weapons: -25% Target Def}
+ItemDisplay[r06s]: %NAME%{%TAN%3 Ith+Key = Tal%NL%%WHITE%Shields: 15% Dmg Taken Gained as Mana%NL%Armor/Helms: 15% Dmg Taken Gained as Mana%NL%Weapons: +9 Max Dmg}
+ItemDisplay[r07s]: %NAME%{%TAN%3 Tal+Key = Ral%NL%%WHITE%Shields: Psn Res +35%%NL%Armor/Helms: Psn Res +30%%NL%Weapons: +75 Psn Dmg/5s}
+ItemDisplay[r08s]: %NAME%{%TAN%3 Ral+Key = Ort%NL%%WHITE%Shields: Fire Res +35%%NL%Armor/Helms: Fire Res +30%%NL%Weapons: Adds 5-30 Fire Dmg}
+ItemDisplay[r09s]: %NAME%{%TAN%3 Ort+Key = Thul%NL%%WHITE%Shields: Lightning Res +35%%NL%Armor/Helms: Lightning Res +30%%NL%Weapons: Adds 1-50 Lightning Dmg}
+ItemDisplay[r10s]: %NAME%{%TAN%3 Thul+Key = Amn%NL%%WHITE%Shields: Cold Res +35%%NL%Armor/Helms: Cold Res +30%%NL%Weapons: Adds 3-14 Cold Dmg}
+ItemDisplay[r11s]: %NAME%{%TAN%3 Amn+Key = Sol%NL%%WHITE%Shields: Thorns +14%NL%Armor/Helms: Thorns +14%NL%Weapons: 7% Leech}
+ItemDisplay[r12s]: %NAME%{%TAN%3 Sol+Key = Shael%NL%%WHITE%Shields: +7 DR%NL%Armor/Helms: +7 DR%NL%Weapons: +9 to Min Dmg}
+ItemDisplay[r13s]: %NAME%{%TAN%3 Shael+Key = Dol%NL%%WHITE%Shields: 20% Block Rate%NL%Armor/Helms: 20% FHR%NL%Weapons: +20% Atk Spd}
+ItemDisplay[r14s]: %NAME%{%TAN%3 Dol+Key = Hel%NL%%WHITE%Shields: Regen Life +7%NL%Armor/Helms: Regen Life +7%NL%Weapons: +25% Dmg}
+ItemDisplay[r15s]: %NAME%{%TAN%3 Hel+Key = Io%NL%%WHITE%Shields: Reqs -15%%NL%Armor/Helms: Reqs -15%%NL%Weapons: Reqs -20%}
+ItemDisplay[r16s]: %NAME%{%TAN%3 Io+Key = Lum%NL%%WHITE%Shields: +10 Vit%NL%Armor/Helms: +10 Vit%NL%Weapons: +10 Vit}
+ItemDisplay[r17s]: %NAME%{%TAN%3 Lum+Key = Ko%NL%%WHITE%Shields: +10 Energy%NL%Armor/Helms: +10 Energy%NL%Weapons: +10 Energy}
+ItemDisplay[r18s]: %NAME%{%TAN%3 Ko+Key = Fal%NL%%WHITE%Shields: +10 Dex%NL%Armor/Helms: +10 Dex%NL%Weapons: +10 Dex}
+ItemDisplay[r19s]: %NAME%{%TAN%3 Fal+Key = Lem%NL%%WHITE%Shields: +10 Str%NL%Armor/Helms: +10 Str%NL%Weapons: +10 Str}
+ItemDisplay[r20s]: %NAME%{%TAN%3 Lem+Key = Pul%NL%%WHITE%Shields: 50% Gold Find%NL%Armor/Helms: 50% Gold Find%NL%Weapons: 75% Gold Find}
+ItemDisplay[r21s]: %NAME%{%TAN%2 Pul+Key = Um%NL%%WHITE%Shield: +30% Def%NL%Armor/Helm: +30% Def%NL%Weapon: +75% Dmg & +100 Atk Rating vs Demon}
+ItemDisplay[r22s]: %NAME%{%TAN%2 Um+Key = Mal%NL%%WHITE%Shields: All Res +22%NL%Armor/Helms: All Res +15%NL%Weapons: 25% Open Wounds}
+ItemDisplay[r23s]: %NAME%{%TAN%2 Mal+Key = Ist%NL%%WHITE%Shield: Magic DR +7%NL%Armor/Helm: Magic DR +7%NL%Weapon: Prevent Monster Heal}
+ItemDisplay[r24s]: %NAME%{%TAN%2 Ist+Key = Gul%NL%%WHITE%Shields: +25% MF%NL%Armor/Helms: +25% MF%NL%Weapons: +25% MF}
+ItemDisplay[r25s]: %NAME%{%TAN%2 Gul+Key = Vex%NL%%WHITE%Shields: +5% Max Poison Res%NL%Armor/Helms: +5% Max Poison Res%NL%Weapons: +20% Atk Rating}
+ItemDisplay[r26s]: %NAME%{%TAN%2 Vex+Key = Ohm%NL%%WHITE%Shields: +5% Max Fire Res%NL%Armor/Helms: +5% Max Fire Res%NL%Weapons: 7% Mana Leech}
+ItemDisplay[r27s]: %NAME%{%TAN%2 Ohm+Key = Lo%NL%%WHITE%Shields: +5% Max Cold Res%NL%Armor/Helms: +5% Max Cold Res%NL%Weapons: +50% Enhanced Dmg}
+ItemDisplay[r28s]: %NAME%{%TAN%2 Lo+Key = Sur%NL%%WHITE%Shields: +5% Max Lightning Res%NL%Armor/Helms: +5% Max Lightning Res%NL%Weapons: 20% Deadly Strike}
+ItemDisplay[r29s]: %NAME%{%TAN%2 Sur+Key = Ber%NL%%WHITE%Shields: +50 Mana%NL%Armor/Helms: Max Mana +5%%NL%Weapons: Blind on Hit}
+ItemDisplay[r30s]: %NAME%{%TAN%2 Ber+Key= Jah%NL%%WHITE%Shields: DR +8%%NL%Armor/Helms: DR +8%%NL%Weapons: +20% Crushing Blow}
+ItemDisplay[r31s]: %NAME%{%TAN%2 Jah+Key = Cham%NL%%WHITE%Shields: +50 Life%NL%Armor/Helms: Max Life +5%%NL%Weapons: Ignore Targets Def}
+ItemDisplay[r32s]: %NAME%{%TAN%2 Cham+Key = Zod%NL%%WHITE%Shields: Cannot be Frozen%NL%Armor/Helms: Cannot be Frozen%NL%Weapons: Freezes Target +3}
 ItemDisplay[r33s]: %NAME%{%WHITE%All Sockets: Indestructible}
 
 //-----------------------------GOLD-----------------------------
