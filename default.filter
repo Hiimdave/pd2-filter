@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
-// Version: 4.0.1
+// Version: 4.0.2
 
 //-----------------------------QUICK TOGGLES---------------------------------------
 // Note: Turn these on / off based on personal preference
@@ -38,7 +38,7 @@ ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:
 //ItemDisplay[NMAG !INF !SUP SOCK=0 (WEAPON OR ARMOR) (DIFF=2 OR CLVL>84)]:
 
 //-----------------------------HIIMDAVE CUSTOM OVERRIDES-----------------------------
-ItemDisplay[wss]: %PURPLE%WORLDSTAR!!!%CONTINUE%
+ItemDisplay[wss]: %ORANGE%* %PURPLE%WORLDSTAR!!!%CONTINUE%
 ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
 // Rejuvs
