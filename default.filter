@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
-// Version: 4.0.3
+// Version: 4.0.4
 
 //-----------------------------QUICK TOGGLES---------------------------------------
 // Note: Turn these on / off based on personal preference
@@ -38,6 +38,10 @@ ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:
 //ItemDisplay[NMAG !INF !SUP SOCK=0 (WEAPON OR ARMOR) (DIFF=2 OR CLVL>84)]:
 
 //-----------------------------HIIMDAVE CUSTOM OVERRIDES-----------------------------
+// Show Corrupted items with [C]
+ItemDisplay[STAT360>0]: %NAME% %RED%[C]%CONTINUE%
+
+// Memes
 ItemDisplay[wss]: %ORANGE%* %PURPLE%WORLDSTAR!!!%CONTINUE%
 ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
@@ -431,20 +435,6 @@ ItemDisplay[NMAG !RW SOCK>1 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK3
 
 // ------------------------------------------------------------------------------
 // LLD Section
-// ------------------------------------------------------------------------------
-// Dave's Custom for his Filter
-// ------------------------------------------------------------------------------
-// Uniqes to look out for
-ItemDisplay[UNI (gwn OR xap OR xui OR kit OR zlb OR tgl OR vgl OR wax OR gma OR cbw OR dr2 OR stu) STAT360>0]: %NAME% [LLD] %RED%[C]%CONTINUE%
-
-// Sets to look out for (Corrupted)
-ItemDisplay[SET (bwn OR vbt OR lbt) STAT360>0]: %NAME% [LLD] %RED%[C]%CONTINUE%
-ItemDisplay[SET amu STAT89=3 STAT360>0]: %NAME% [LLD] %RED%[C]%CONTINUE% // Angelic amu
-ItemDisplay[SET ID rin STAT74=6 STAT360>0]: %NAME% [LLD] %RED%[C]%CONTINUE% // Angelic rin
-ItemDisplay[SET amu (STAT34>2 AND STAT35>1) STAT360>0]: %NAME% [LLD] %RED%[C]%CONTINUE% // Tancreds amu
-
-// ------------------------------------------------------------------------------
-// Mark's Sections
 // ------------------------------------------------------------------------------
 // Uniqes to look out for
 ItemDisplay[UNI (gwn OR xap OR xui OR kit OR zlb OR tgl OR vgl OR wax OR gma OR cbw OR dr2 OR stu) STAT360=0]: %NAME% [LLD]%CONTINUE%
