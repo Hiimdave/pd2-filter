@@ -53,7 +53,7 @@ ItemDisplay[(jew OR cm1 OR cm3) MAG !ID]: %DOT-9B%%GRAY%*%BLUE%          %NAME% 
 ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%ORANGE%*%YELLOW%          %NAME%          %ORANGE%*
 
 //-----------------------------BASES-----------------------------
-ItemDisplay[NMAG SOCK=2 ETH (6ws OR 7fb)]: %TAN%[%WHITE%%eth%%TAN%]%GRAY% %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%WHITE%
+ItemDisplay[NMAG SOCK=2 !RW ETH (6ws OR 7fb)]: %TAN%[%WHITE%%eth%%TAN%]%GRAY% %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%WHITE%
 
 //-----------------------------MAPS-----------------------------
 // Dclone Items
