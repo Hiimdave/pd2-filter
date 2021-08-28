@@ -1,59 +1,195 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
-// Version: 4.0.6
+// Version: 4.0.7
+//-----------------------------------------------------------------------------------
+// Note: You can disable any of these to return to the Kryszard Default.
 
 //-----------------------------QUICK TOGGLES---------------------------------------
 // Note: Turn these on / off based on personal preference
 
-// Turn off player ears...ewww.
-ItemDisplay[ear]:
+// Recommended: ON
+ItemDisplay[ear]:                                   // Turn off player ears...ewww.
+ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:               // Turn off less than Flawless Gems
 
-// Turn off less than Flawless Gems
-ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:
+// Recommended: OFF (Unless you 100% know you don't want them)
+//ItemDisplay[key (DIFF=2 OR CLVL>84)]:             // Turn off Keys in Hell or 85+
+//ItemDisplay[yps (DIFF=2 OR CLVL>84)]:             // Turn off Antidotes in Hell or 85+
+//ItemDisplay[RUNE<10 (DIFF=2 OR CLVL>85)]:         // Turn off Runes < Thul in Hell or when over 85  
 
-// Turn off Runes < Thul in Hell or when over 85   
-//ItemDisplay[RUNE<10 (DIFF=2 OR CLVL>85)]:
+// Extra Strict Toggles (Only for certain builds / usages)
+//ItemDisplay[hp5 (DIFF=2 AND CLVL>84)]:            // Turn off Rank 5 HP Pots in Hell or 85+
+//ItemDisplay[mp5 (DIFF=2 AND CLVL>84)]:            // Turn off Rank 5 MP Pots in Hell or 85+
+//ItemDisplay[rvs (DIFF=2 AND CLVL>84)]:            // Turn off 35% Rejuvs in Hell or 85% (b/c you're just that thicc) 
 
-// Turn off small rejuvs
-//ItemDisplay[rvs]:
+// Uber Strict Toggles (For very specific farming)
+//ItemDisplay[MAG cm2 DIFF=2 !ID]:                  // Turn off Large Charms in Hell thar are not ID'd
+//ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:         // Turn off Magic rings/amulets in Hell that are not ID'd
 
-// Turn off Rank 5 HP Pots in Hell or 85+
-ItemDisplay[hp5 (DIFF=2 OR CLVL>84)]:
+//-----------------------------FOR THE MEMES----------------------------
+ItemDisplay[wss]: %ORANGE%* %PURPLE%WORLDSTAR!!!%CONTINUE%      // Worldstar HipHop and throw a chair!!!
+ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%            // @Ailos, always the Poo Rune!
 
-// Turn off Rank 5 MP Pots in Hell or 85+
-ItemDisplay[mp5 (DIFF=2 OR CLVL>84)]:
+//-----------------------------GENERAL GEAR-----------------------------
+ItemDisplay[MAG jew !ID]: %DOT-9B%%PURPLE%**%BLUE%          %NAME%          %PURPLE%**          // Magic Jewels
+ItemDisplay[RARE jew !ID]: %DOT-9B%%ORANGE%**%YELLOW%          %NAME%          %ORANGE%**       // Rare Jewels
 
-// Turn off Antidotes in Hell or 85+
-//ItemDisplay[yps (DIFF=2 OR CLVL>84)]:
+ItemDisplay[MAG rin !ID]: %DOT-9B%%GRAY%*%BLUE%     %NAME%     %GRAY%*                          // Magic Rings
+ItemDisplay[RARE rin !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*                   // Rare Rings
 
-// Turn off Keys in Hell or 85+
-//ItemDisplay[key (DIFF=2 OR CLVL>84)]:
+ItemDisplay[MAG amu !ID]: %DOT-9B%%GRAY%*%BLUE%     %NAME%     %GRAY%*                          // Magic Amulets
+ItemDisplay[RARE amu !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*                   // Rare Amulets
 
-// Turn off Large Charms in Hell
-//ItemDisplay[MAG cm2 DIFF=2]:
-
-// Turn off Magic rings/amulets that are not ID'd in Hell
-//ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:
-
-// Turn off basic Normal Bases in Hell or 85+
-//ItemDisplay[NMAG !INF !SUP SOCK=0 (WEAPON OR ARMOR) (DIFF=2 OR CLVL>84)]:
-
-//-----------------------------HIIMDAVE CUSTOM OVERRIDES-----------------------------
-// Show Corrupted items with [C]
-ItemDisplay[STAT360>0]: %NAME% %RED%[C]%CONTINUE%
-
-// Memes
-ItemDisplay[wss]: %ORANGE%* %PURPLE%WORLDSTAR!!!%CONTINUE%
-ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
-
-// Rejuvs
-ItemDisplay[rvl]: %PURPLE%*        %TAN%Rejuv %WHITE%65%        %PURPLE%*
-
-// Jewels, Charms, Rings, Amulets
-ItemDisplay[(jew OR cm1 OR cm3) MAG !ID]: %DOT-9B%%GRAY%*%BLUE%          %NAME%          %GRAY%*
-ItemDisplay[(jew OR rin OR amu) RARE !ID]: %DOT-9B%%ORANGE%*%YELLOW%          %NAME%          %ORANGE%*
+ItemDisplay[MAG cm1 !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                      // Small Charms
+ItemDisplay[MAG cm2 !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                      // Large Charms
+ItemDisplay[MAG cm3 !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                      // Grand Charms
 
 //-----------------------------BASES-----------------------------
-ItemDisplay[NMAG SOCK=2 !RW ETH (6ws OR 7fb)]: %TAN%[%WHITE%%eth%%TAN%]%GRAY% %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%WHITE%
+// Archon Staff / Colossus Sword for Wind
+ItemDisplay[NMAG 6ws ETH !RW !INF (SOCK=0 OR SOCK=2)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
+ItemDisplay[NMAG 7fb ETH !RW !INF (SOCK=0 OR SOCK=2)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
+
+//-----------------------------LLD SETTINGS-----------------------------
+// Note: These are evolving over time and itterated upon constantly.
+//       Shoutout for help with this to the LLD community and Maaaark for collab'ing on filter code.
+
+//-----------------------------
+// UNIQUE - Weapons
+//-----------------------------
+// gwm - Umes Lament
+// kit - Steelclash
+// clb - Felloak
+// wax - Rakescar
+// gma - Steeldriver
+// cbw - Rogues Bow
+// mau - Bonesnap
+ItemDisplay[UNI (gwm OR kit OR clb OR wax OR gma OR cbw OR mau)]: %NAME% [LLD]%CONTINUE%
+
+//-----------------------------
+// UNIQUE - Armor
+//-----------------------------
+// xap - Peasant Crown
+// xui - Spirit Shroud
+// tgl - Magefist
+// vgl - Bloodfist
+// dr2 - Quetzalcoatl
+// stu - Twitchthroe
+// zlb - String of Ears
+// gth - Rattlecage
+// fld - Rockfleece
+// tbt - Goblin Toes
+// vbt - Gorefoot
+ItemDisplay[UNI (xap OR xui OR tgl OR vgl OR dr2 OR stu OR zlb OR gth OR fld OR tbt OR vbt)]: %NAME% [LLD]%CONTINUE%
+
+//-----------------------------
+// UNIQUE - Jewelry
+//-----------------------------
+// SoJ has STAT77 or % Increased Max Mana
+ItemDisplay[UNI rin STAT77>0]: %NAME% [LLD]%CONTINUE%
+
+//-----------------------------
+// SETS - Weapons
+//-----------------------------
+// bwn - Tancred's Wand
+ItemDisplay[SET bwn]: %NAME% [LLD]%CONTINUE%
+
+//-----------------------------
+// SETS - Armor
+//-----------------------------
+// lbt - Tancred's Boots
+// vbt - Sander's Boots
+// lgl - Deaths Hand
+ItemDisplay[SET (lbt OR vbt OR lgl)]: %NAME% [LLD]%CONTINUE%
+
+//-----------------------------
+// SETS - Jewelry - Note: Since Rings and Amulets have no defined item codes we have to check by stats.
+//-----------------------------
+ItemDisplay[SET amu STAT89=3]: %NAME% [LLD]%CONTINUE%                   // Angelic amu
+ItemDisplay[SET rin STAT74=6]: %NAME% [LLD]%CONTINUE%                   // Angelic rin
+ItemDisplay[SET amu (STAT34>2 AND STAT35>1)]: %NAME% [LLD]%CONTINUE%    // Tancreds amu
+   
+//-----------------------------
+// Jewels
+//-----------------------------
+// Magic
+ItemDisplay[MAG jew LVLREQ<31 (MAXDMG>15 OR RES>13 OR (ED>13 AND MAXDMG>9) OR (MINDMG>4 AND MAXDMG>13) OR (ED>12 AND (STR>4 OR DEX>5)) OR (RES>9 AND (STR>4 OR DEX>5)) OR (STAT91=-15 AND (RES>10 OR ED>14 OR MAXDMG>7 OR MINDMG>6)))]: %NAME% %PURPLE%[LLD]{%GRAY%This jewel is %TAN%Good%GRAY% to %PURPLE%GG}
+ItemDisplay[MAG jew LVLREQ<31 (MAXDMG>13 OR RES>11 OR (FRES>20 AND STAT91=-15) OR (CRES>20 AND STAT91=-15) OR (LRES>20 AND STAT91=-15) OR (MAXDMG>10 AND (RES>9 OR ED>0 OR MINDMG>3)) OR (MINDMG>3 AND (RES>9 OR ED>0 OR MAXDMG>10)) OR (STR>3 AND (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)) OR (DEX>5 AND (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)) OR (STR>3 AND DEX>3) OR (STAT91=-15 AND (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)))]: %NAME% %BLUE%[LLD]{%GRAY%This jewel is %BLUE%Okay%GRAY% to %TAN%Good}
+ItemDisplay[MAG jew LVLREQ<31 (STR=6 OR DEX=9 OR MAXDMG>11)]: %NAME% %GRAY%[LLD]{%GRAY%This jewel is either extremely %ORANGE%Situational%GRAY% or a %WHITE%Beginner %GRAY%Jewel}
+
+// Rare
+ItemDisplay[RARE jew LVLREQ<31 (ED>15 OR MAXDMG>14 OR (MINDMG>4 AND MAXDMG>9) OR (ED>14 AND (MAXDMG>12 OR STR>4 OR DEX>5)) OR (MAXDMG>8 AND (STR>4 OR DEX>5)) OR (STAT91=-15 AND (RES>7 OR ED>14 OR MAXDMG>7 OR MINDMG>6 OR STR>4 OR DEX>5)))]: %NAME% %PURPLE%[LLD]{%GRAY%This jewel is %TAN%Good%GRAY% to %PURPLE%GG}
+ItemDisplay[RARE jew LVLREQ<31 ((STR>4 AND DEX>5) OR (MAXDMG>8 AND (STR>3 OR DEX>6 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)) OR (STR>3 AND (MAXDMG>8 OR DEX>6 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)) OR (DEX>6 AND (MAXDMG>8 OR STR>3 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)) OR (ED>14 AND (MAXDMG>8 OR STR>3 OR DEX>6 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)) OR (RES>0 AND (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)) OR ((FRES>0 OR LRES>0 OR CRES>0 OR PRES>0) AND (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR STAT91=-15)) OR (STAT91=-15 AND (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14))))]: %NAME% %BLUE%[LLD]{%GRAY%This jewel is %BLUE%Okay%GRAY% to %TAN%Good}
+ItemDisplay[RARE jew LVLREQ<31 ((STAT91=-15 AND (ED>0 OR MINDMG>0 OR MAXDMG>0 OR RES>0)) OR ((ED>0 OR MINDMG>0 OR MAXDMG>0) AND ((STR>3 OR DEX>3) OR RES>0 OR (FRES>15 OR CRES>15 OR LRES>15))))]: %NAME% %GRAY%[LLD]{%GRAY%This jewel is either extremely %ORANGE%Situational%GRAY% or a %WHITE%Beginner %GRAY%Jewel}
+
+//-----------------------------
+// Charms
+//-----------------------------
+// Small
+ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>14 (MAXDMG>1 OR MANA>9 OR STR>0 OR DEX>0 OR RES>2 OR STAT31>10)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>13 (MANA>9 OR RES>3 OR FRES>8 OR LRES>8 OR CRES>8 OR PRES>8)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>12 RES>4]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>9 (MAXDMG>2)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG cm1 ID LVLREQ<31 (FHR>0 OR FRW>0) (RES>0 OR FRES>8 OR LRES>8 OR CRES>8 OR PRES>8)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+
+ItemDisplay[MAG cm1 ID LVLREQ<31 (LIFE>13 OR (LIFE>10 AND (MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)))]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY%Decent LLD}
+ItemDisplay[MAG cm1 ID LVLREQ<31 (FHR>0 OR FRW>0) (RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0)]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY%For LLD}
+ItemDisplay[MAG cm1 ID LVLREQ<31 (LIFE>10 OR (LIFE>8 AND (MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>10)))]: %DOT-50%%NAME% %BLUE%[LLD]{%GRAY%For LLD}
+
+// Large
+ItemDisplay[MAG cm2 ID LVLREQ<31 LIFE>19 (MAXDMG>5 OR RES>7 OR STAT357>1 OR STAT329>1 OR STAT330>1 OR STAT331>1 OR STAT332>1)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG cm2 ID LVLREQ<31 LIFE>19 (MAXDMG>3 OR RES>5 OR STAT357>0 OR STAT329>0 OR STAT330>0 OR STAT331>0 OR STAT332>0)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG cm2 ID LVLREQ<31 LIFE>19 (MAXDMG>2 OR RES>4)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+
+// GG
+ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT357=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT329=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT330=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT331=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT332=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+
+ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT357=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
+ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT329=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
+ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT330=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
+ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT331=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
+ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT332=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
+
+//-----------------------------
+// LLD Shopping
+//-----------------------------
+//Super GG Wands
+ItemDisplay[WAND CLSK2>0 STAT105>10 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD WAND%RED%   ***}
+ItemDisplay[WAND TABSK17>1 STAT105>10 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD WAND%RED%   ***}
+
+//GG Wands
+ItemDisplay[WAND CLSK2>0 STAT105>10 LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
+ItemDisplay[WAND TABSK17>1 STAT105>10 LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
+ItemDisplay[WAND CLSK2>0 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
+ItemDisplay[WAND TABSK17>1 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
+
+//Check staffmod WAND
+ItemDisplay[WAND TABSK17>0 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD WAND%RED%   ***}
+
+//Base WAND + fcr
+ItemDisplay[WAND CLSK2>0 STAT105>0 LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD WAND%RED%   ***}
+ItemDisplay[WAND TABSK17>1 STAT105>0 LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD WAND%RED%   ***}
+
+//Super GG SCEPTER
+ItemDisplay[SCEPTER CLSK3>0 (STAT93>20 OR STAT105>10) (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK24>1 (STAT93>20 OR STAT105>10)  (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK25>1 (STAT93>20 OR STAT105>10)  (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD SCEPTER%RED%   ***}
+
+//GG SCEPTER
+ItemDisplay[SCEPTER CLSK3>0 (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK24>1 (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK25>1 (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD SCEPTER%RED%   ***}
+
+//Check staffmod SCEPTER
+ItemDisplay[SCEPTER CLSK3>0 (SK97>0 OR SK98>2 OR SK107>0 OR SK112>0 OR SK113>2 OR SK117>0 OR SK121>1 OR SK122>2 OR SK123>2 OR SK378>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK24>0 (SK97>0 OR SK98>2 OR SK107>0 OR SK112>0 OR SK113>2 OR SK117>0 OR SK121>1 OR SK122>2 OR SK123>2 OR SK378>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK25>0 (SK97>0 OR SK98>2 OR SK107>0 OR SK112>0 OR SK113>2 OR SK117>0 OR SK121>1 OR SK122>2 OR SK123>2 OR SK378>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+
+//Base SCEPTER + mod
+ItemDisplay[SCEPTER CLSK3>0 (STAT93>0 OR STAT105>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK24>0 (STAT93>0 OR STAT105>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+ItemDisplay[SCEPTER TABSK25>0 (STAT93>0 OR STAT105>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
 
 //-----------------------------MAPS-----------------------------
 // Dclone Items
@@ -189,26 +325,27 @@ ItemDisplay[GOLD<250 CLVL>29]:
 ItemDisplay[GOLD<500 CLVL>39]:
 ItemDisplay[GOLD<1000 CLVL>59]:
 ItemDisplay[GOLD<2000 CLVL>79]:
-ItemDisplay[GOLD<4000 CLVL>84]:
-ItemDisplay[GOLD<5000 CLVL>89]:
+ItemDisplay[GOLD<3000 CLVL>84]:
+ItemDisplay[GOLD<3500 CLVL>89]:
 
 //-----------------------------CONSUMABLES-----------------------------
 // Keys
-ItemDisplay[key]: %GOLD%+%WHITE%Key
+ItemDisplay[key]: %GOLD%+%WHITE%Key{%GRAY% Hiimdave Filter v4.0.7}
 
 // Scrolls and Tomes
 ItemDisplay[isc (DIFF=2 OR CLVL>79)]:												// Hide ID Scrolls in Hell or when 80+
 ItemDisplay[tsc (DIFF=2 OR CLVL>79)]:												// Hide TP Scrolls in Hell or when 80+
 ItemDisplay[isc (DIFF<2 AND CLVL<80)]: %RED%+%WHITE%ID								// Show ID Scrolls pre Hell and under 80
 ItemDisplay[tsc (DIFF<2 AND CLVL<80)]: %BLUE%+%WHITE%TP								// Show ID Scrolls pre Hell and under 80
-ItemDisplay[ibk]: %RED%+%WHITE%ID Tome												// Always show ID Tomes
-ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome												// Always show TP Tomes
+ItemDisplay[ibk]: %RED%+%WHITE%ID Tome%CONTINUE%									// Always show ID Tomes
+ItemDisplay[tbk]: %BLUE%+%WHITE%TP Tome%CONTINUE%									// Always show TP Tomes
+
+// Currently does not work but we can dream...
+ItemDisplay[(ibk OR tbk)]: %NAME%{%GRAY%Tip: Sell to vendor that doesn't sell when empty and buy back}
 
 // Rejuv Pot Settings
-ItemDisplay[rvs OR rvl]: %TAN%Rejuv%PURPLE%+%WHITE%%CONTINUE%
-ItemDisplay[rvs]: %PURPLE%+%WHITE%35% %NAME%
-ItemDisplay[rvl]: %PURPLE%+%WHITE%65% %NAME%
-//ItemDisplay[rvl]: %NAME%%MAP-70%
+ItemDisplay[rvl]: %PURPLE%*        %TAN%Rejuv %WHITE%65%        %PURPLE%*%WHITE%
+ItemDisplay[rvs]: %PURPLE%* %TAN%Rejuv %WHITE%35% %PURPLE%*%WHITE%
 
 // HP Pot Settings
 ItemDisplay[(hp1 OR hp2) (DIFF>0 OR CLVL>79)]: 										// Hide Rank 1 & 2 post Normal or when 80+
@@ -436,136 +573,1146 @@ ItemDisplay[NMAG !RW SOCK>1 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK3
 ItemDisplay[NMAG !RW SOCK=0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %NAME% %ORANGE%* %WHITE%%CONTINUE%
 ItemDisplay[NMAG !RW SOCK>1 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %NAME% %ORANGE%* %WHITE%%CONTINUE%
 
+//-----------------------------UNIQUES OVERRIDES---------------------------------------
+ItemDisplay[STAT360>0]: %NAME% %RED%[C]%CONTINUE%               // Show Corrupted items with [C]
+
+// ==============================================================================
+// Override all Unid names to show Id name
+// ==============================================================================
 // ------------------------------------------------------------------------------
-// LLD Section
+//      [UMCI] Circlets
 // ------------------------------------------------------------------------------
-// Uniqes to look out for
-ItemDisplay[UNI (gwn OR xap OR xui OR kit OR zlb OR tgl OR vgl OR wax OR gma OR cbw OR dr2 OR stu) STAT360=0]: %NAME% [LLD]%CONTINUE%
+ItemDisplay[UNI !ID ci0]: %CONTINUE% UNID Circlet (No Unique for this base)
+ItemDisplay[UNI !ID ci1]: %CONTINUE% UNID Coronet (No Unique for this base)
+ItemDisplay[UNI !ID ci2]: %CONTINUE% UNID Kiras Guardian Tiara
+ItemDisplay[UNI !ID ci3]: %CONTINUE% UNID Griffons Eye Diadem
 
-// Sets to look out for
-ItemDisplay[SET (bwn OR vbt OR lbt) STAT360=0]: %NAME% [LLD]%CONTINUE%
-ItemDisplay[SET amu (STAT360=0 AND STAT89=3)]: %NAME% [LLD]%CONTINUE% // Angelic amu
-ItemDisplay[SET rin (STAT360=0 AND STAT74=6)]: %NAME% [LLD]%CONTINUE% // Angelic rin
-ItemDisplay[SET amu (STAT360=0 AND STAT34>2 AND STAT35>1)]: %NAME% [LLD]%CONTINUE% // Tancreds amu
+// ------------------------------------------------------------------------------
+// [UICS] Unique Class Specific
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//      [UCAM] Amazon
+// ------------------------------------------------------------------------------
+// Amazon Bows
+//      Normal tier Amazon Bows
+ItemDisplay[UNI !ID am1]: %CONTINUE% UNID Stag Bow (No Unique for this base)
+ItemDisplay[UNI !ID am2]: %CONTINUE% UNID Reflex Bow (No Unique for this base)
 
-// Magic Jewels
-ItemDisplay[MAG jew LVLREQ<31 MAXDMG>19]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 ED>19]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 ED>14 MAXDMG>12]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 MINDMG>4 MAXDMG>13]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 ED>12 (STR>4 OR DEX>5)]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 RES>9 (STR>4 OR DEX>5)]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 STAT91=-15 (RES>10 OR ED>14 OR MAXDMG>7 OR MINDMG>6)]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
+//      Exceptional tier Amazon Bows
+ItemDisplay[UNI !ID am6]: %CONTINUE% UNID Ashwood Bow (No Unique for this base)
+ItemDisplay[UNI !ID am7]: %CONTINUE% UNID Lycanders Aim Ceremonial Bow
 
-ItemDisplay[MAG jew LVLREQ<31 MAXDMG>10 (RES>9 OR ED>0 OR MINDMG>3)]: %NAME% %PURPLE%{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 MINDMG>3 (RES>9 OR ED>0 OR MAXDMG>10)]: %NAME% %PURPLE%{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 STR>4 (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)]: %NAME% %PURPLE%{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 DEX>6 (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)]: %NAME% %PURPLE%{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 STAT91=-15 (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)]: %NAME% %PURPLE%{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
+//      Elite tier Amazon Bows
+ItemDisplay[UNI !ID amb]: %CONTINUE% UNID Bloodravens Charge Matriarchal Bow
+ItemDisplay[UNI !ID amc]: %CONTINUE% UNID Grand Matron Bow (No Unique for this base)
 
-ItemDisplay[MAG jew LVLREQ<31 MAXDMG>14]: %NAME% %PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew LVLREQ<31 RES>13]: %NAME%%PURPLE%[LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
+// Amazon Javelins
+//      Normal tier Amazon Javelins
+ItemDisplay[UNI !ID am5]: %CONTINUE% UNID True Silver Maiden Javelin
 
-ItemDisplay[MAG jew ID LVLREQ<31 ((MAXDMG>13 OR STR>3 OR DEX>5 OR ED>14 OR RES>9) AND STAT91=-15)]: %NAME% [LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
-ItemDisplay[MAG jew ID LVLREQ<31 (MAXDMG>13 OR STR>3 OR DEX>5 OR ED>14 OR RES>9)]: %NAME% [LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%All res >9 -Reqs%NL%For GG LLD Combo of 2 or high roll:}
+//      Exceptional tier Amazon Javelins
+ItemDisplay[UNI !ID ama]: %CONTINUE% UNID Titans Revenge Ceremonial Javelin
 
-//Rare Jewels
-ItemDisplay[RARE jew LVLREQ<31 ED>19]:  %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew LVLREQ<31 ED>14 (MAXDMG>12 OR STR>4 OR DEX>5)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew LVLREQ<31 MAXDMG>8 (STR>4 OR DEX>5)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew LVLREQ<31 STR>4 DEX>5]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew LVLREQ<31 MAXDMG>14]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew LVLREQ<31 MINDMG>4 MAXDMG>9]: %%NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew LVLREQ<31 STAT91=-15 (RES>7 OR ED>14 OR MAXDMG>7 OR MINDMG>6 OR STR>4 OR DEX>5)]: %NAME%%PURPLE%%CONTINUE%
+//      Elite tier Amazon Javelins
+ItemDisplay[UNI !ID amf]: %CONTINUE% UNID Thunderstroke Matriarchal Javelin
 
-ItemDisplay[RARE jew ID LVLREQ<31 MAXDMG>8 (STR>3 OR DEX>6 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew ID LVLREQ<31 STR>3 (MAXDMG>8 OR DEX>6 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew ID LVLREQ<31 DEX>6 (MAXDMG>8 OR STR>3 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew ID LVLREQ<31 ED>14 (MAXDMG>8 OR STR>3 OR DEX>6 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew ID LVLREQ<31 RES>0 (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14) OR STAT91=-15)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew ID LVLREQ<31 (FRES>0 OR LRES>0 OR CRES>0 OR PRES>0) (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR STAT91=-15)]: %NAME%%PURPLE%%CONTINUE%
-ItemDisplay[RARE jew ID LVLREQ<31 STAT91=-15 (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR RES>0 OR (FRES>14 OR LRES>14 OR CRES>14 OR PRES>14))]: %NAME%%PURPLE%%CONTINUE%
+// Amazon Spears
+//      Normal tier Amazon Spears
+ItemDisplay[UNI !ID am3]: %CONTINUE% UNID Maiden Spear (No Unique for this base)
+ItemDisplay[UNI !ID am4]: %CONTINUE% UNID Maiden Pike (No Unique for this base)
 
-ItemDisplay[RARE jew ID LVLREQ<31 ((MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0) AND STAT91=-15)]: %NAME% [LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%Any Resists -Reqs%NL%For GG LLD Combo of 3 or High roll 2:} // LLD jewels
-ItemDisplay[RARE jew ID LVLREQ<31 (MAXDMG>8 OR STR>3 OR DEX>6 OR ED>14 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0)]: %NAME% [LLD]{%GRAY%MAX DMG(9+) ED (15%+)%NL%STR(4-6) DEX(7-9)%NL%Any Resists -Reqs%NL%For GG LLD Combo of 3 or High roll 2:} // LLD jewels
+//      Exceptional tier Amazon Spears
+ItemDisplay[UNI !ID am8]: %CONTINUE% UNID Ceremonial Spear (No Unique for this base)
+ItemDisplay[UNI !ID am9]: %CONTINUE% UNID Lycanders Flank Ceremonial Pike
 
-// Charms
+//      Elite tier Amazon Spears
+ItemDisplay[UNI !ID amd]: %CONTINUE% UNID Stoneraven Matriarchal Spear
+ItemDisplay[UNI !ID ame]: %CONTINUE% UNID Matriarchal Pike (No Unique for this base)
 
-// Small
-ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>14 (MAXDMG>1 OR MANA>9 OR STR>0 OR DEX>0 OR RES>2 OR STAT31>10)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>13 (MANA>9 OR RES>3 OR FRES>8 OR LRES>8 OR CRES>8 OR PRES>8)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>12 RES>4]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>9 (MAXDMG>2)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG cm1 ID LVLREQ<31 (FHR>0 OR FRW>0) (RES>0 OR FRES>8 OR LRES>8 OR CRES>8 OR PRES>8)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+// ------------------------------------------------------------------------------
+//      [UCAS] Assassin
+// ------------------------------------------------------------------------------
+// Normal tier Katars
+ItemDisplay[UNI !ID ktr]: %CONTINUE% UNID Katar (No Unique for this base)
+ItemDisplay[UNI !ID wrb]: %CONTINUE% UNID Wrist Blade (No Unique for this base)
+ItemDisplay[UNI !ID axf]: %CONTINUE% UNID Hatchet Hands (No Unique for this base)
+ItemDisplay[UNI !ID ces]: %CONTINUE% UNID Cestus (No Unique for this base)
+ItemDisplay[UNI !ID clw]: %CONTINUE% UNID Claws (No Unique for this base)
+ItemDisplay[UNI !ID btl]: %CONTINUE% UNID Blade Talons (No Unique for this base)
+ItemDisplay[UNI !ID skr]: %CONTINUE% UNID Scissors Katar (No Unique for this base)
 
-ItemDisplay[MAG cm1 ID LVLREQ<31 (LIFE>13 OR (LIFE>10 AND (MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)))]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY%Decent LLD}
-ItemDisplay[MAG cm1 ID LVLREQ<31 (FHR>0 OR FRW>0) (RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0)]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY%For LLD}
-ItemDisplay[MAG cm1 ID LVLREQ<31 (LIFE>10 OR (LIFE>8 AND (MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>10)))]: %DOT-50%%NAME% %BLUE%[LLD]{%GRAY%For LLD}
+// Exceptional tier Katars
+ItemDisplay[UNI !ID 9ar]: %CONTINUE% UNID Mage Slayer Quhab
+ItemDisplay[UNI !ID 9wb]: %CONTINUE% UNID Wrist Spike (No Unique for this base)
+ItemDisplay[UNI !ID 9xf]: %CONTINUE% UNID Fascia (No Unique for this base)
+ItemDisplay[UNI !ID 9cs]: %CONTINUE% UNID Hand Scythe (No Unique for this base)
+ItemDisplay[UNI !ID 9lw]: %CONTINUE% UNID Greater Claws (No Unique for this base)
+ItemDisplay[UNI !ID 9tw]: %CONTINUE% UNID Bartucs Cut-Throat Greater Talons
+ItemDisplay[UNI !ID 9qr]: %CONTINUE% UNID Scissors Quhab (No Unique for this base)
 
-// Large
-ItemDisplay[MAG cm2 ID LVLREQ<31 LIFE>19 (MAXDMG>5 OR RES>7 OR STAT357>1 OR STAT329>1 OR STAT330>1 OR STAT331>1 OR STAT332>1)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG cm2 ID LVLREQ<31 LIFE>19 (MAXDMG>3 OR RES>5 OR STAT357>0 OR STAT329>0 OR STAT330>0 OR STAT331>0 OR STAT332>0)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG cm2 ID LVLREQ<31 LIFE>19 (MAXDMG>2 OR RES>4)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+// Elite tier Katars
+ItemDisplay[UNI !ID 7ar]: %CONTINUE% UNID Suwayyah (No Unique for this base)
+ItemDisplay[UNI !ID 7wb]: %CONTINUE% UNID Jadetalon Wrist Sword
+ItemDisplay[UNI !ID 7xf]: %CONTINUE% UNID War Fist (No Unique for this base)
+ItemDisplay[UNI !ID 7cs]: %CONTINUE% UNID Shadowkiller Battle Cestus
+ItemDisplay[UNI !ID 7lw]: %CONTINUE% UNID Firelizards Talons Feral Claws
+ItemDisplay[UNI !ID 7tw]: %CONTINUE% UNID Runic Talons (No Unique for this base)
+ItemDisplay[UNI !ID 7qr]: %CONTINUE% UNID Aidans Scar Scissors Suwayyah
 
-// GG
-ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT357=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT329=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT330=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT331=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
-ItemDisplay[MAG (cm1 OR cm2 OR cm3) ID LVLREQ<31 STAT332=2 (FHR>0 OR FRW>0 OR MAXDMG>0 OR MANA>0 OR STR>0 OR DEX>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR STAT31>15)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+// ------------------------------------------------------------------------------
+//      [UCBA] Barbarian
+// ------------------------------------------------------------------------------
+// Normal tier Barbarian Helms
+ItemDisplay[UNI !ID ba1]: %CONTINUE% UNID Jawbone Cap (No Unique for this base)
+ItemDisplay[UNI !ID ba2]: %CONTINUE% UNID Fanged Helm (No Unique for this base)
+ItemDisplay[UNI !ID ba3]: %CONTINUE% UNID Horned Helm (No Unique for this base)
+ItemDisplay[UNI !ID ba4]: %CONTINUE% UNID Assault Helmet (No Unique for this base)
+ItemDisplay[UNI !ID ba5]: %CONTINUE% UNID Avenger Guard (No Unique for this base)
 
-ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT357=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
-ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT329=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
-ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT330=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
-ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT331=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
-ItemDisplay[MAG ID (cm1 OR cm2 OR cm3) LVLREQ<31 STAT332=2]: %DOT-50%%NAME% %ORANGE%[LLD]{%GRAY% LLD}
+// Exceptional tier Barbarian Helms
+ItemDisplay[UNI !ID ba6]: %CONTINUE% UNID Cyclopean Roar Jawbone Visor
+ItemDisplay[UNI !ID ba7]: %CONTINUE% UNID Lion Helm (No Unique for this base)
+ItemDisplay[UNI !ID ba8]: %CONTINUE% UNID Rage Mask (No Unique for this base)
+ItemDisplay[UNI !ID ba9]: %CONTINUE% UNID Savage Helmet (No Unique for this base)
+ItemDisplay[UNI !ID baa]: %CONTINUE% UNID Arreats Face Slayer Guard
 
-// LLD Shopping
-//Super GG Wands
-ItemDisplay[WAND CLSK2>0 STAT105>10 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD WAND%RED%   ***}
-ItemDisplay[WAND TABSK17>1 STAT105>10 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD WAND%RED%   ***}
+// Elite tier Barbarian Helms
+ItemDisplay[UNI !ID bab]: %CONTINUE% UNID Carnage Helm (No Unique for this base)
+ItemDisplay[UNI !ID bac]: %CONTINUE% UNID Wolfhowl Fury Visor
+ItemDisplay[UNI !ID bad]: %CONTINUE% UNID Demonhorns Edge Destroyer Helm
+ItemDisplay[UNI !ID bae]: %CONTINUE% UNID Halaberds Reign Conqueror Crown
+ItemDisplay[UNI !ID baf]: %CONTINUE% UNID Guardian Crown (No Unique for this base)
 
-//GG Wands
-ItemDisplay[WAND CLSK2>0 STAT105>10 LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
-ItemDisplay[WAND TABSK17>1 STAT105>10 LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
-ItemDisplay[WAND CLSK2>0 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
-ItemDisplay[WAND TABSK17>1 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD WAND%RED%   ***}
+// ------------------------------------------------------------------------------
+//      [UCDR] Druid
+// ------------------------------------------------------------------------------
+// Normal tier Pelts
+ItemDisplay[UNI !ID dr1]: %CONTINUE% UNID Wolf Head (No Unique for this base)
+ItemDisplay[UNI !ID dr2]: %CONTINUE% UNID Quetzalcoatl Hawk Helm
+ItemDisplay[UNI !ID dr3]: %CONTINUE% UNID Antlers (No Unique for this base)
+ItemDisplay[UNI !ID dr4]: %CONTINUE% UNID Falcon Mask (No Unique for this base)
+ItemDisplay[UNI !ID dr5]: %CONTINUE% UNID Spirit Mask (No Unique for this base)
 
-//Check staffmod WAND
-ItemDisplay[WAND TABSK17>0 (SK68>0 OR SK67>0 OR SK75>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK88>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK367>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD WAND%RED%   ***}
+// Exceptional tier Pelts
+ItemDisplay[UNI !ID dr6]: %CONTINUE% UNID Alpha Helm (No Unique for this base)
+ItemDisplay[UNI !ID dr7]: %CONTINUE% UNID Griffon Headdress (No Unique for this base)
+ItemDisplay[UNI !ID dr8]: %CONTINUE% UNID Hunters Guise (No Unique for this base)
+ItemDisplay[UNI !ID dr9]: %CONTINUE% UNID Sacred Feathers (No Unique for this base)
+ItemDisplay[UNI !ID dra]: %CONTINUE% UNID Jalals Mane Totemic Mask
 
-//Base WAND + fcr
-ItemDisplay[WAND CLSK2>0 STAT105>0 LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD WAND%RED%   ***}
-ItemDisplay[WAND TABSK17>1 STAT105>0 LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD WAND%RED%   ***}
+// Elite tier Pelts
+ItemDisplay[UNI !ID drb]: %CONTINUE% UNID Cerebus Bite Blood Spirit
+ItemDisplay[UNI !ID drc]: %CONTINUE% UNID Sun Spirit (No Unique for this base)
+ItemDisplay[UNI !ID drd]: %CONTINUE% UNID Spirit Keeper Earth Spirit
+ItemDisplay[UNI !ID dre]: %CONTINUE% UNID Ravenlore Sky Spirit
+ItemDisplay[UNI !ID drf]: %CONTINUE% UNID Dream Spirit (No Unique for this base)
 
-//Super GG SCEPTER
-ItemDisplay[SCEPTER CLSK3>0 (STAT93>20 OR STAT105>10) (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK24>1 (STAT93>20 OR STAT105>10)  (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK25>1 (STAT93>20 OR STAT105>10)  (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%* * *   %NAME%   * * *{%RED%***   %PURPLE%OMG GG LLD SCEPTER%RED%   ***}
+// ------------------------------------------------------------------------------
+//      [UCNE] Necromancer
+// ------------------------------------------------------------------------------
+// Normal tier Heads
+ItemDisplay[UNI !ID ne1]: %CONTINUE% UNID Preserved Head (No Unique for this base)
+ItemDisplay[UNI !ID ne2]: %CONTINUE% UNID Zombie Head (No Unique for this base)
+ItemDisplay[UNI !ID ne3]: %CONTINUE% UNID Unraveller Head (No Unique for this base)
+ItemDisplay[UNI !ID ne4]: %CONTINUE% UNID Gargoyle HEad (No Unique for this base)
+ItemDisplay[UNI !ID ne5]: %CONTINUE% UNID Demon Head (No Unique for this base)
 
-//GG SCEPTER
-ItemDisplay[SCEPTER CLSK3>0 (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK24>1 (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK25>1 (SK97>2 OR SK107>2 OR SK112>2 OR SK117>2 OR SK121>2 OR SK378>2) LVLREQ<31]: %PURPLE%***   %NAME%   ***{%RED%***   %PURPLE%GG LLD SCEPTER%RED%   ***}
+// Exceptional tier Heads
+ItemDisplay[UNI !ID ne6]: %CONTINUE% UNID Kalans Legacy Mummified Trophy
+ItemDisplay[UNI !ID ne7]: %CONTINUE% UNID Fetish Trophy (No Unique for this base)
+ItemDisplay[UNI !ID ne8]: %CONTINUE% UNID Sexton Trophy (No Unique for this base)
+ItemDisplay[UNI !ID ne9]: %CONTINUE% UNID Cantor Trophy (No Unique for this base)
+ItemDisplay[UNI !ID nea]: %CONTINUE% UNID Homunculus Hierophant Trophy
 
-//Check staffmod SCEPTER
-ItemDisplay[SCEPTER CLSK3>0 (SK97>0 OR SK98>2 OR SK107>0 OR SK112>0 OR SK113>2 OR SK117>0 OR SK121>1 OR SK122>2 OR SK123>2 OR SK378>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK24>0 (SK97>0 OR SK98>2 OR SK107>0 OR SK112>0 OR SK113>2 OR SK117>0 OR SK121>1 OR SK122>2 OR SK123>2 OR SK378>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK25>0 (SK97>0 OR SK98>2 OR SK107>0 OR SK112>0 OR SK113>2 OR SK117>0 OR SK121>1 OR SK122>2 OR SK123>2 OR SK378>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+// Elite tier Heads
+ItemDisplay[UNI !ID neb]: %CONTINUE% UNID Minion Skull (No Unique for this base)
+ItemDisplay[UNI !ID neg]: %CONTINUE% UNID Hellspawn Skull (No Unique for this base)
+ItemDisplay[UNI !ID ned]: %CONTINUE% UNID Overseer Skull (No Unique for this base)
+ItemDisplay[UNI !ID nee]: %CONTINUE% UNID Boneflame Succubus Skull
+ItemDisplay[UNI !ID nef]: %CONTINUE% UNID Darkforce Spawn Bloodlord Skull
 
-//Base SCEPTER + mod
-ItemDisplay[SCEPTER CLSK3>0 (STAT93>0 OR STAT105>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK24>0 (STAT93>0 OR STAT105>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
-ItemDisplay[SCEPTER TABSK25>0 (STAT93>0 OR STAT105>0) LVLREQ<31]: %GREEN%***   %NAME%   ***{%RED%***   %GREEN%LLD SCEPTER%RED%   ***}
+// ------------------------------------------------------------------------------
+//      [UCPA] Paladin
+// ------------------------------------------------------------------------------
+// Normal tier Paladin Shields
+ItemDisplay[UNI !ID pa1]: %CONTINUE% UNID Targe (No Unique for this base)
+ItemDisplay[UNI !ID pa2]: %CONTINUE% UNID Rondache (No Unique for this base)
+ItemDisplay[UNI !ID pa3]: %CONTINUE% UNID Sankekurs Fall Heraldic Shield
+ItemDisplay[UNI !ID pa4]: %CONTINUE% UNID Aerin Shield (No Unique for this base)
+ItemDisplay[UNI !ID pa5]: %CONTINUE% UNID Crown Shield (No Unique for this base)
 
-//--------------------------------------------------------------
-// BEYOND THIS POINT IS KYZARD'S BASE FILTER
-//--------------------------------------------------------------
+// Exceptional tier Paladin Shields
+ItemDisplay[UNI !ID pa6]: %CONTINUE% UNID Akaran Targe (No Unique for this base)
+ItemDisplay[UNI !ID pa7]: %CONTINUE% UNID Akaran Rondache (No Unique for this base)
+ItemDisplay[UNI !ID pa8]: %CONTINUE% UNID Protector Shield (No Unique for this base)
+ItemDisplay[UNI !ID pa9]: %CONTINUE% UNID Herald of Zakarum Gilded Shield
+ItemDisplay[UNI !ID paa]: %CONTINUE% UNID Royal Shield (No Unique for this base)
+
+// Elite tier Paladin Shields
+ItemDisplay[UNI !ID pab]: %CONTINUE% UNID Sacred Targe (No Unique for this base)
+ItemDisplay[UNI !ID pac]: %CONTINUE% UNID Alma Negra Sacred Rondache
+ItemDisplay[UNI !ID pad]: %CONTINUE% UNID Kurast Shield (No Unique for this base)
+ItemDisplay[UNI !ID pae]: %CONTINUE% UNID Dragonscale Zakarum Shield
+ItemDisplay[UNI !ID paf]: %CONTINUE% UNID Vortex Shield (No Unique for this base)
+
+// ------------------------------------------------------------------------------
+//      [UCSO] Sorceress
+// ------------------------------------------------------------------------------
+// Normal tier Orbs
+ItemDisplay[UNI !ID ob1]: %CONTINUE% UNID Eagle Orb (No Unique for this base)
+ItemDisplay[UNI !ID ob2]: %CONTINUE% UNID Sacred Globe (No Unique for this base)
+ItemDisplay[UNI !ID ob3]: %CONTINUE% UNID Smoked Sphere (No Unique for this base)
+ItemDisplay[UNI !ID ob4]: %CONTINUE% UNID Clasped Orb (No Unique for this base)
+ItemDisplay[UNI !ID ob5]: %CONTINUE% UNID Jareds Stone (No Unique for this base)
+
+// Exceptional tier Orbs
+ItemDisplay[UNI !ID ob6]: %CONTINUE% UNID Tempest Glowing Orb
+ItemDisplay[UNI !ID ob7]: %CONTINUE% UNID Crystalline Globe (No Unique for this base)
+ItemDisplay[UNI !ID ob8]: %CONTINUE% UNID Cloudy Sphere (No Unique for this base)
+ItemDisplay[UNI !ID ob9]: %CONTINUE% UNID Sparkling Ball (No Unique for this base)
+ItemDisplay[UNI !ID oba]: %CONTINUE% UNID The Oculus Swirling Crystal
+
+// Elite tier Orbs
+ItemDisplay[UNI !ID obb]: %CONTINUE% UNID Heavenly Stone (No Unique for this base)
+ItemDisplay[UNI !ID obc]: %CONTINUE% UNID Eschutas Temper Eldritch Orb
+ItemDisplay[UNI !ID obd]: %CONTINUE% UNID Demon Heart (No Unique for this base)
+ItemDisplay[UNI !ID obe]: %CONTINUE% UNID Vortex Orb (No Unique for this base)
+ItemDisplay[UNI !ID obf]: %CONTINUE% UNID Deaths Fathom Dimensional Shard
+
+// ------------------------------------------------------------------------------
+// [UIUA] Unique Armor
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//      [UAAR] Armor
+// ------------------------------------------------------------------------------
+// Normal tier Armor
+ItemDisplay[UNI !ID qui]: %CONTINUE% UNID Greyform Quilted Armor
+ItemDisplay[UNI !ID lea]: %CONTINUE% UNID Blinkbats Form Leather Armor
+ItemDisplay[UNI !ID hla]: %CONTINUE% UNID The Centurion Hard Leather Armor
+ItemDisplay[UNI !ID stu]: %CONTINUE% UNID Twitchthroe Studded Leather
+ItemDisplay[UNI !ID rng]: %CONTINUE% UNID Darkglow Ring Mail
+ItemDisplay[UNI !ID scl]: %CONTINUE% UNID Hawkmail Scale Mail
+ItemDisplay[UNI !ID brs]: %CONTINUE% UNID Venom Ward Breast Plate
+ItemDisplay[UNI !ID chn]: %CONTINUE% UNID Sparking Mail Chain Mail
+ItemDisplay[UNI !ID spl]: %CONTINUE% UNID Iceblink Splint Mail
+ItemDisplay[UNI !ID ltp]: %CONTINUE% UNID Heavenly Garb Light Plate
+ItemDisplay[UNI !ID fld]: %CONTINUE% UNID Rockfleece Field Plate
+ItemDisplay[UNI !ID plt]: %CONTINUE% UNID Boneflesh Plate Mail
+ItemDisplay[UNI !ID gth]: %CONTINUE% UNID Rattlecage Gothic Plate
+ItemDisplay[UNI !ID ful]: %CONTINUE% UNID Goldskin Full Plate Mail
+ItemDisplay[UNI !ID aar]: %CONTINUE% UNID Silks of the Victor Ancient Armor
+
+// Exceptional tier Armor
+ItemDisplay[UNI !ID xui]: %CONTINUE% UNID The Spirit Shroud Ghost Armor
+ItemDisplay[UNI !ID xea]: %CONTINUE% UNID Skin of the Vipermagi Serpentskin Armor
+ItemDisplay[UNI !ID xla]: %CONTINUE% UNID Skin of the Flayed One Demonhide Armor
+ItemDisplay[UNI !ID xtu]: %CONTINUE% UNID Iron Pelt Trellised Armor
+ItemDisplay[UNI !ID xng]: %CONTINUE% UNID Spirit Forge Linked Mail
+ItemDisplay[UNI !ID xcl]: %CONTINUE% UNID Crow Caw Tigulated Mail
+ItemDisplay[UNI !ID xrs]: %CONTINUE% UNID Duriels Shell Cuirass
+ItemDisplay[UNI !ID xhn]: %CONTINUE% UNID Shaftstop Mesh Armor
+ItemDisplay[UNI !ID xpl]: %CONTINUE% UNID Skullders Ire Russet Armor
+ItemDisplay[UNI !ID xtp]: %CONTINUE% UNID Que-Hegans Wisdom Mage Plate
+ItemDisplay[UNI !ID xld]: %CONTINUE% UNID Toothrow Sharktooth Armor
+ItemDisplay[UNI !ID xlt]: %CONTINUE% UNID Guardian Angel Templar Coat
+ItemDisplay[UNI !ID xth]: %CONTINUE% UNID Atmas Wail Embossed Plate
+ItemDisplay[UNI !ID xul]: %CONTINUE% UNID Black Hades Chaos Armor
+ItemDisplay[UNI !ID xar]: %CONTINUE% UNID Corpsemourn Ornate Plate
+
+// Elite tier Armor
+ItemDisplay[UNI !ID uui]: %CONTINUE% UNID Ormus Robes Dusk Shroud
+ItemDisplay[UNI !ID uea]: %CONTINUE% UNID Wyrmhide (No Unique for this base)
+ItemDisplay[UNI !ID ula]: %CONTINUE% UNID Scarab Husk (No Unique for this base)
+ItemDisplay[UNI !ID utu]: %CONTINUE% UNID The Gladiators Bane Wire Fleece
+ItemDisplay[UNI !ID ung]: %CONTINUE% UNID Diamond Mail (No Unique for this base)
+ItemDisplay[UNI !ID ucl]: %CONTINUE% UNID Loricated Mail (No Unique for this base)
+ItemDisplay[UNI !ID urs]: %CONTINUE% UNID Great Hauberk (No Unique for this base)
+ItemDisplay[UNI !ID uhn]: %CONTINUE% UNID Boneweave (No Unique for this base)
+ItemDisplay[UNI !ID upl]: %CONTINUE% UNID Arkaines Valor Balrog Skin
+ItemDisplay[UNI !ID utp]: %CONTINUE% UNID Archon Plate (No Unique for this base)
+ItemDisplay[UNI !ID uld]: %CONTINUE% UNID Leviathan Kraken Shell
+ItemDisplay[UNI !ID ult]: %CONTINUE% UNID Hellforge Plate (No Unique for this base)
+ItemDisplay[UNI !ID uth]: %CONTINUE% UNID Dark Abyss Lacquered Plate
+ItemDisplay[UNI !ID uul]: %CONTINUE% UNID Steel Carapace Shadow Plate
+ItemDisplay[UNI !ID uar]: %CONTINUE% UNID Templars Might or Tyraels Might Sacred Armor
+
+// ------------------------------------------------------------------------------
+//      [UABE] Belts
+// ------------------------------------------------------------------------------
+// Normal tier Belts
+ItemDisplay[UNI !ID lbl]: %CONTINUE% UNID Lenymo Sash
+ItemDisplay[UNI !ID vbl]: %CONTINUE% UNID Snakecord Light Belt
+ItemDisplay[UNI !ID mbl]: %CONTINUE% UNID Nightsmoke Belt
+ItemDisplay[UNI !ID tbl]: %CONTINUE% UNID Goldwrap Heavy Belt
+ItemDisplay[UNI !ID hbl]: %CONTINUE% UNID Bladebuckle Plated Belt
+
+// Exceptional tier Belts
+ItemDisplay[UNI !ID zlb]: %CONTINUE% UNID String of Ears Demonhide Sash
+ItemDisplay[UNI !ID zvb]: %CONTINUE% UNID Razortail Sharkskin Belt
+ItemDisplay[UNI !ID zmb]: %CONTINUE% UNID Glooms Trap Mesh Belt
+ItemDisplay[UNI !ID ztb]: %CONTINUE% UNID Snowclash Battle Belt
+ItemDisplay[UNI !ID zhb]: %CONTINUE% UNID Thundergods Vigor War Belt
+
+// Elite tier Belts
+ItemDisplay[UNI !ID ulc]: %CONTINUE% UNID Arachnid Mesh Spiderweb Sash
+ItemDisplay[UNI !ID uvc]: %CONTINUE% UNID Nosferatus Coil Vampirefang Belt
+ItemDisplay[UNI !ID umc]: %CONTINUE% UNID Verdungos Hearty Cord Mithril Coil
+ItemDisplay[UNI !ID utc]: %CONTINUE% UNID Troll Belt (No Unique for this base)
+ItemDisplay[UNI !ID uhc]: %CONTINUE% UNID Colossus Girdle (No Unique for this base)
+
+// ------------------------------------------------------------------------------
+//      [UABO] Boots
+// ------------------------------------------------------------------------------
+// Normal tier Boots
+ItemDisplay[UNI !ID lbt]: %CONTINUE% UNID Hotspur Boots
+ItemDisplay[UNI !ID vbt]: %CONTINUE% UNID Gorefoot Heavy Boots
+ItemDisplay[UNI !ID mbt]: %CONTINUE% UNID Treads of Cthon Chain Boots
+ItemDisplay[UNI !ID tbt]: %CONTINUE% UNID Goblin Toe Light Plated Boots
+ItemDisplay[UNI !ID hbt]: %CONTINUE% UNID Tearhaunch Greaves
+
+// Exceptional tier Boots
+ItemDisplay[UNI !ID xlb]: %CONTINUE% UNID Infernostride Demonhide Boots
+ItemDisplay[UNI !ID xvb]: %CONTINUE% UNID Waterwalk Sharkskin Boots
+ItemDisplay[UNI !ID xmb]: %CONTINUE% UNID Silkweave Mesh Boots
+ItemDisplay[UNI !ID xtb]: %CONTINUE% UNID War Traveler Battle Boots
+ItemDisplay[UNI !ID xhb]: %CONTINUE% UNID Gore Rider War Boots
+
+// Elite tier Boots
+ItemDisplay[UNI !ID ulb]: %CONTINUE% UNID Wyrmhide Boots (No Unique for this base)
+ItemDisplay[UNI !ID uvb]: %CONTINUE% UNID Sandstorm Trek Scarabshell Boots
+ItemDisplay[UNI !ID umb]: %CONTINUE% UNID Marrowwalk Boneweave Boots
+ItemDisplay[UNI !ID utb]: %CONTINUE% UNID Itheraels Path Mirrored Boots
+ItemDisplay[UNI !ID uhb]: %CONTINUE% UNID Shadow Dancer Myrmidon Greaves
+
+// ------------------------------------------------------------------------------
+//      [UAGL] Gloves
+// ------------------------------------------------------------------------------
+// Normal tier Gloves
+ItemDisplay[UNI !ID lgl]: %CONTINUE% UNID The Hand of Broc Leather Gloves
+ItemDisplay[UNI !ID vgl]: %CONTINUE% UNID Bloodfist Heavy Gloves
+ItemDisplay[UNI !ID mgl]: %CONTINUE% UNID Chance Guards Chain Gloves
+ItemDisplay[UNI !ID tgl]: %CONTINUE% UNID Magefist Light Gauntlets
+ItemDisplay[UNI !ID hgl]: %CONTINUE% UNID Frostburn Gauntlets
+
+// Exceptional tier Gloves
+ItemDisplay[UNI !ID xlg]: %CONTINUE% UNID Venom Grip Demonhide Gloves
+ItemDisplay[UNI !ID xvg]: %CONTINUE% UNID Gravepalm Sharkskin Gloves
+ItemDisplay[UNI !ID xmg]: %CONTINUE% UNID Ghoulhide Heavy Bracers
+ItemDisplay[UNI !ID xtg]: %CONTINUE% UNID Lava Gout Battle Gauntlets
+ItemDisplay[UNI !ID xhg]: %CONTINUE% UNID Hellmouth War Gauntlets
+
+// Elite tier Gloves
+ItemDisplay[UNI !ID ulg]: %CONTINUE% UNID Bramble Mitts (No Unique for this base)
+ItemDisplay[UNI !ID uvg]: %CONTINUE% UNID Draculs Grasp Vampirebone Gloves
+ItemDisplay[UNI !ID umg]: %CONTINUE% UNID Soul Drainer Vambraces
+ItemDisplay[UNI !ID utg]: %CONTINUE% UNID Crusader Gauntlets (No Unique for this base)
+ItemDisplay[UNI !ID uhg]: %CONTINUE% UNID Steelrend Ogre Gauntlets
+
+// ------------------------------------------------------------------------------
+//      [UAHE] Helms
+// ------------------------------------------------------------------------------
+// Normal tier Helms
+ItemDisplay[UNI !ID cap]: %CONTINUE% UNID Biggins Bonnet Cap
+ItemDisplay[UNI !ID skp]: %CONTINUE% UNID Tarnhelm Skull Cap
+ItemDisplay[UNI !ID hlm]: %CONTINUE% UNID Coif of Glory Helm
+ItemDisplay[UNI !ID fhl]: %CONTINUE% UNID Duskdeep Full Helm
+ItemDisplay[UNI !ID ghm]: %CONTINUE% UNID Howltusk Great Helm
+ItemDisplay[UNI !ID msk]: %CONTINUE% UNID The Face of Horror Mask
+ItemDisplay[UNI !ID crn]: %CONTINUE% UNID Undead Crown Crown
+ItemDisplay[UNI !ID bhm]: %CONTINUE% UNID Wormskull Bone Helm
+
+// Exceptional tier Helms
+ItemDisplay[UNI !ID xap]: %CONTINUE% UNID Peasant Crown War Hat
+ItemDisplay[UNI !ID xkp]: %CONTINUE% UNID Rockstopper Sallet
+ItemDisplay[UNI !ID xlm]: %CONTINUE% UNID Stealskull Casque
+ItemDisplay[UNI !ID xhl]: %CONTINUE% UNID Darksight Helm Basinet
+ItemDisplay[UNI !ID xhm]: %CONTINUE% UNID Valkyrie Wing Winged Helm
+ItemDisplay[UNI !ID xsk]: %CONTINUE% UNID Blackhorns Face Death Mask
+ItemDisplay[UNI !ID xrn]: %CONTINUE% UNID Crown of Thieves Grand Crown
+ItemDisplay[UNI !ID xh9]: %CONTINUE% UNID Vampire Gaze Grim Helm
+
+// Elite tier Helms
+ItemDisplay[UNI !ID uap]: %CONTINUE% UNID Harlequin Crest Shako
+ItemDisplay[UNI !ID ukp]: %CONTINUE% UNID Hydraskull (No Unique for this base)
+ItemDisplay[UNI !ID ulm]: %CONTINUE% UNID Steel Shade Armet
+ItemDisplay[UNI !ID uhl]: %CONTINUE% UNID Overlords Helm Giant Conch
+ItemDisplay[UNI !ID uhm]: %CONTINUE% UNID Veil of Steel or Nightwings Veil Spired Helm
+ItemDisplay[UNI !ID usk]: %CONTINUE% UNID Andariels Visage Demonhead
+ItemDisplay[UNI !ID urn]: %CONTINUE% UNID Crown of Ages Corona
+ItemDisplay[UNI !ID uh9]: %CONTINUE% UNID Giant Skull Bone Visage
+
+// ------------------------------------------------------------------------------
+//      [UASH] Shields
+// ------------------------------------------------------------------------------
+// Normal tier Shields
+ItemDisplay[UNI !ID buc]: %CONTINUE% UNID Pelta Lunata Buckler
+ItemDisplay[UNI !ID sml]: %CONTINUE% UNID Umbral Disk Small Shield
+ItemDisplay[UNI !ID lrg]: %CONTINUE% UNID Stormguild Large Shield
+ItemDisplay[UNI !ID kit]: %CONTINUE% UNID Steelclash Kite Shield
+ItemDisplay[UNI !ID spk]: %CONTINUE% UNID Swordback Hold Spiked Shield
+ItemDisplay[UNI !ID tow]: %CONTINUE% UNID Bverrit Keep Tower Shield
+ItemDisplay[UNI !ID bsh]: %CONTINUE% UNID Wall of the Eyeless Bone Shield
+ItemDisplay[UNI !ID gts]: %CONTINUE% UNID The Ward Gothic Shield
+
+// Exceptional tier Shields
+ItemDisplay[UNI !ID xuc]: %CONTINUE% UNID Visceratuant Defender Defender
+ItemDisplay[UNI !ID xml]: %CONTINUE% UNID Mosers Blessed Circle Round Shield
+ItemDisplay[UNI !ID xrg]: %CONTINUE% UNID Stormchaser Scutum
+ItemDisplay[UNI !ID xpk]: %CONTINUE% UNID Lance Guard Barbed Shield
+ItemDisplay[UNI !ID xit]: %CONTINUE% UNID Tiamats Rebuke Dragon Shield
+ItemDisplay[UNI !ID xsh]: %CONTINUE% UNID Lidless Wall Grim Shield
+ItemDisplay[UNI !ID xow]: %CONTINUE% UNID Gerkes Sanctuary Pavise
+ItemDisplay[UNI !ID xts]: %CONTINUE% UNID Radaments Sphere Ancient Shield
+
+// Elite tier Shields
+ItemDisplay[UNI !ID uuc]: %CONTINUE% UNID Heater (No Unique for this base)
+ItemDisplay[UNI !ID uml]: %CONTINUE% UNID Blackoak Shield Luna
+ItemDisplay[UNI !ID urg]: %CONTINUE% UNID Hyperion (No Unique for this base)
+ItemDisplay[UNI !ID uit]: %CONTINUE% UNID Stormshield Monarch
+ItemDisplay[UNI !ID upk]: %CONTINUE% UNID Spike Thorn Blade Barrier
+ItemDisplay[UNI !ID uow]: %CONTINUE% UNID Medusas Gaze Aegis
+ItemDisplay[UNI !ID ush]: %CONTINUE% UNID Head Hunters Glory Troll Nest
+ItemDisplay[UNI !ID uts]: %CONTINUE% UNID Spirit Ward Ward
+
+// ------------------------------------------------------------------------------
+// [UIUW] Unique Weapons
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//      [UWAX] Axes
+// ------------------------------------------------------------------------------
+// Normal tier Axes
+//      1-Handed Axes
+ItemDisplay[UNI !ID hax]: %CONTINUE% UNID The Gnasher Hand Axe
+ItemDisplay[UNI !ID axe]: %CONTINUE% UNID Deathspade Axe
+ItemDisplay[UNI !ID 2ax]: %CONTINUE% UNID Bladebone Double Axe
+ItemDisplay[UNI !ID mpi]: %CONTINUE% UNID Skull Splitter Military Pick
+ItemDisplay[UNI !ID wax]: %CONTINUE% UNID Rakescar War Axe
+
+//      2-Handed Axes
+ItemDisplay[UNI !ID lax]: %CONTINUE% UNID Axe of Fechmar Large Axe
+ItemDisplay[UNI !ID bax]: %CONTINUE% UNID Goreshovel Broad Axe
+ItemDisplay[UNI !ID btx]: %CONTINUE% UNID The Chieftain Battle Axe
+ItemDisplay[UNI !ID gax]: %CONTINUE% UNID Brainhew Great Axe
+ItemDisplay[UNI !ID gix]: %CONTINUE% UNID Humongous Giant Axe
+
+// Exceptional tier Axes
+//      1-Handed Axes
+ItemDisplay[UNI !ID 9ha]: %CONTINUE% UNID Coldkill Hatchet
+ItemDisplay[UNI !ID 9ax]: %CONTINUE% UNID Butchers Pupil Cleaver
+ItemDisplay[UNI !ID 92a]: %CONTINUE% UNID Islestrike Twin Axe
+ItemDisplay[UNI !ID 9mp]: %CONTINUE% UNID Pompeiis Wrath Crowbill
+ItemDisplay[UNI !ID 9wa]: %CONTINUE% UNID Guardian Naga Naga
+
+//      2-Handed Axes
+ItemDisplay[UNI !ID 9la]: %CONTINUE% UNID Warlords Trust Military Axe
+ItemDisplay[UNI !ID 9ba]: %CONTINUE% UNID Spellsteel Bearded Axe
+ItemDisplay[UNI !ID 9bt]: %CONTINUE% UNID Stormrider Tabar
+ItemDisplay[UNI !ID 9ga]: %CONTINUE% UNID Boneslayer Blade Gothic Axe
+ItemDisplay[UNI !ID 9gi]: %CONTINUE% UNID The Minotaur Ancient Axe
+
+// Elite tier Axes
+//      1-Handed Axes
+ItemDisplay[UNI !ID 7ha]: %CONTINUE% UNID Razors Edge Tomahawk
+ItemDisplay[UNI !ID 7ax]: %CONTINUE% UNID Small Crescent (No Unique for this base)
+ItemDisplay[UNI !ID 72a]: %CONTINUE% UNID Rune Master Ettin Axe
+ItemDisplay[UNI !ID 7mp]: %CONTINUE% UNID Cranebeak War Spike
+ItemDisplay[UNI !ID 7wa]: %CONTINUE% UNID Death Cleaver Berserker Axe
+
+//      2-Handed Axes
+ItemDisplay[UNI !ID 7la]: %CONTINUE% UNID Feral Axe (No Unique for this base)
+ItemDisplay[UNI !ID 7ba]: %CONTINUE% UNID Ethereal Edge Silver-Edged Axe
+ItemDisplay[UNI !ID 7bt]: %CONTINUE% UNID Hellslayer Decapitator
+ItemDisplay[UNI !ID 7ga]: %CONTINUE% UNID Messerschmidts Reaver Champion Axe
+ItemDisplay[UNI !ID 7gi]: %CONTINUE% UNID Executioners Justice Glorious Axe
+
+// ------------------------------------------------------------------------------
+//      [UWBO] Bows
+// ------------------------------------------------------------------------------
+// Normal tier Bows
+ItemDisplay[UNI !ID sbw]: %CONTINUE% UNID Pluckeye Short Bow
+ItemDisplay[UNI !ID hbw]: %CONTINUE% UNID Witherstring Hunters Bow
+ItemDisplay[UNI !ID lbw]: %CONTINUE% UNID Raven Claw Long Bow
+ItemDisplay[UNI !ID cbw]: %CONTINUE% UNID Rogues Bow Composite Bow
+ItemDisplay[UNI !ID sbb]: %CONTINUE% UNID Stormstrike Short Battle Bow
+ItemDisplay[UNI !ID lbb]: %CONTINUE% UNID Wizendraw Long Battle Bow
+ItemDisplay[UNI !ID swb]: %CONTINUE% UNID Hellclap Short War Bow
+ItemDisplay[UNI !ID lwb]: %CONTINUE% UNID Blastbark Long War Bow
+
+// Exceptional tier Bows
+ItemDisplay[UNI !ID 8sb]: %CONTINUE% UNID Skystrike Edge Bow
+ItemDisplay[UNI !ID 8hb]: %CONTINUE% UNID Riphook Razor Bow
+ItemDisplay[UNI !ID 8lb]: %CONTINUE% UNID Kuko Shakaku Cedar Bow
+ItemDisplay[UNI !ID 8cb]: %CONTINUE% UNID Endlesshail Double Bow
+ItemDisplay[UNI !ID 8s8]: %CONTINUE% UNID Witchwild String Short Siege Bow
+ItemDisplay[UNI !ID 8l8]: %CONTINUE% UNID Cliffkiller Large Siege Bow
+ItemDisplay[UNI !ID 8sw]: %CONTINUE% UNID Magewrath Rune Bow
+ItemDisplay[UNI !ID 8lw]: %CONTINUE% UNID Goldstrike Arch Gothic Bow
+
+// Elite tier Bows
+ItemDisplay[UNI !ID 6sb]: %CONTINUE% UNID Spider Bow (No Unique for this base)
+ItemDisplay[UNI !ID 6hb]: %CONTINUE% UNID Blade Bow (No Unique for this base)
+ItemDisplay[UNI !ID 6lb]: %CONTINUE% UNID Shadow Bow (No Unique for this base)
+ItemDisplay[UNI !ID 6cb]: %CONTINUE% UNID Great Bow (No Unique for this base)
+ItemDisplay[UNI !ID 6s7]: %CONTINUE% UNID Diamond Bow (No Unique for this base)
+ItemDisplay[UNI !ID 6l7]: %CONTINUE% UNID Eaglehorn Crusader Bow
+ItemDisplay[UNI !ID 6sw]: %CONTINUE% UNID Widowmaker Ward Bow
+ItemDisplay[UNI !ID 6lw]: %CONTINUE% UNID Windforce Hydra Bow
+
+// ------------------------------------------------------------------------------
+//      [UWCR] Crossbows
+// ------------------------------------------------------------------------------
+// Normal tier Crossbows
+ItemDisplay[UNI !ID lxb]: %CONTINUE% UNID Leadcrow Light Crossbow
+ItemDisplay[UNI !ID mxb]: %CONTINUE% UNID Ichorsting Crossbow
+ItemDisplay[UNI !ID hxb]: %CONTINUE% UNID Hellcast Heavy Crossbow
+ItemDisplay[UNI !ID rxb]: %CONTINUE% UNID Doomslinger Repeating Crossbow
+
+// Exceptional tier Crossbows
+ItemDisplay[UNI !ID 8lx]: %CONTINUE% UNID Langer Briser Arbalest
+ItemDisplay[UNI !ID 8mx]: %CONTINUE% UNID Pus Spitter Siege Crossbow
+ItemDisplay[UNI !ID 8hx]: %CONTINUE% UNID Buriza-Do Kyanon Ballista
+ItemDisplay[UNI !ID 8rx]: %CONTINUE% UNID Demon Machine Chu-Ko-Nu
+
+// Elite tier Crossbows
+ItemDisplay[UNI !ID 6lx]: %CONTINUE% UNID Pellet Bow (No Unique for this base)
+ItemDisplay[UNI !ID 6mx]: %CONTINUE% UNID Gorgon Crossbow (No Unique for this base)
+ItemDisplay[UNI !ID 6hx]: %CONTINUE% UNID Hellrack Colossus Crossbow
+ItemDisplay[UNI !ID 6rx]: %CONTINUE% UNID Gut Siphon Demon Crossbow
+
+// ------------------------------------------------------------------------------
+//      [UWDA] Daggers
+// ------------------------------------------------------------------------------
+// Normal tier Daggers
+ItemDisplay[UNI !ID dgr]: %CONTINUE% UNID Gull Dagger
+ItemDisplay[UNI !ID dir]: %CONTINUE% UNID The Diggler Dirk
+ItemDisplay[UNI !ID kri]: %CONTINUE% UNID The Jade Tan Do Kris
+ItemDisplay[UNI !ID bld]: %CONTINUE% UNID Spectral Shard Blade
+
+// Exceptional tier Daggers
+ItemDisplay[UNI !ID 9dg]: %CONTINUE% UNID Spineripper Poignard
+ItemDisplay[UNI !ID 9di]: %CONTINUE% UNID Heart Carver Rondel
+ItemDisplay[UNI !ID 9kr]: %CONTINUE% UNID Blackbogs Sharp Cinquedeas
+ItemDisplay[UNI !ID 9bl]: %CONTINUE% UNID Stormspike Stiletto
+
+// Elite tier Daggers
+ItemDisplay[UNI !ID 7dg]: %CONTINUE% UNID Wizardspike Bone Knife
+ItemDisplay[UNI !ID 7di]: %CONTINUE% UNID Mithril Point (No Unique for this base)
+ItemDisplay[UNI !ID 7kr]: %CONTINUE% UNID Fleshripper Fanged Knife
+ItemDisplay[UNI !ID 7bl]: %CONTINUE% UNID Ghostflame Legend Spike
+
+// ------------------------------------------------------------------------------
+//      [UWJA] Javelins
+// ------------------------------------------------------------------------------
+// Normal tier Javelins
+ItemDisplay[UNI !ID jav]: %CONTINUE% UNID Javelin (No Unique for this base)
+ItemDisplay[UNI !ID pil]: %CONTINUE% UNID Pilum (No Unique for this base)
+ItemDisplay[UNI !ID ssp]: %CONTINUE% UNID Short Spear (No Unique for this base)
+ItemDisplay[UNI !ID glv]: %CONTINUE% UNID Glaive (No Unique for this base)
+ItemDisplay[UNI !ID tsp]: %CONTINUE% UNID Throwing Spear (No Unique for this base)
+
+// Exceptional tier Javelins
+ItemDisplay[UNI !ID 9ja]: %CONTINUE% UNID War Javelin (No Unique for this base)
+ItemDisplay[UNI !ID 9pi]: %CONTINUE% UNID Great Pilum (No Unique for this base)
+ItemDisplay[UNI !ID 9s9]: %CONTINUE% UNID Simbilan (No Unique for this base)
+ItemDisplay[UNI !ID 9gl]: %CONTINUE% UNID Spiculum (No Unique for this base)
+ItemDisplay[UNI !ID 9ts]: %CONTINUE% UNID Harpoon (No Unique for this base)
+
+// Elite tier Javelins
+ItemDisplay[UNI !ID 7ja]: %CONTINUE% UNID Hyperion Javelin (No Unique for this base)
+ItemDisplay[UNI !ID 7pi]: %CONTINUE% UNID Stygian Pilum (No Unique for this base)
+ItemDisplay[UNI !ID 7s7]: %CONTINUE% UNID Demons Arch Balrog Spear
+ItemDisplay[UNI !ID 7gl]: %CONTINUE% UNID Wraith Flight Ghost Glaive
+ItemDisplay[UNI !ID 7ts]: %CONTINUE% UNID Gargoyles Bite Winged Harpoon
+
+// ------------------------------------------------------------------------------
+//      [UWMA] Maces
+// ------------------------------------------------------------------------------
+// Normal tier Maces
+//      1-Handed Maces
+ItemDisplay[UNI !ID clb]: %CONTINUE% UNID Felloak Club
+ItemDisplay[UNI !ID spc]: %CONTINUE% UNID Stoutnail Spiked Club
+ItemDisplay[UNI !ID mac]: %CONTINUE% UNID Crushflange Mace
+ItemDisplay[UNI !ID mst]: %CONTINUE% UNID Bloodrise Morning Star
+ItemDisplay[UNI !ID fla]: %CONTINUE% UNID The Generals Tan Do Li Ga Flail
+ItemDisplay[UNI !ID whm]: %CONTINUE% UNID Ironstone War Hammer
+
+//      2-Handed Maces
+ItemDisplay[UNI !ID mau]: %CONTINUE% UNID Bonesnap Maul
+ItemDisplay[UNI !ID gma]: %CONTINUE% UNID Steeldriver Great Maul
+
+// Exceptional tier Maces
+//      1-Handed Maces
+ItemDisplay[UNI !ID 9cl]: %CONTINUE% UNID Dark Clan Crusher Cudgel
+ItemDisplay[UNI !ID 9sp]: %CONTINUE% UNID Fleshrender Barbed Club
+ItemDisplay[UNI !ID 9ma]: %CONTINUE% UNID Sureshrill Frost Flanged Mace
+ItemDisplay[UNI !ID 9mt]: %CONTINUE% UNID Moonfall Jagged Star
+ItemDisplay[UNI !ID 9fl]: %CONTINUE% UNID Baezils Vortex Knout
+ItemDisplay[UNI !ID 9wh]: %CONTINUE% UNID Earthshaker Battle Hammer
+
+//      2-Handed Maces
+ItemDisplay[UNI !ID 9m9]: %CONTINUE% UNID Bloodtree Stump War Club
+ItemDisplay[UNI !ID 9gm]: %CONTINUE% UNID The Gavel Of Pain Martel de Fer
+
+// Elite tier Maces
+//      1-Handed Maces
+ItemDisplay[UNI !ID 7cl]: %CONTINUE% UNID Nords Tenderizer Truncheon
+ItemDisplay[UNI !ID 7sp]: %CONTINUE% UNID Demon Limb Tyrant Club
+ItemDisplay[UNI !ID 7ma]: %CONTINUE% UNID Reinforced Mace (No Unique for this base)
+ItemDisplay[UNI !ID 7mt]: %CONTINUE% UNID Baranars Star Devil Star
+ItemDisplay[UNI !ID 7fl]: %CONTINUE% UNID Horizons Tornado or Stormlash Scourge
+ItemDisplay[UNI !ID 7wh]: %CONTINUE% UNID Stone Crusher or Schaefers Hammer Legendary Mallet
+
+//      2-Handed Maces
+ItemDisplay[UNI !ID 7m7]: %CONTINUE% UNID Windhammer Ogre Maul
+ItemDisplay[UNI !ID 7gm]: %CONTINUE% UNID Earth Shifter or The Cranium Basher Thunder Maul
+
+// ------------------------------------------------------------------------------
+//      [UWPO] Polearms
+// ------------------------------------------------------------------------------
+// Normal tier Polearms
+ItemDisplay[UNI !ID bar]: %CONTINUE% UNID Dimoaks Hew Bardiche
+ItemDisplay[UNI !ID vou]: %CONTINUE% UNID Steelgoad Voulge
+ItemDisplay[UNI !ID scy]: %CONTINUE% UNID Soul Harvest Scythe
+ItemDisplay[UNI !ID pax]: %CONTINUE% UNID The Battlebranch Poleaxe
+ItemDisplay[UNI !ID hal]: %CONTINUE% UNID Woestave Halberd
+ItemDisplay[UNI !ID wsc]: %CONTINUE% UNID The Grim Reaper War Scythe
+
+// Exceptional tier Polearms
+ItemDisplay[UNI !ID 9b7]: %CONTINUE% UNID The Meat Scraper Lochaber Axe
+ItemDisplay[UNI !ID 9vo]: %CONTINUE% UNID Blackleach Blade Bill
+ItemDisplay[UNI !ID 9s8]: %CONTINUE% UNID Athenas Wrath Battle Scythe
+ItemDisplay[UNI !ID 9pa]: %CONTINUE% UNID Pierre Tombale Couant Partizan
+ItemDisplay[UNI !ID 9h9]: %CONTINUE% UNID Husoldal Evo Bec-de-Corbin
+ItemDisplay[UNI !ID 9wc]: %CONTINUE% UNID Grims Burning Dead Grim Scythe
+
+// Elite tier Polearms
+ItemDisplay[UNI !ID 7o7]: %CONTINUE% UNID Bonehew Ogre Axe
+ItemDisplay[UNI !ID 7vo]: %CONTINUE% UNID Colossus Voulge (No Unique for this base)
+ItemDisplay[UNI !ID 7s8]: %CONTINUE% UNID The Reapers Toll Thresher
+ItemDisplay[UNI !ID 7pa]: %CONTINUE% UNID Tomb Reaver Cryptic Axe
+ItemDisplay[UNI !ID 7h7]: %CONTINUE% UNID Great Poleaxe (No Unique for this base)
+ItemDisplay[UNI !ID 7wc]: %CONTINUE% UNID Stormspire Giant Thresher
+
+// ------------------------------------------------------------------------------
+//      [UWSC] Scepters
+// ------------------------------------------------------------------------------
+// Normal tier Scepters
+ItemDisplay[UNI !ID scp]: %CONTINUE% UNID Knell Striker Scepter
+ItemDisplay[UNI !ID gsc]: %CONTINUE% UNID Rusthandle Grand Scepter
+ItemDisplay[UNI !ID wsp]: %CONTINUE% UNID Stormeye War Scepter
+
+// Exceptional tier Scepters
+ItemDisplay[UNI !ID 9sc]: %CONTINUE% UNID Zakarums Hand Rune Scepter
+ItemDisplay[UNI !ID 9qs]: %CONTINUE% UNID The Fetid Sprinkler Holy Water Sprinkler
+ItemDisplay[UNI !ID 9ws]: %CONTINUE% UNID Hand of Blessed Light Divine Scepter
+
+// Elite tier Scepters
+ItemDisplay[UNI !ID 7sc]: %CONTINUE% UNID Heavens Light or The Redeemer Mighty Scepter
+ItemDisplay[UNI !ID 7qs]: %CONTINUE% UNID Seraph Rod (No Unique for this base)
+ItemDisplay[UNI !ID 7ws]: %CONTINUE% UNID Astreons Iron Ward Caduceus
+
+// ------------------------------------------------------------------------------
+//      [UWSP] Spears
+// ------------------------------------------------------------------------------
+// Normal tier Spears
+ItemDisplay[UNI !ID spr]: %CONTINUE% UNID The Dragon Chang Spear
+ItemDisplay[UNI !ID tri]: %CONTINUE% UNID Razortine Trident
+ItemDisplay[UNI !ID brn]: %CONTINUE% UNID Bloodthief Brandistock
+ItemDisplay[UNI !ID spt]: %CONTINUE% UNID Lance of Yaggai Spetum
+ItemDisplay[UNI !ID pik]: %CONTINUE% UNID The Tannr Gorerod Pike
+
+// Exceptional tier Spears
+ItemDisplay[UNI !ID 9sr]: %CONTINUE% UNID The Impaler War Spear
+ItemDisplay[UNI !ID 9tr]: %CONTINUE% UNID Kelpie Snare Fuscina
+ItemDisplay[UNI !ID 9br]: %CONTINUE% UNID Soulfeast Tine War Fork
+ItemDisplay[UNI !ID 9st]: %CONTINUE% UNID Hone Sundan Yari
+ItemDisplay[UNI !ID 9p9]: %CONTINUE% UNID Spire of Honor Lance
+
+// Elite tier Spears
+ItemDisplay[UNI !ID 7sr]: %CONTINUE% UNID Ariocs Needle Hyperion Spear
+ItemDisplay[UNI !ID 7tr]: %CONTINUE% UNID Stygian Pike (No Unique for this base)
+ItemDisplay[UNI !ID 7br]: %CONTINUE% UNID Viperfork Mancatcher
+ItemDisplay[UNI !ID 7st]: %CONTINUE% UNID Ghost Spear (No Unique for this base)
+ItemDisplay[UNI !ID 7p7]: %CONTINUE% UNID Steel Pillar War Pike
+
+// ------------------------------------------------------------------------------
+//      [UWST] Staves
+// ------------------------------------------------------------------------------
+// Normal tier Staves
+ItemDisplay[UNI !ID sst]: %CONTINUE% UNID Bane Ash Short Staff
+ItemDisplay[UNI !ID lst]: %CONTINUE% UNID Serpent Lord Long Staff
+ItemDisplay[UNI !ID cst]: %CONTINUE% UNID Spire of Lazarus Gnarled Staff
+ItemDisplay[UNI !ID bst]: %CONTINUE% UNID The Salamander Battle Staff
+ItemDisplay[UNI !ID wst]: %CONTINUE% UNID The Iron Jang Bong War Staff
+
+// Exceptional tier Staves
+ItemDisplay[UNI !ID 8ss]: %CONTINUE% UNID Razorswitch Jo Staff
+ItemDisplay[UNI !ID 8ls]: %CONTINUE% UNID Ribcracker Quarterstaff
+ItemDisplay[UNI !ID 8cs]: %CONTINUE% UNID Chromatic Ire Cedar Staff
+ItemDisplay[UNI !ID 8bs]: %CONTINUE% UNID Warpspear Gothic Staff
+ItemDisplay[UNI !ID 8ws]: %CONTINUE% UNID Skull Collector Rune Staff
+
+// Elite tier Staves
+ItemDisplay[UNI !ID 6ss]: %CONTINUE% UNID Walking Stick (No Unique for this base)
+ItemDisplay[UNI !ID 6ls]: %CONTINUE% UNID Stalagmite (No Unique for this base)
+ItemDisplay[UNI !ID 6cs]: %CONTINUE% UNID Ondals Wisdom Elder Staff
+ItemDisplay[UNI !ID 6bs]: %CONTINUE% UNID Shillelagh (No Unique for this base)
+ItemDisplay[UNI !ID 6ws]: %CONTINUE% UNID Mang Songs Lesson Archon Staff
+
+// ------------------------------------------------------------------------------
+//      [UWSW] Swords
+// ------------------------------------------------------------------------------
+// Normal tier Swords
+//      1-Handed Swords
+ItemDisplay[UNI !ID ssd]: %CONTINUE% UNID Rixots Keen Short Sword
+ItemDisplay[UNI !ID scm]: %CONTINUE% UNID Blood Crescent Scimitar
+ItemDisplay[UNI !ID sbr]: %CONTINUE% UNID Skewer of Krintiz Sabre
+ItemDisplay[UNI !ID flc]: %CONTINUE% UNID Gleamscythe Falchion
+ItemDisplay[UNI !ID crs]: %CONTINUE% UNID Crystal Sword (No Unique for this base)
+ItemDisplay[UNI !ID bsd]: %CONTINUE% UNID Griswolds Edge Broad Sword
+ItemDisplay[UNI !ID lsd]: %CONTINUE% UNID Hellplague Long Sword
+ItemDisplay[UNI !ID wsd]: %CONTINUE% UNID Culwens Point War Sword
+
+//      2-Handed Swords
+ItemDisplay[UNI !ID 2hs]: %CONTINUE% UNID Shadowfang Two-handed Sword
+ItemDisplay[UNI !ID clm]: %CONTINUE% UNID Soulflay Claymore
+ItemDisplay[UNI !ID gis]: %CONTINUE% UNID Kinemils Awl Giant Sword
+ItemDisplay[UNI !ID bsw]: %CONTINUE% UNID Blacktongue Bastard Sword
+ItemDisplay[UNI !ID flb]: %CONTINUE% UNID Ripsaw Flamberge
+ItemDisplay[UNI !ID gsd]: %CONTINUE% UNID The Patriarch Great Sword
+
+// Exceptional tier Swords
+//      1-Handed Swords
+ItemDisplay[UNI !ID 9ss]: %CONTINUE% UNID Bloodletter Gladius
+ItemDisplay[UNI !ID 9sm]: %CONTINUE% UNID Coldsteel Eye Cutlass
+ItemDisplay[UNI !ID 9sb]: %CONTINUE% UNID Hexfire Shamshir
+ItemDisplay[UNI !ID 9fc]: %CONTINUE% UNID Blade of Ali Baba Tulwar
+ItemDisplay[UNI !ID 9cr]: %CONTINUE% UNID Ginthers Rift Dimensional Blade
+ItemDisplay[UNI !ID 9bs]: %CONTINUE% UNID Headstriker Battle Sword
+ItemDisplay[UNI !ID 9ls]: %CONTINUE% UNID Plague Bearer Rune Sword
+ItemDisplay[UNI !ID 9wd]: %CONTINUE% UNID The Atlantean Ancient Sword
+
+//      2-Handed Swords
+ItemDisplay[UNI !ID 92h]: %CONTINUE% UNID Crainte Vomir Espandon
+ItemDisplay[UNI !ID 9cm]: %CONTINUE% UNID Bing Sz Wang Dacian Falx
+ItemDisplay[UNI !ID 9gs]: %CONTINUE% UNID The Vile Husk Tusk Sword
+ItemDisplay[UNI !ID 9b9]: %CONTINUE% UNID Cloudcrack Gothic Sword
+ItemDisplay[UNI !ID 9fb]: %CONTINUE% UNID Todesfaelle Flamme Zweihander
+ItemDisplay[UNI !ID 9gd]: %CONTINUE% UNID Swordguard Executioner Sword
+
+// Elite tier Swords
+//      1-Handed Swords
+ItemDisplay[UNI !ID 7ss]: %CONTINUE% UNID Falcata (No Unique for this base)
+ItemDisplay[UNI !ID 7sm]: %CONTINUE% UNID Djinn Slayer Ataghan
+ItemDisplay[UNI !ID 7sb]: %CONTINUE% UNID Bloodmoon Elegant Blade
+ItemDisplay[UNI !ID 7fc]: %CONTINUE% UNID Hydra Edge (No Unique for this base)
+ItemDisplay[UNI !ID 7cr]: %CONTINUE% UNID Lightsabre or Azurewrath Phase Blade
+ItemDisplay[UNI !ID 7bs]: %CONTINUE% UNID Hadriels Hand Conquest Sword 
+ItemDisplay[UNI !ID 7ls]: %CONTINUE% UNID Frostwind Cryptic Sword
+ItemDisplay[UNI !ID 7wd]: %CONTINUE% UNID Mythical Sword (No Unique for this base)
+
+//      2-Handed Swords
+ItemDisplay[UNI !ID 72h]: %CONTINUE% UNID Legend Sword (No Unique for this base)
+ItemDisplay[UNI !ID 7cm]: %CONTINUE% UNID Highland Blade (No Unique for this base)
+ItemDisplay[UNI !ID 7gs]: %CONTINUE% UNID Flamebellow Balrog Blade
+ItemDisplay[UNI !ID 7b7]: %CONTINUE% UNID Doombringer Champion Sword
+ItemDisplay[UNI !ID 7fb]: %CONTINUE% UNID Colossus Sword (No Unique for this base)
+ItemDisplay[UNI !ID 7gd]: %CONTINUE% UNID The Grandfather Colossus Blade
+
+// ------------------------------------------------------------------------------
+//      [UWTH] Throwing Weapons
+// ------------------------------------------------------------------------------
+// Normal tier Throwing Weapons
+ItemDisplay[UNI !ID tkf]: %CONTINUE% UNID Throwing Knife (No Unique for this base)
+ItemDisplay[UNI !ID bkf]: %CONTINUE% UNID Balanced Knife (No Unique for this base)
+ItemDisplay[UNI !ID tax]: %CONTINUE% UNID Throwing Axe (No Unique for this base)
+ItemDisplay[UNI !ID bal]: %CONTINUE% UNID Balanced Axe (No Unique for this base)
+
+// Exceptional tier Throwing Weapons
+ItemDisplay[UNI !ID 9tk]: %CONTINUE% UNID Deathbit Battle Dart
+ItemDisplay[UNI !ID 9bk]: %CONTINUE% UNID War Dart (No Unique for this base)
+ItemDisplay[UNI !ID 9ta]: %CONTINUE% UNID The Scalper Francisca
+ItemDisplay[UNI !ID 9b8]: %CONTINUE% UNID Hurlbat (No Unique for this base)
+
+// Elite tier Throwing Weapons
+ItemDisplay[UNI !ID 7tk]: %CONTINUE% UNID Flying Knife (No Unique for this base)
+ItemDisplay[UNI !ID 7bk]: %CONTINUE% UNID Warshrike Winged Knife
+ItemDisplay[UNI !ID 7ta]: %CONTINUE% UNID Gimmershred Flying Axe
+ItemDisplay[UNI !ID 7b8]: %CONTINUE% UNID Lacerator Winged Axe
+
+// ------------------------------------------------------------------------------
+//      [UWWA] Wands
+// ------------------------------------------------------------------------------
+// Normal tier Wands
+ItemDisplay[UNI !ID wnd]: %CONTINUE% UNID Torch of Iro Wand
+ItemDisplay[UNI !ID ywn]: %CONTINUE% UNID Maelstrom Yew Wand
+ItemDisplay[UNI !ID bwn]: %CONTINUE% UNID Gravenspine Bone Wand
+ItemDisplay[UNI !ID gwn]: %CONTINUE% UNID Umes Lament Grim Wand
+
+// Exceptional tier Wands
+ItemDisplay[UNI !ID 9wn]: %CONTINUE% UNID Suicide Branch Burnt Wand
+ItemDisplay[UNI !ID 9yw]: %CONTINUE% UNID Carin Shard Petrified Wand
+ItemDisplay[UNI !ID 9bw]: %CONTINUE% UNID Arm of King Leoric Tomb Wand
+ItemDisplay[UNI !ID 9gw]: %CONTINUE% UNID Blackhand Key Grave Wand
+
+// Elite tier Wands
+ItemDisplay[UNI !ID 7wn]: %CONTINUE% UNID Polished Wand (No Unique for this base)
+ItemDisplay[UNI !ID 7yw]: %CONTINUE% UNID Ghost Wand (No Unique for this base)
+ItemDisplay[UNI !ID 7bw]: %CONTINUE% UNID Boneshade Lich Wand
+ItemDisplay[UNI !ID 7gw]: %CONTINUE% UNID Deathss Web Unearthed Wand
+
+// +----------------------------------------------------------------------------+
+// |                                                                            |
+// |     [SETS] Set Items                                                       |
+// |                                                                            |
+// +----------------------------------------------------------------------------+
+
+// ------------------------------------------------------------------------------
+// [SIMU] Set Multiple
+// ------------------------------------------------------------------------------
+// These item bases belong to multiple sets, so you cannot know what one they are until identified
+ItemDisplay[SET !ID amu]: %CONTINUE% UNID Set Amulet
+ItemDisplay[SET !ID cap]: %CONTINUE% UNID Infernal or Sanders Caps
+ItemDisplay[SET !ID crn]: %CONTINUE% UNID Iratha or Milabrega Crowns
+ItemDisplay[SET !ID mbl]: %CONTINUE% UNID Hsaru or Hwanin Belts
+ItemDisplay[SET !ID rin]: %CONTINUE% UNID Set Ring
+ItemDisplay[SET !ID tbl]: %CONTINUE% UNID Infernal or Iratha Heavy Belts
+ItemDisplay[SET !ID tgl]: %CONTINUE% UNID Arctic or Iratha Light Gauntlets
+ItemDisplay[SET !ID vbt]: %CONTINUE% UNID Cow King or Sander Heavy Boots
+
+// ------------------------------------------------------------------------------
+// [SINS] Normal Sets
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//    [SIAR] Angelic Raiment
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID rng]: %CONTINUE% UNID Angelic Mantle Ring Mail
+ItemDisplay[SET !ID sbr]: %CONTINUE% UNID Angelic Sickle Sabre
+// Angelic Halo Ring in "Set Multiple" section
+// Angelic Wings Amulet in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SIAT] Arcannas Tricks
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID skp]: %CONTINUE% UNID Arcannas Head Skull Cap
+ItemDisplay[SET !ID ltp]: %CONTINUE% UNID Arcannas Flesh Light
+ItemDisplay[SET !ID wst]: %CONTINUE% UNID Arcannas Deathwand War Staff
+// Arcannas Sign Amulet in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SIAG] Arctic Gear
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID qui]: %CONTINUE% UNID Arctic Furs Quilted Armor
+ItemDisplay[SET !ID vbl]: %CONTINUE% UNID Arctic Binding Light Belt
+// Arctic Mitts Light Gauntlets in "Set Multiple" section
+ItemDisplay[SET !ID swb]: %CONTINUE% UNID Arctic Horn Short War Bow
+
+// ------------------------------------------------------------------------------
+//    [SIBA] Berserkers Arsenal
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID hlm]: %CONTINUE% UNID Berserkers Headgear Helm
+ItemDisplay[SET !ID spl]: %CONTINUE% UNID Berserkers Hauberk Splint Mail
+ItemDisplay[SET !ID 2ax]: %CONTINUE% UNID Berserkers Hatchet Double Axe
+
+// ------------------------------------------------------------------------------
+//    [SICT] Cathans Traps
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID msk]: %CONTINUE% UNID Cathans Visage Mask
+ItemDisplay[SET !ID chn]: %CONTINUE% UNID Cathans Mesh Chain Mail
+ItemDisplay[SET !ID bst]: %CONTINUE% UNID Cathans Rule Battle Staff
+// Cathans Sigil Amulet in "Set Multiple" section
+// Cathans Seal Ring in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SICV] Civerbs Vestments
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID gsc]: %CONTINUE% UNID Civerbs Cudgel Grand Scepter
+// Civerbs Icon Amulet in "Set Multiple" section
+ItemDisplay[SET !ID lrg]: %CONTINUE% UNID Civerbs Ward Large Shield
+
+// ------------------------------------------------------------------------------
+//    [SICB] Cleglaws Brace
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID lsd]: %CONTINUE% UNID Cleglaws Tooth Long Sword
+ItemDisplay[SET !ID mgl]: %CONTINUE% UNID Cleglaws Pincers Chain Gloves
+ItemDisplay[SET !ID sml]: %CONTINUE% UNID Cleglaws Claw Small Shield
+
+// ------------------------------------------------------------------------------
+//    [SIDD] Deaths Disguise
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID wsd]: %CONTINUE% UNID Deaths Touch War Sword
+ItemDisplay[SET !ID lgl]: %CONTINUE% UNID Deaths Hand Leather Gloves
+ItemDisplay[SET !ID lbl]: %CONTINUE% UNID Deaths Guard Sash
+
+// ------------------------------------------------------------------------------
+//    [SIHD] Hsarus Defense
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID buc]: %CONTINUE% UNID Hsarus Iron Fist Buckler
+// Hsarus Iron Stay Belt in "Set Multiple" section
+ItemDisplay[SET !ID mbt]: %CONTINUE% UNID Hsarus Iron Heel Chain Boots
+
+// ------------------------------------------------------------------------------
+//    [SIIT] Infernal Tools
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID dgr]: %CONTINUE% UNID Infernal Spine Dagger
+// Infernal Sign Heavy Belt in "Set Multiple" section
+// Infernal Cranium Cap in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SIIF] Irathas Finery
+// ------------------------------------------------------------------------------
+// Irathas Coil Crown in "Set Multiple" section
+// Irathas Collar Amulet in "Set Multiple" section
+// Irathas Cord Heavy Belt in "Set Multiple" section
+// Irathas Cuff Light Gauntlets in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SIIA] Isenharts Armory
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID bsd]: %CONTINUE% UNID Isenharts Lightbrand Broad Sword
+ItemDisplay[SET !ID fhl]: %CONTINUE% UNID Isenharts Horns Full Helm
+ItemDisplay[SET !ID brs]: %CONTINUE% UNID Isenharts Case Breast Plate
+ItemDisplay[SET !ID gts]: %CONTINUE% UNID Isenharts Parry Gothic Shield
+
+// ------------------------------------------------------------------------------
+//    [SIMR] Milabregas Regalia
+// ------------------------------------------------------------------------------
+// Milabregas Diadem Crown in "Set Multiple" section
+ItemDisplay[SET !ID aar]: %CONTINUE% UNID Milabregas Robe Ancient Armor
+ItemDisplay[SET !ID kit]: %CONTINUE% UNID Milabregas Orb Kite Shield
+ItemDisplay[SET !ID wsp]: %CONTINUE% UNID Milabregas Rod War Scepter
+
+// ------------------------------------------------------------------------------
+//    [SISC] Sigons Complete Steel
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID ghm]: %CONTINUE% UNID Sigons Visor Great Helm
+ItemDisplay[SET !ID gth]: %CONTINUE% UNID Sigons Shelter Gothic Plate
+ItemDisplay[SET !ID hbt]: %CONTINUE% UNID Sigons Sabot Greaves
+ItemDisplay[SET !ID tow]: %CONTINUE% UNID Sigons Guard Tower Shield
+ItemDisplay[SET !ID hbl]: %CONTINUE% UNID Sigons Wrap Plated Belt
+ItemDisplay[SET !ID hgl]: %CONTINUE% UNID Sigons Gage Gauntlets
+
+// ------------------------------------------------------------------------------
+//    [SITB] Tancreds Battlegear
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID bhm]: %CONTINUE% UNID Tancreds Skull Bone Helm
+ItemDisplay[SET !ID ful]: %CONTINUE% UNID Tancreds Spine Full Plate Mail
+ItemDisplay[SET !ID lbt]: %CONTINUE% UNID Tancreds Hobnails Boots
+ItemDisplay[SET !ID mpi]: %CONTINUE% UNID Tancreds Crowbill Military Pick
+//Tancreds Weird  Amulet in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SIVR] Vidalas Rig
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID lbb]: %CONTINUE% UNID Vidalas Barb Long Battle Bow
+ItemDisplay[SET !ID lea]: %CONTINUE% UNID Vidalas Ambush Leather Armor
+ItemDisplay[SET !ID tbt]: %CONTINUE% UNID Vidalas Fetlock Light Plated Boots
+//Vidalas Snare Amulet in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+// [SIES] Exceptional/Elite Sets
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//    [SIAW] Aldurs Watchtower
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID dr8]: %CONTINUE% UNID Aldurs Stony Gaze Hunters Guise
+ItemDisplay[SET !ID xtb]: %CONTINUE% UNID Aldurs Advance Battle Boots
+ItemDisplay[SET !ID uul]: %CONTINUE% UNID Aldurs Deception Shadow Plate
+ItemDisplay[SET !ID 9mt]: %CONTINUE% UNID Aldurs Rhythm Jagged Star
+
+// ------------------------------------------------------------------------------
+//    [SIBK] Bul-Kathos Children
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID 7gd]: %CONTINUE% UNID Bul-Kathos Sacred Charge Colossus Blade
+// Season 1
+ItemDisplay[SET !ID 7wd]: %CONTINUE% UNID Bul-Kathos Tribal Guardian Mythical Sword
+//Season 2
+ItemDisplay[SET !ID 7fb]: %CONTINUE% UNID Bul-Kathos Tribal Guardian Mythical Sword
+// BulKathos Death Band Ring in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SICK] Cow Kings Leathers
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xap]: %CONTINUE% UNID Cow Kings Horns War Hat
+ItemDisplay[SET !ID stu]: %CONTINUE% UNID Cow Kings Hide Studded Leather
+// Cow Kings Hooves Heavy Boots in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SITD] The Disciple
+// ------------------------------------------------------------------------------
+// Telling of Beads Amulet in "Set Multiple" section
+ItemDisplay[SET !ID ulg]: %CONTINUE% UNID Laying of Hands Bramble Mitts
+ItemDisplay[SET !ID uui]: %CONTINUE% UNID Dark Adherent Dusk Shroud
+ItemDisplay[SET !ID xlb]: %CONTINUE% UNID Rite of Passage Demonhide Boots
+ItemDisplay[SET !ID umc]: %CONTINUE% UNID Credendum Mithril Coil
+
+// ------------------------------------------------------------------------------
+//    [SIGL] Griswolds Legacy
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xar]: %CONTINUE% UNID Griswolds Heart Ornate Plate
+ItemDisplay[SET !ID urn]: %CONTINUE% UNID Griswolds Valor Corona
+ItemDisplay[SET !ID 7ws]: %CONTINUE% UNID Griswolds Redemption Caduceus
+ItemDisplay[SET !ID paf]: %CONTINUE% UNID Griswolds Honor Vortex Shield
+
+// ------------------------------------------------------------------------------
+//    [SIHB] Heavens Brethren
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xrs]: %CONTINUE% UNID Haemosus Adament Cuirass
+ItemDisplay[SET !ID 7ma]: %CONTINUE% UNID Dangoons Teaching Reinforced Mace
+ItemDisplay[SET !ID uts]: %CONTINUE% UNID Taebaeks Glory Ward
+ItemDisplay[SET !ID uhm]: %CONTINUE% UNID Ondals Almighty Spired Helm
+
+// ------------------------------------------------------------------------------
+//    [SIHM] Hwanins Majesty
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xrn]: %CONTINUE% UNID Hwanins Splendor Grand Crown
+ItemDisplay[SET !ID 9vo]: %CONTINUE% UNID Hwanins Justice Bill
+ItemDisplay[SET !ID xcl]: %CONTINUE% UNID Hwanins Refuge Tigulated Mail
+// Hwanins Blessing Belt in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SIIK] Immortal King
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID ba5]: %CONTINUE% UNID Immortal Kings Will Avenger Guard
+ItemDisplay[SET !ID 7m7]: %CONTINUE% UNID Immortal Kings Stone Crusher Ogre Maul
+ItemDisplay[SET !ID uar]: %CONTINUE% UNID Immortal Kings Soul Cage Sacred Armor
+ItemDisplay[SET !ID zhb]: %CONTINUE% UNID Immortal Kings Detail War Belt
+ItemDisplay[SET !ID xhg]: %CONTINUE% UNID Immortal Kings Forge War Gauntlets
+ItemDisplay[SET !ID xhb]: %CONTINUE% UNID Immortal Kings Pillar War Boots
+
+// ------------------------------------------------------------------------------
+//    [SIMB] Mavinas Battle Hymn
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID ci3]: %CONTINUE% UNID Mavinas True Sight Diadem
+ItemDisplay[SET !ID amc]: %CONTINUE% UNID Mavinas Caster Grand Matron Bow
+ItemDisplay[SET !ID uld]: %CONTINUE% UNID Mavinas Embrace Kraken Shell
+ItemDisplay[SET !ID xtg]: %CONTINUE% UNID Mavinas Icy Clutch Battle Gauntlets
+ItemDisplay[SET !ID zvb]: %CONTINUE% UNID Mavinas Tenet Sharkskin Belt
+
+// ------------------------------------------------------------------------------
+//    [SINO] Natalyas Odium
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xh9]: %CONTINUE% UNID Natalyas Totem Grim Helm
+ItemDisplay[SET !ID 7qr]: %CONTINUE% UNID Natalyas Mark Scissors Suwayyah
+ItemDisplay[SET !ID ucl]: %CONTINUE% UNID Natalyas Shadow Loricated Mail
+ItemDisplay[SET !ID xmb]: %CONTINUE% UNID Natalyas Soul Mesh Boots
+
+// ------------------------------------------------------------------------------
+//    [SINA] Najs Ancient Vestige
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID ci0]: %CONTINUE% UNID Najs Circlet Circlet
+ItemDisplay[SET !ID ult]: %CONTINUE% UNID Najs Light Plate Hellforge Plate
+ItemDisplay[SET !ID 6cs]: %CONTINUE% UNID Najs Puzzler Elder Staff
+
+// ------------------------------------------------------------------------------
+//    [SIOC] Orphans Call
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xhm]: %CONTINUE% UNID Guillaumes Face Winged Helm
+ItemDisplay[SET !ID xml]: %CONTINUE% UNID Whitstans Guard Round Shield
+ItemDisplay[SET !ID xvg]: %CONTINUE% UNID Magnus Skin Sharkskin Gloves
+ItemDisplay[SET !ID ztb]: %CONTINUE% UNID Wilhelms Pride Battle Belt
+
+// ------------------------------------------------------------------------------
+//    [SISF] Sanders Folly
+// ------------------------------------------------------------------------------
+//Sanders Paragon Cap in "Set Multiple" section
+ItemDisplay[SET !ID bwn]: %CONTINUE% UNID Sanders Superstition Bone Wand
+ItemDisplay[SET !ID vgl]: %CONTINUE% UNID Sanders Taboo Heavy Gloves
+//Sanders Riprap Heavy Boots in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SISG] Sazabis Grand Tribute
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID xhl]: %CONTINUE% UNID Sazabis Mental Sheath Basinet
+ItemDisplay[SET !ID 7ls]: %CONTINUE% UNID Sazabis Cobalt Redeemer Cryptic Sword
+ItemDisplay[SET !ID upl]: %CONTINUE% UNID Sazabis Ghost Liberator Balrog Skin
+
+// ------------------------------------------------------------------------------
+//    [SITR] Tal Rashas Wrappings
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID oba]: %CONTINUE% UNID Tal Rashas Lidless Eye Swirling Crystal
+ItemDisplay[SET !ID xsk]: %CONTINUE% UNID Tal Rashas Horadric Crest Death Mask
+ItemDisplay[SET !ID uth]: %CONTINUE% UNID Tal Rashas Guardianship Lacquered Plate
+ItemDisplay[SET !ID zmb]: %CONTINUE% UNID Tal Rashas Fine-Spun Cloth Mesh Belt
+//Tal Rashas Adjudication Amulet in "Set Multiple" section
+
+// ------------------------------------------------------------------------------
+//    [SITO] Trang-Ouls Avatar
+// ------------------------------------------------------------------------------
+ItemDisplay[SET !ID uh9]: %CONTINUE% UNID Trang-Ouls Guise Bone Visage
+ItemDisplay[SET !ID xul]: %CONTINUE% UNID Trang-Ouls Scales Chaos Armor
+ItemDisplay[SET !ID ne9]: %CONTINUE% UNID Trang-Ouls Wing Cantor Trophy
+ItemDisplay[SET !ID utc]: %CONTINUE% UNID Trang-Ouls Girth Troll Belt
+ItemDisplay[SET !ID xmg]: %CONTINUE% UNID Trang-Ouls Claws Heavy Bracers
+
+// Add ETH back to unid
+ItemDisplay[ETH UNI !ID]: [eth] %NAME%%CONTINUE%
+ItemDisplay[ETH SET !ID]: [eth] %NAME%%CONTINUE%
+
+// ------------------------------------------------------------------------------
+// GG UNIQUES ID ed
+// ------------------------------------------------------------------------------
+ItemDisplay[(rin OR amu OR 7gl OR 7b8 OR ulc OR uvc OR xea OR urn OR uap OR ulm OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR uhm OR uh9 OR lbt OR xhb OR uhb OR 7cr) UNI ID]: %MAP%%NAME%
+
+// ------------------------------------------------------------------------------
+// GG UNIQUES !ID
+// ------------------------------------------------------------------------------
+ItemDisplay[(7gl OR 7b8 OR ulm OR xh9 OR usk) UNI ETH !ID]: %BORDER-68%%PURPLE%>>>>>>>>     %GOLD%%NAME%%PURPLE%     <<<<<<<<
+
+ItemDisplay[(rin OR amu) UNI !ID]: %BORDER-68%%PURPLE%>>>>>>>>     %GOLD%%NAME%%PURPLE%     <<<<<<<<
+ItemDisplay[(ulc OR uvc OR xea OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR uhm OR pa9 OR uh9 OR lbt OR xhb OR 7cr) UNI !ID]: %BORDER-68%%PURPLE%>>>>>>>>     %GOLD%%NAME%%PURPLE%     <<<<<<<<
+
+//Sacred Armor only below
+ItemDisplay[uar UNI ETH !ID]: %BORDER-68%%ORANGE%>>>>>>>       %GOLD%%NAME%%ORANGE%       <<<<<<<
+ItemDisplay[uar UNI !ID]: %BORDER-68%%ORANGE%>>>>>       %GOLD%%NAME%%ORANGE%       <<<<<
+ItemDisplay[uar UNI ID]: %MAP%%NAME%
+
+// DCLONE Only ones
+ItemDisplay[(7qr OR uhl OR uth OR utb OR 7bs) UNI !ID]: %BORDER-68%%ORANGE%>>>>>       %NAME%       <<<<<
+ItemDisplay[(7qr OR uhl OR uth OR utb OR 7bs) UNI ID]: %MAP%%NAME%
+
+// new s3 items
+ItemDisplay[(am5 OR ba6 OR dr2 OR ne6 OR pa3 OR 9ar OR ob6) UNI !ID]: %BORDER-68%%ORANGE%>>>>>       %NAME%       <<<<<
+ItemDisplay[(am5 OR ba6 OR dr2 OR ne6 OR pa3 OR 9ar OR ob6) UNI ID]: %MAP%%NAME%
+
+// ------------------------------------------------------------------------------
+// OK UNIQUES
+// ------------------------------------------------------------------------------
+//belts
+ItemDisplay[(zlb OR zvb OR zhb OR umc) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+//armors
+ItemDisplay[(ulm OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+//gloves
+ItemDisplay[(uhg OR uvg OR umg) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+//helmets
+ItemDisplay[(xh9 OR usk OR ci2 OR baa OR bac OR dre OR xhm OR drd OR bae) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+//boots
+ItemDisplay[(xvb OR uvb) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+//shields
+ItemDisplay[(nee OR nea OR uts OR uow OR xsh OR xow OR nef) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+//weapons
+ItemDisplay[(7cr OR 9tw OR obc) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+ItemDisplay[(urn OR 72a OR 7fl OR 7kr OR 7gm OR oba OR ama OR 6ws OR 7lw OR amf OR 7wh OR 7cs) UNI !ID]: %DOT-68%%GOLD% * * *  %NAME%  * * *
+
+// ------------------------------------------------------------------------------
+// Good SET parts
+// ------------------------------------------------------------------------------
+ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%DARK_GREEN%****   %NAME%   %DARK_GREEN%****
+
+// ------------------------------------------------------------------------------
+// Uniques and Sets worth notifying
+// ------------------------------------------------------------------------------
+//Armors
+ItemDisplay[(xsk OR xml OR xlb OR xpl OR xap OR xld OR xrs OR gth OR aar OR BELT OR skp OR xhl OR xrn OR vbt OR xmb OR uvb OR umb OR lgl OR mgl OR tgl OR hgl OR xlg OR xvg OR xtg OR xhg OR ush OR upk OR uml OR xts OR xrg OR xuc OR tow OR kit OR gts) UNI !ID]: %PX-68% >  %NAME%  < 
+//Weapons
+ItemDisplay[((7wa OR 7gi OR 7pa OR 8ls OR 72a OR 7o7 OR 9yw OR 9fc OR 7bw OR 9kr OR amb OR 7sc OR 7mp OR 6sw OR 6l7 OR 8hx OR 8rx OR dgr OR 7dg OR 7bl OR 9ma OR 9wh OR 9gm OR 7s8 OR 7wc OR 9ws OR 6cs OR 7b7 OR 7gs OR 9sb) OR (ELT (WP5 OR WP6)) OR 9bw OR ywn OR 7wb OR 7sp) UNI !ID]: %PX-68% >  %NAME%  < 
+//Sets
+ItemDisplay[((ARMOR OR WEAPON) (EXC OR ELT OR ci0 OR ba5) !(9vo OR xcl OR xrn)) SET !ID]: %PX-84%%NAME%
+
+//----------------------------------------------------------------------------------------------------------------------------
+// >>>>>>>>                         BEYOND THIS POINT IS KRYSZARD'S BASE FILTER
+//----------------------------------------------------------------------------------------------------------------------------
 //	Kryszard's PD2 Loot Filter for Season III: ver 3.1.7
-//
-//	twitch.tv/kryszard
-//
-//	For Casual and EndGame Players
 
 //Gold
 ItemDisplay[GOLD<100 CLVL<18]:
