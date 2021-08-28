@@ -1,5 +1,5 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
-// Version: 4.0.7
+// Version: 4.0.8
 //-----------------------------------------------------------------------------------
 // Note: You can disable any of these to return to the Kryszard Default.
 
@@ -32,10 +32,10 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%            // @Ailos, alway
 ItemDisplay[MAG jew !ID]: %DOT-9B%%PURPLE%**%BLUE%          %NAME%          %PURPLE%**          // Magic Jewels
 ItemDisplay[RARE jew !ID]: %DOT-9B%%ORANGE%**%YELLOW%          %NAME%          %ORANGE%**       // Rare Jewels
 
-ItemDisplay[MAG rin !ID]: %DOT-9B%%GRAY%*%BLUE%     %NAME%     %GRAY%*                          // Magic Rings
+ItemDisplay[MAG rin !ID]: %GRAY%*%BLUE%     %NAME%     %GRAY%*                                  // Magic Rings
 ItemDisplay[RARE rin !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*                   // Rare Rings
 
-ItemDisplay[MAG amu !ID]: %DOT-9B%%GRAY%*%BLUE%     %NAME%     %GRAY%*                          // Magic Amulets
+ItemDisplay[MAG amu !ID]: %GRAY%*%BLUE%     %NAME%     %GRAY%*                                  // Magic Amulets
 ItemDisplay[RARE amu !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*                   // Rare Amulets
 
 ItemDisplay[MAG cm1 !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                      // Small Charms
@@ -46,6 +46,9 @@ ItemDisplay[MAG cm3 !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*      
 // Archon Staff / Colossus Sword for Wind
 ItemDisplay[NMAG 6ws ETH !RW !INF (SOCK=0 OR SOCK=2)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
 ItemDisplay[NMAG 7fb ETH !RW !INF (SOCK=0 OR SOCK=2)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
+
+// +3 Holy Shield Bases
+ItemDisplay[NMAG !RW !INF SK117>1 (SOCK=0 OR SOCK>3)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
 
 //-----------------------------LLD SETTINGS-----------------------------
 // Note: These are evolving over time and itterated upon constantly.
@@ -330,7 +333,7 @@ ItemDisplay[GOLD<3500 CLVL>89]:
 
 //-----------------------------CONSUMABLES-----------------------------
 // Keys
-ItemDisplay[key]: %GOLD%+%WHITE%Key{%GRAY% Hiimdave Filter v4.0.7}
+ItemDisplay[key]: %GOLD%+%WHITE%Key{%GRAY% Hiimdave Filter v4.0.8}
 
 // Scrolls and Tomes
 ItemDisplay[isc (DIFF=2 OR CLVL>79)]:												// Hide ID Scrolls in Hell or when 80+
@@ -1646,8 +1649,8 @@ ItemDisplay[SET !ID utc]: %CONTINUE% UNID Trang-Ouls Girth Troll Belt
 ItemDisplay[SET !ID xmg]: %CONTINUE% UNID Trang-Ouls Claws Heavy Bracers
 
 // Add ETH back to unid
-ItemDisplay[ETH UNI !ID]: [eth] %NAME%%CONTINUE%
-ItemDisplay[ETH SET !ID]: [eth] %NAME%%CONTINUE%
+//ItemDisplay[ETH UNI !ID]: [eth] %NAME%%CONTINUE%
+//ItemDisplay[ETH SET !ID]: [eth] %NAME%%CONTINUE%
 
 // ------------------------------------------------------------------------------
 // GG UNIQUES ID ed
