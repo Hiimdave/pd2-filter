@@ -16,8 +16,8 @@ ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:               // Turn off less than Flawle
 //ItemDisplay[RUNE<10 (DIFF=2 OR CLVL>85)]:         // Turn off Runes < Thul in Hell or when over 85  
 
 // Extra Strict Toggles (Only for certain builds / usages)
-//ItemDisplay[hp5 (DIFF=2 AND CLVL>84)]:            // Turn off Rank 5 HP Pots in Hell or 85+
-//ItemDisplay[mp5 (DIFF=2 AND CLVL>84)]:            // Turn off Rank 5 MP Pots in Hell or 85+
+//ItemDisplay[hp5 (DIFF=2 OR CLVL>84)]:            // Turn off Rank 5 HP Pots in Hell or 85+
+//ItemDisplay[mp5 (DIFF=2 OR CLVL>84)]:            // Turn off Rank 5 MP Pots in Hell or 85+
 //ItemDisplay[rvs (DIFF=2 AND CLVL>84)]:            // Turn off 35% Rejuvs in Hell or 85% (b/c you're just that thicc) 
 
 // Uber Strict Toggles (For very specific farming)
