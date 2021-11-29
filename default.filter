@@ -32,6 +32,8 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 // Arrows/Quivers
 ItemDisplay[(aqv OR cqv) MAG !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                 // Magic Arrows
 ItemDisplay[(aqv OR cqv) RARE !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*              // Rare Arrows
+ItemDisplay[(aqv OR cqv) MAG ID]: %NAME%
+ItemDisplay[(aqv OR cqv) RARE ID]: %NAME%
 
 // Jewels
 ItemDisplay[MAG jew !ID]: %DOT-9B%%PURPLE%**%BLUE%          %NAME%          %PURPLE%**          // Magic Jewels
@@ -299,7 +301,7 @@ ItemDisplay[RUNE>0]: %NAME%{%TAN%Note%WHITE%: Cube %ORANGE%Runes %WHITE%to %GRAY
 
 //-----------------------------CONSUMABLES-----------------------------
 // Jewel Shards
-ItemDisplay[jewf]: %ORANGE%*    %GRAY%%NAME%   %ORANGE%*%WHITE%%MAP-68%
+ItemDisplay[jewf]: %GOLD%+%WHITE%%NAME% x%QTY%
 
 // Keys
 ItemDisplay[key]: %GOLD%+%WHITE%Key{%GRAY% Hiimdave Filter v4.2.1beta}
@@ -382,25 +384,16 @@ ItemDisplay[rtma]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%          // Rathm
 ItemDisplay[rtbk OR rtp]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%   // Rathma Tome of Town Portal (infinite)
 ItemDisplay[ribk OR rid]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%   // Rathma Tome of Identify (infinite)
 
-//-----------------------------BASES-----------------------------
-// Archon Staff / Colossus Sword for Wind
-ItemDisplay[NMAG 6ws ETH !RW !INF (SOCK=0 OR SOCK=2)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
-ItemDisplay[NMAG 7fb ETH !RW !INF (SOCK=0 OR SOCK=2)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
+//-----------------------------CLASS SPECIFIC OVERRIDES---------------------------------------
+//-----Pally
+// Holy Shield Base
+ItemDisplay[NMAG !RW !INF SK117=3 (SOCK=0 OR SOCK>3)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
 
-// +3 Holy Shield Bases
-ItemDisplay[NMAG !RW !INF SK117>1 (SOCK=0 OR SOCK>3)]: %BLUE%*%PURPLE%*%RED%*%ORANGE%*   %GRAY%%NAME%   %ORANGE%*%RED%*%PURPLE%*%BLUE%*
+// Concentration / Hammer Bases
+ItemDisplay[NMAG SK113=3 SK112=3 (SOCK=0 OR SOCK>2)]: %RED%**%PURPLE%**%GREEN%**%WHITE% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
+ItemDisplay[NMAG 9ws SK113=3 SK112=3 (SOCK=0 OR SOCK>2)]: %RED%**%PURPLE%**%GREEN%**%WHITE% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
 
-//-----------------------------CLASS OVERRIDES---------------------------------------
-ItemDisplay[NMAG SK113=3 SK112=3 SOCK=0]: %RED%**%PURPLE%**%GREEN%**%WHITE% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
-ItemDisplay[NMAG SK113=3 SK112=3 SOCK=5]: %RED%**%PURPLE%**%GREEN%**%GRAY% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
-ItemDisplay[NMAG SK113>1 SK112>1 SOCK=0]: %GREEN%**%WHITE% %NAME% %GREEN%**%WHITE%
-ItemDisplay[NMAG SK113>1 SOCK=0]: %GREEN%**%WHITE% %NAME% %GREEN%**%WHITE%
-ItemDisplay[NMAG SK112>1 SOCK=0]: %GREEN%**%WHITE% %NAME% %GREEN%**%WHITE%
-
-ItemDisplay[NMAG 9ws SK113=3 SK112=3 SOCK=0]: %RED%**%PURPLE%**%GREEN%**%WHITE% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
-ItemDisplay[NMAG 9ws SK113=3 SK112=3 SOCK=5]: %RED%**%PURPLE%**%GREEN%**%GRAY% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
-ItemDisplay[NMAG 9ws SK113>1 SK112>1 SOCK=0]: %GREEN%**%WHITE% %NAME% %GREEN%**%WHITE%
-
+//-----Druid
 // Utility (SK235>0 OR SK235>0 OR SK236>0 OR SK370>0)
 // Bear (SK228>1 OR SK224>1 OR SK243>1 OR SK239>1)
 // Wolf (SK223>1 OR SK224>1 OR SK238>1 OR SK248>1 OR SK239>1)
@@ -409,9 +402,11 @@ ItemDisplay[NMAG 9ws SK113>1 SK112>1 SOCK=0]: %GREEN%**%WHITE% %NAME% %GREEN%**%
 // Cold (SK230>0)
 // Wind (SK245>1 OR SK240>1 OR SK25>1)
 
+// Show all non ID'd MAG and RARE Druid Helms and Clubs b/c of Skills...
 ItemDisplay[MAG !ID (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %DOT-90%%ORANGE%*          %BLUE%%NAME%          %ORANGE%*
 ItemDisplay[RARE !ID (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %DOT-90%%ORANGE%*          %YELLOW%%NAME%          %ORANGE%*
 
+// Show all good Druid bases...
 ItemDisplay[NMAG !RW SOCK=0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %WHITE% %NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SOCK>0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %GRAY% %NAME%%CONTINUE%
 
