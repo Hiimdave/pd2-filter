@@ -25,14 +25,13 @@ ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:               // Turn off less than Flawle
 
 //-----------------------------FOR THE MEMES----------------------------
 ItemDisplay[wss]: %MAP-62%%ORANGE%* %PURPLE%WORLDSTAR!!! x%QTY% %ORANGE%*%WHITE%{%TAN%Unsock Item: 50% Mod, 25% Brick, 25% Sockets%NL%Sock Item: 75% Mod, 25% Brick%NL%Maps: 70% Mod, 30% CNC%NL%%ORANGE%Cube w/ item to corrupt}
-ItemDisplay[cwss]: %MAP-0A%%RED%*** Tainted %PURPLE% WORLDSTAR!!! x%QTY% %RED%***%WHITE%{%RED%Do not use on Throwing weapons!%NL%%NL%%TAN%Armors: 1-2%NL%2H Weapons: 1-6%NL%1H Weapons: 1-2%NL%%ORANGE%Cube w/ unsocketed item to roll sockets}
+ItemDisplay[cwss]: %MAP-0A%%RED%*** Tainted %PURPLE% WORLDSTAR!!! x%QTY% %RED%***%WHITE%{%RED%Corrupts %TAN%your Annihilus}
 ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
 //-----------------------------GENERAL GEAR-----------------------------
 // Arrows/Quivers
 ItemDisplay[(aqv OR cqv) MAG !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                 // Magic Arrows
 ItemDisplay[(aqv OR cqv) RARE !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*              // Rare Arrows
-//ItemDisplay[(aqv OR cqv) CRAFT]: %DOT-9B%%ORANGE%*     %NAME%     *                                 // Crafted Arrows (not possible but in case of bugs)
 
 // Jewels
 ItemDisplay[MAG jew !ID]: %DOT-9B%%PURPLE%**%BLUE%          %NAME%          %PURPLE%**          // Magic Jewels
