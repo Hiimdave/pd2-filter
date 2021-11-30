@@ -1,11 +1,11 @@
 //-----------------------------Hiimdave's Lootfilter---------------------------------
 // Version: 4.2.1beta
 //-----------------------------------------------------------------------------------
+
 //-----------------------------QUICK TOGGLES-----------------------------------------
 // Note: Turn these on / off based on personal preference
 
 // Recommended: ON
-ItemDisplay[ear]:                                   // Turn off player ears...ewww.
 ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:               // Turn off less than Flawless Gems
 
 // Recommended: OFF (Unless you 100% know you don't want them)
@@ -14,14 +14,18 @@ ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:               // Turn off less than Flawle
 //ItemDisplay[RUNE<10 (DIFF=2 OR CLVL>85)]:         // Turn off Runes < Thul in Hell or when over 85  
 
 // Extra Strict Toggles (Only for certain builds / usages)
-//ItemDisplay[hp5 (DIFF=2 OR CLVL>84)]:            // Turn off Rank 5 HP Pots in Hell or 85+
-//ItemDisplay[mp5 (DIFF=2 OR CLVL>84)]:            // Turn off Rank 5 MP Pots in Hell or 85+
+//ItemDisplay[hp5 (DIFF=2 OR CLVL>84)]:             // Turn off Rank 5 HP Pots in Hell or 85+
+//ItemDisplay[mp5 (DIFF=2 OR CLVL>84)]:             // Turn off Rank 5 MP Pots in Hell or 85+
 //ItemDisplay[rvs (DIFF=2 AND CLVL>84)]:            // Turn off 35% Rejuvs in Hell or 85% (b/c you're just that thicc) 
 
 // Uber Strict Toggles (For very specific farming)
 //ItemDisplay[MAG cm2 DIFF=2 !ID]:                  // Turn off Large Charms in Hell thar are not ID'd
 //ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:         // Turn off Magic rings/amulets in Hell that are not ID'd
-//ItemDisplay[MAG (rin OR amu) DIFF>0 !ID]:
+//ItemDisplay[MAG (rin OR amu) DIFF>0 !ID]:         // Turn off Magic rings/amulets after normal that are not ID'd
+
+//-----------------------------ZONE SPECIFIC----------------------------
+//ItemDisplay[ear (MAPID=157 OR MAPID=159)]: %NAME%
+ItemDisplay[ear]:
 
 //-----------------------------FOR THE MEMES----------------------------
 ItemDisplay[wss]: %MAP-62%%ORANGE%* %PURPLE%WORLDSTAR!!! x%QTY% %ORANGE%*%WHITE%{%TAN%Unsock Item: 50% Mod, 25% Brick, 25% Sockets%NL%Sock Item: 75% Mod, 25% Brick%NL%Maps: 70% Mod, 30% CNC%NL%%ORANGE%Cube w/ item to corrupt}
@@ -30,8 +34,8 @@ ItemDisplay[r32 OR r32s]: %ORANGE%Poo Rune%CONTINUE%
 
 //-----------------------------GENERAL GEAR-----------------------------
 // Arrows/Quivers
-ItemDisplay[(aqv OR cqv) MAG !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*                 // Magic Arrows
-ItemDisplay[(aqv OR cqv) RARE !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*              // Rare Arrows
+ItemDisplay[(aqv OR cqv) MAG !ID]: %DOT-9B%%YELLOW%*%BLUE%     %NAME%     %YELLOW%*             // Magic Arrows
+ItemDisplay[(aqv OR cqv) RARE !ID]: %DOT-9B%%ORANGE%*%YELLOW%     %NAME%     %ORANGE%*          // Rare Arrows
 ItemDisplay[(aqv OR cqv) MAG ID]: %NAME%
 ItemDisplay[(aqv OR cqv) RARE ID]: %NAME%
 
@@ -127,8 +131,8 @@ ItemDisplay[NMAG t34]: %NAME%%WHITE%Ancestral Trial Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t35]: %NAME%%WHITE%Blood Moon Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t36]: %NAME%%WHITE%Fall of Caldeum Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t37]: %NAME%%WHITE%Pandemonium Citadel Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t38]: %NAME%%WHITE%Frozen Forest Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t39]: %NAME%%WHITE%T3-9 Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t38]: %NAME%%WHITE%Canyon of Sescheron Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t39]: %NAME%%WHITE%Kehjistan Marketplace Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t31]: %NAME%%BLUE%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t32]: %NAME%%BLUE%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t33]: %NAME%%BLUE%Reziarfg's Lair Map%WHITE%%CONTINUE%
@@ -136,8 +140,8 @@ ItemDisplay[MAG t34]: %NAME%%BLUE%Ancestral Trial Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t35]: %NAME%%BLUE%Blood Moon Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t36]: %NAME%%BLUE%Fall of Caldeum Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t37]: %NAME%%BLUE%Pandemonium Citadel Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t38]: %NAME%%BLUE%Frozen Forest Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t39]: %NAME%%BLUE%T3-9 Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t38]: %NAME%%BLUE%Canyon of Sescheron Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t39]: %NAME%%BLUE%Kehjistan Marketplace Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t31]: %NAME%%YELLOW%River of Blood Map Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t32]: %NAME%%YELLOW%Throne of Insanity Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t33]: %NAME%%YELLOW%Reziarfg's Lair Map%WHITE%%CONTINUE%
@@ -145,14 +149,14 @@ ItemDisplay[RARE t34]: %NAME%%YELLOW%Ancestral Trial Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t35]: %NAME%%YELLOW%Blood Moon Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t36]: %NAME%%YELLOW%Fall of Caldeum Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t37]: %NAME%%YELLOW%Pandemonium Citadel Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t38]: %NAME%%YELLOW%Frozen Forest Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t39]: %NAME%%YELLOW%T3-9 Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t38]: %NAME%%YELLOW%Canyon of Sescheron Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t39]: %NAME%%YELLOW%Kehjistan Marketplace Map%WHITE%%CONTINUE%
 ItemDisplay[t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39]: %MAP-62%%NAME% %ORANGE%*
 
 // T4 Maps (Dungeon)
 ItemDisplay[t41 OR t42 OR t43 OR t44 OR t45 OR t44 OR t47 OR t48 OR t49]: %RED%* [T4] %CONTINUE%
 ItemDisplay[NMAG t41]: %NAME%%WHITE%Cathedral of Light Map%WHITE%%CONTINUE%
-ItemDisplay[NMAG t42]: %NAME%%WHITE%Desert Map%WHITE%%CONTINUE%
+ItemDisplay[NMAG t42]: %NAME%%WHITE%T4-2 Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t43]: %NAME%%WHITE%Mesa Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t44]: %NAME%%WHITE%T4-4 Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t45]: %NAME%%WHITE%T4-5 Map%WHITE%%CONTINUE%
@@ -161,7 +165,7 @@ ItemDisplay[NMAG t47]: %NAME%%WHITE%T4-7 Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t48]: %NAME%%WHITE%T4-8 Map%WHITE%%CONTINUE%
 ItemDisplay[NMAG t49]: %NAME%%WHITE%T4-9 Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t41]: %NAME%%BLUE%Cathedral of Light Map%WHITE%%CONTINUE%
-ItemDisplay[MAG t42]: %NAME%%BLUE%Desert Map%WHITE%%CONTINUE%
+ItemDisplay[MAG t42]: %NAME%%BLUE%T4-2 Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t43]: %NAME%%BLUE%Mesa Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t44]: %NAME%%BLUE%T4-4 Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t45]: %NAME%%BLUE%T4-5 Map%WHITE%%CONTINUE%
@@ -170,7 +174,7 @@ ItemDisplay[MAG t47]: %NAME%%BLUE%T4-7 Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t48]: %NAME%%BLUE%T4-8 Map%WHITE%%CONTINUE%
 ItemDisplay[MAG t49]: %NAME%%BLUE%T4-9 Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t41]: %NAME%%YELLOW%Cathedral of Light Map%WHITE%%CONTINUE%
-ItemDisplay[RARE t42]: %NAME%%YELLOW%Desert Map%WHITE%%CONTINUE%
+ItemDisplay[RARE t42]: %NAME%%YELLOW%T4-2 Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t43]: %NAME%%YELLOW%Mesa Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t44]: %NAME%%YELLOW%T4-4 Map%WHITE%%CONTINUE%
 ItemDisplay[RARE t45]: %NAME%%YELLOW%T4-5 Map%WHITE%%CONTINUE%
@@ -350,34 +354,6 @@ ItemDisplay[yps (DIFF=2 OR (DIFF<2 AND CLVL<90))]: %GREEN%+%WHITE%Antidote			// 
 // Other Potions
 ItemDisplay[wms OR gpl OR gpm OR gps OR opl OR opm OR ops]:  						// Hide all other types of pots
 
-//-----------------------------RESET TOKENS-----------------------------
-// Essences
-ItemDisplay[tes OR ceh OR bet OR fed]: %ORANGE%*          %NAME%          *%CONTINUE%
-ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}
-ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}
-ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}
-ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
-
-// Reset Token
-ItemDisplay[toa]: %ORANGE%*        Reset Token        *%WHITE%%MAP-68%{%TAN%Use: Reset your Stat & Skill points.}
-
-//-----------------------------UBERS-----------------------------
-// Keys
-ItemDisplay[pk1 OR pk2 OR pk3]: %ORANGE%*          %NAME%          *%CONTINUE%
-ItemDisplay[pk1]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
-ItemDisplay[pk2]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
-ItemDisplay[pk3]: %PX-9D%%NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
-
-// Organs
-ItemDisplay[(bey OR dhn OR mbr)]: %ORANGE%*          %NAME%          *%MAP-68%{%TAN%Cube: Any 3 organs for talisman}
-
-// Talisman
-ItemDisplay[ubtm]: %ORANGE%*          %NAME%          *%MAP-68%{%TAN%Cube: Opens Uber Trist}
-
-//-----------------------------DCLONE-----------------------------
-ItemDisplay[dcma]: %MAP-0A%%RED%**********************************%ORANGE%         %NAME%         %RED%**********************************%WHITE%{%TAN%Note%WHITE%: %GRAY%You better not go in there... %RED%DO IT AT YOUR OWN RISK!}
-ItemDisplay[dcbl OR dcho OR dcso]: %MAP-0A%%RED%*          %NAME%          %RED%*{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}
-
 //-----------------------------Rathma-----------------------------
 ItemDisplay[rtmo]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%          // Rathma Ingredient
 ItemDisplay[rtma]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%          // Rathma Map
@@ -393,14 +369,19 @@ ItemDisplay[NMAG !RW !INF SK117=3 (SOCK=0 OR SOCK>3)]: %BLUE%*%PURPLE%*%RED%*%OR
 ItemDisplay[NMAG SK113=3 SK112=3 (SOCK=0 OR SOCK>2)]: %RED%**%PURPLE%**%GREEN%**%WHITE% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
 ItemDisplay[NMAG 9ws SK113=3 SK112=3 (SOCK=0 OR SOCK>2)]: %RED%**%PURPLE%**%GREEN%**%WHITE% %NAME% %GREEN%**%PURPLE%**%RED%**%WHITE%
 
-//-----Druid
-// Utility (SK235>0 OR SK235>0 OR SK236>0 OR SK370>0)
-// Bear (SK228>1 OR SK224>1 OR SK243>1 OR SK239>1)
-// Wolf (SK223>1 OR SK224>1 OR SK238>1 OR SK248>1 OR SK239>1)
-// Summons (SK221>1 OR SK237>1 OR SK227>1 OR SK247>1)
-// Fire (SK234>1 OR SK244>1 OR SK249>1)
-// Cold (SK230>0)
-// Wind (SK245>1 OR SK240>1 OR SK25>1)
+// TODO: When changes are merged in for pending BH code updates, add DRUID tag to druid section stuff.
+// ItemDisplay[DRUID MAG !ID (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %DOT-90%%ORANGE%*          %BLUE%%NAME%          %ORANGE%*
+// ItemDisplay[DRUID RARE !ID (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %DOT-90%%ORANGE%*          %YELLOW%%NAME%          %ORANGE%*
+
+// ItemDisplay[DRUID NMAG !RW SOCK=0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %WHITE% %NAME%%CONTINUE%
+// ItemDisplay[DRUID NMAG !RW SOCK>0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %GRAY% %NAME%%CONTINUE%
+
+// ALL THE SKILLS...
+
+// ItemDisplay[DRUID NMAG !RW SOCK=0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %ORANGE%* %WHITE%%NAME%%WHITE%%CONTINUE%
+// ItemDisplay[DRUID NMAG !RW SOCK=0 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %NAME% %ORANGE%* %WHITE%%CONTINUE%
+// ItemDisplay[DRUID NMAG !RW SOCK>1 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %ORANGE%* %GRAY%%NAME%%WHITE%%CONTINUE%
+// ItemDisplay[DRUID NMAG !RW SOCK>1 (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (SK370>0 OR SK250>0 OR SK249>0 OR SK248>0 OR SK247>0 OR SK245>0 OR SK244>0 OR SK243>0 OR SK240>0 OR SK239>0 OR SK238>0 OR SK237>0 OR SK235>0 OR SK234>0 OR SK230>0 OR SK229>0 OR SK228>0 OR SK227>0 OR SK226>0 OR SK225>0 OR SK224>0 OR SK223>0 OR SK221>0)]: %NAME% %ORANGE%* %WHITE%%CONTINUE%
 
 // Show all non ID'd MAG and RARE Druid Helms and Clubs b/c of Skills...
 ItemDisplay[MAG !ID (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)]: %DOT-90%%ORANGE%*          %BLUE%%NAME%          %ORANGE%*
@@ -1695,10 +1676,15 @@ ItemDisplay[SET (lbt OR vbt OR lgl)]: %NAME% [LLD]%CONTINUE%
 ItemDisplay[SET amu STAT89=3]: %NAME% [LLD]%CONTINUE%                   // Angelic amu
 ItemDisplay[SET rin STAT74=6]: %NAME% [LLD]%CONTINUE%                   // Angelic rin
 ItemDisplay[SET amu (STAT34>2 AND STAT35>1)]: %NAME% [LLD]%CONTINUE%    // Tancreds amu
-   
+
 //-----------------------------
 // Jewels
 //-----------------------------
+// TODO - When changes are merged in for pending BH code updates, update LLD section for use of PREFIX / SUFFIX.
+// ItemDisplay[jew LVLREQ<31 ((PREFIX=XYZ OR PREFIX=ABC) OR (SUFFIX=ABC OR SUFFIX=DEF))]: %NAME% %PURPLE%[LLD]{%GRAY%This jewel is %TAN%Good%GRAY% to %PURPLE%GG}
+// ItemDisplay[jew LVLREQ<31 ((PREFIX=XYZ OR PREFIX=ABC) OR (SUFFIX=ABC OR SUFFIX=DEF))]: %NAME% %BLUE%[LLD]{%GRAY%This jewel is %BLUE%Okay%GRAY% to %TAN%Good}
+// ItemDisplay[jew LVLREQ<31 ((PREFIX=XYZ OR PREFIX=ABC) OR (SUFFIX=ABC OR SUFFIX=DEF))]: %NAME% %GRAY%[LLD]{%GRAY%This jewel is either extremely %ORANGE%Situational%GRAY% or a %WHITE%Beginner %GRAY%Jewel}
+
 // Magic
 ItemDisplay[MAG jew LVLREQ<31 (MAXDMG>15 OR RES>13 OR (ED>13 AND MAXDMG>9) OR (MINDMG>4 AND MAXDMG>13) OR (ED>12 AND (STR>4 OR DEX>5)) OR (RES>9 AND (STR>4 OR DEX>5)) OR (STAT91=-15 AND (RES>10 OR ED>14 OR MAXDMG>7 OR MINDMG>6)))]: %NAME% %PURPLE%[LLD]{%GRAY%This jewel is %TAN%Good%GRAY% to %PURPLE%GG}
 ItemDisplay[MAG jew LVLREQ<31 (MAXDMG>13 OR RES>11 OR (FRES>20 AND STAT91=-15) OR (CRES>20 AND STAT91=-15) OR (LRES>20 AND STAT91=-15) OR (MAXDMG>10 AND (RES>9 OR ED>0 OR MINDMG>3)) OR (MINDMG>3 AND (RES>9 OR ED>0 OR MAXDMG>10)) OR (STR>3 AND (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)) OR (DEX>5 AND (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)) OR (STR>3 AND DEX>3) OR (STAT91=-15 AND (RES>9 OR ED>0 OR MAXDMG>10 OR MINDMG>3)))]: %NAME% %BLUE%[LLD]{%GRAY%This jewel is %BLUE%Okay%GRAY% to %TAN%Good}
@@ -1712,6 +1698,15 @@ ItemDisplay[RARE jew LVLREQ<31 ((STAT91=-15 AND (ED>0 OR MINDMG>0 OR MAXDMG>0 OR
 //-----------------------------
 // Charms
 //-----------------------------
+// TODO - When changes are merged in for pending BH code updates, update LLD section for use of PREFIX / SUFFIX.
+// ItemDisplay[cm1 LVLREQ<31 ((PREFIX=XYZ OR PREFIX=ABC) OR (SUFFIX=ABC OR SUFFIX=DEF))]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
+// ItemDisplay[cm1 LVLREQ<31 ((PREFIX=XYZ OR PREFIX=ABC) OR (SUFFIX=ABC OR SUFFIX=DEF))]: %DOT-50%%NAME% %BLUE%[LLD]{%GRAY%Good LLD}
+// ItemDisplay[cm1 LVLREQ<31 ((PREFIX=XYZ OR PREFIX=ABC) OR (SUFFIX=ABC OR SUFFIX=DEF))]: %DOT-50%%NAME% %GRAY%[LLD]{%GRAY%Okay LLD}
+// ItemDisplay[cm2 LVLREQ<31 (PREFIX=XYZ OR ...)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD} //GG LARGE CHARMS
+// ItemDisplay[cm2 LVLREQ<31 (PREFIX=XYZ OR ...)]: %DOT-50%%NAME% %BLUE%[LLD]{%GRAY%Good LLD} //USABLE LARGE CHARMS
+// ItemDisplay[cm3 LVLREQ<31 ((PREFIX=XYZ) OR (SUFFIX=ABC))]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD} //GG GRAND CHARMS
+// ItemDisplay[cm3 LVLREQ<31 ((PREFIX=XYZ) OR (SUFFIX=ABC))]: %DOT-50%%NAME% %BLUE%[LLD]{%GRAY%Good LLD} //USABLE GRAND CHARMS
+
 // Small
 ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>14 (MAXDMG>1 OR MANA>9 OR STR>0 OR DEX>0 OR RES>2 OR STAT31>10)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
 ItemDisplay[MAG cm1 ID LVLREQ<31 LIFE>13 (MANA>9 OR RES>3 OR FRES>8 OR LRES>8 OR CRES>8 OR PRES>8)]: %DOT-50%%NAME% %PURPLE%[LLD]{%GRAY%GG LLD}
@@ -1806,6 +1801,10 @@ ItemDisplay[(7qr OR uhl OR uth OR utb OR 7bs) UNI ID]: %MAP%%NAME%
 // new s3 items
 ItemDisplay[(am5 OR ba6 OR dr2 OR ne6 OR pa3 OR 9ar OR ob6) UNI !ID]: %BORDER-68%%ORANGE%>>>>>       %NAME%       <<<<<
 ItemDisplay[(am5 OR ba6 OR dr2 OR ne6 OR pa3 OR 9ar OR ob6) UNI ID]: %MAP%%NAME%
+
+// new s4 items
+ItemDisplay[(ram OR rar OR rbe OR uhn OR utc) UNI !ID]: %BORDER-68%%ORANGE%>>>>>       %NAME%       <<<<<
+ItemDisplay[(ram OR rar OR rbe OR uhn OR utc) UNI ID]: %MAP%%NAME%
 
 // ------------------------------------------------------------------------------
 // OK UNIQUES
