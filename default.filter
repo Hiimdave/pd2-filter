@@ -304,9 +304,6 @@ ItemDisplay[r33s]: %NAME%{%TAN%Note%WHITE%: Zod + Perf %GRAY%O %WHITE%= Repair a
 ItemDisplay[RUNE>0]: %NAME%{%TAN%Note%WHITE%: Cube %ORANGE%Runes %WHITE%to %GRAY%(un)%WHITE%stack them%NL%}
 
 //-----------------------------CONSUMABLES-----------------------------
-// Jewel Shards
-ItemDisplay[jewf]: %GOLD%+%WHITE%%NAME% x%QTY%
-
 // Keys
 ItemDisplay[key]: %GOLD%+%WHITE%Key{%GRAY% Hiimdave Filter v4.2.1beta}
 
