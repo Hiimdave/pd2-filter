@@ -23,6 +23,9 @@ ItemDisplay[GEM=1 OR GEM=2 OR GEM=3]:               // Turn off less than Flawle
 //ItemDisplay[MAG (rin OR amu) DIFF=2 !ID]:         // Turn off Magic rings/amulets in Hell that are not ID'd
 //ItemDisplay[MAG (rin OR amu) DIFF>0 !ID]:         // Turn off Magic rings/amulets after normal that are not ID'd
 
+//-----------------------------OVERRIDES----------------------------
+ItemDisplay[HELM !RW !UNI !SET SOCK=3 ILVL>79]: %NAME% %GRAY%[%SOCKETS%]
+
 //-----------------------------ZONE SPECIFIC----------------------------
 ItemDisplay[ear (MAPID=157 OR MAPID=159)]: %NAME%
 ItemDisplay[ear]:
