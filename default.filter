@@ -392,7 +392,7 @@ ItemDisplay[yps (DIFF=2 OR (DIFF<2 AND CLVL<90))]: %GREEN%+%WHITE%Antidote			// 
 ItemDisplay[wms OR gpl OR gpm OR gps OR opl OR opm OR ops]:  						// Hide all other types of pots
 
 //-----------------------------Rathma-----------------------------
-ItemDisplay[rtmo OR rtmv OR rtma]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%          
+ItemDisplay[rtmo OR rtmv OR rtma OR rtmf]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%          
 ItemDisplay[rtbk OR rtp]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%   // Rathma Tome of Town Portal (infinite)
 ItemDisplay[ribk OR rid]: %MAP-0A%%RED%* %ORANGE%%NAME% %RED%*%WHITE%   // Rathma Tome of Identify (infinite)
 
